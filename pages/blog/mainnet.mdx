@@ -1,0 +1,35 @@
+---
+title: "Rhonix mainnet announcement 🌟🎉"
+date: 2022/11/25
+description:  "Rhonix mainnet announcement"
+tag: "mainnet"
+ogImage: /images/blog/merge/cover.png
+---
+
+# Rhonix mainnet announcement 🌟🎉
+
+import { Authors } from "../../components/Authors";
+import Date from "../../components/blog/Date";
+
+<Date>
+  25 November 2022
+</Date>
+
+<Authors authors={["jaredpalmer", "becca__z", "gaspargarcia_", "gsoltis"]} />
+
+![mainnet](./images/concert.jpg)
+
+Rhonix Mainnet is live. Initially, it will run all the nodes in the root shard but expects that to change in the future.
+
+Rhonix uses a pure proof-of-stake version of the correct-by-construction (CBC) Casper consensus framework.
+
+Parameters for Rhonix Root Shard Nodes
+
+- The root shard is limited to 100 validator nodes and unlimited read-only nodes.
+- After the root shard, 100 validator slots are filled, bonding requests will be queued in a waiting list. Validators are randomly selected from the waiting list for bonding.
+- Approved bonding requests get up to two weeks to provision hardware before they are placed in rotation.
+- Unbonded validators may re-apply for validation. Their bonding will be treated just like any other bonding request and may be subject to queuing on the waiting list.
+- The minimum bonding period for all validator nodes is four months.
+- The deposit will be bounded for the entire time they are resident in the validator set unless the validator’s deposit is subject to slashing.
+- When a validator requests to unbond to leave the validator set, the validator must wait a minimum of two weeks for their bond to be returned.
+- Bonding minimum is 10,000 REV and maximum is 5,000,000 REV.

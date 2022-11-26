@@ -1,0 +1,34 @@
+{
+  "*": {
+    "type": "page"
+  },
+  "index": {
+    "display": "hidden",
+    "theme": {
+      "layout": "raw",
+      "sidebar": false,
+      "toc": true
+    }
+  },
+  "learn": "Learn",
+  "build": "Build",
+  "explore": "Explore",
+  "blog": {
+    "title": "Blog",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "confirm": {
+    "title": "Confirm",
+    "display": "hidden"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "display": "hidden"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "display": "hidden"
+  }
+}
