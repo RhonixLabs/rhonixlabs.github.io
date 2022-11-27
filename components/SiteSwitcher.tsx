@@ -13,9 +13,7 @@ export function useTurboSite(): "learn" | "build" | "explore" | undefined {
     return "build";
   }
 
-  if (pathname.startsWith("/explore")) {
-    return "explore";
-  }
+
 
   return undefined;
 }
