@@ -1,3 +1,6 @@
 {
-  "overview": "Overview"
+  "overview": "Overview",
+  "use-vscode": "Use VSCode",
+  "use-codesandbox": "Use Codesandbox",
+  "use-local-node": "Use local Node"
 }

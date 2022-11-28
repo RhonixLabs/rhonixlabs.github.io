@@ -1,4 +1,6 @@
 {
-  "running-tasks": "Running Tasks",
-  "filtering": "Filtering Workspaces"
+  "commands": "Commands for RNode",
+  "deploy-contract": "Deploy a Rholang contract",
+  "propose-block": "Propose a block",
+  "block-finalization": "Check block finalization"
 }

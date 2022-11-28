@@ -1,58 +1,55 @@
-# Build with Rhonix
+# Use VSCode
 
-How to build and deploy a dApp with Rhonix.
+The evaluation of rholang code is done on a rnode client. This tutorial explains how to setup everything to run rholang code in VSCode with the use of a rholang [extension](https://marketplace.visualstudio.com/vscode)
 
-## Rchain Cloud
+## Install the rholang extension in VSCode
 
-Evaluate Rholang code in the cloud and test your dapp [Rchain Cloud](https://rchain-community.github.io/rgov/).
+The VSCode extension runs with Windows, Linux, Mac. This tutorial describes the installing process for windows.
 
-## VSCode Plugin
+**Prerequisites:**
+Windows 10
 
-This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting.
-[Marketplace VSCode](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
+1. Install the latest updates for windows 10 and install the latest version of [docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/). Click on **Get Docker** and install it on your pc. Restart the pc.
+2. After restart run the Docker Desktop application.
+3. There has to be a **white** docker logo on the windows taskbar.
+   If the docker logo ist red, then there is a docker problem with your pc (sometimes wsl_update_x64.msi has to be additionally installed).
+   ![vscode1](public/images/docs/build/vscode/vscode-1.png)
 
-## Local Node
+4. Install the VSCode extension for rholang. Search for the rholang extension, install it and then got to setting for this extension.
+   ![dev3](public/images/docs/build/vscode/vscode-3.png)
 
-Another way to run rholang code is to start up your own local RNode and use its rholang interpreter. For that rnode has to be installed. There are two modes to run rholang code locally: repl and eval. With repl you can type rholang code directly into the console and execute it. With eval you are running a .rho file and execute this file. Try the [localhost development environment](https://docs.google.com/document/d/1V5k9tDjztEVDYiXJG1-Hpb0rNtVcV22GrsdXb0pDUx8).
+5. The checkbox for Enable Docker and the Rnode Docker Image (rchain/rnode:v0.12.1) has to be set.
+   ![dev2](public/images/docs/build/vscode/vscode-4.png)
+6. Open to the command line in vscode and to the OUTPUT tab. Then select rholang on the dropdown menu on the right. Wait for a minute until there is the output **Rholang VM is ready!**.
+   ![dev2](public/images/docs/build/vscode/vscode-7.png)
 
-##### 1. REPL
+7. Create a new file with the .rho extension. And write some rholang code:
 
-the following chapter provides you with the information for setting up REPL with docker for windows. If you don't want to use docker or windows, this is also possible and you just have to change the commands slidely.
+   ```ts
+   new helloworld, stdout(`rho:io:stdout`) in {
+   contract helloworld( world ) = {
+      for( @msg <- world )
+      { stdout!(msg) }
+   }
 
-##### 1.1 Requirements
+   | new world, world2 in {
+         helloworld!(*world)
+      | world!("Hello World")
+      | helloworld!(*world2)
+      | world2!("Hello World again")
+      }
+   }
+   ```
 
-- Requirements: Windows 10 or Linux
-- Docker installed
+   ![dev3](public/images/docs/build/vscode/vscode-5.png)
 
-##### 1.1 Setting up docker
+8. Save the hello.rho file with strg+s. After every save the rholang file is evaluated on the rnode instance in docker.
 
-- after installing docker for windows -> start Docker Desktop -> on the right bottom there is a small icon, if docker has started
-- download genesis folder from [genesis folder](https://github.com/rchain-community/rchain-docker-shard/tree/master/genesis)
-- create a folder (e.g on desktop -> C:/Users/Nakamoto/Rnode/)
-- copy genesis folder from download (unzip) into rnode folder (e.g C:/Users/Nakamoto/Rnode/genesis)
-- open command line
-  - cmd1: `$ docker pull rchain/rnode:latest`
+9. Open a terminal in VSCode, go to OUTPUT and select Rholang in the navbar. The evaluated result of the code in this example is: "Hello World again"
+   "Hello World".
 
-##### 1.2 Commands for running repl
+   ![dev4](public/images/docs/build/vscode/vscode-6.png)
 
-- cmd1:`$ docker run --rm --name rnode-server -v C:\Users\Nakamoto\Rnode\:/var/lib/rnode --network host rchain/rnode:latest run -s`
-
-  - if the mount path is right and the genesis folder is there, then there is no error
-
-- wait until it says:
-
-  - 11:59:00.474 [INFO ][node-runner-21 ] [c.r.c.e.CasperLaunch$$anon$1 ] - Checking pendant hashes: 0 items in CasperBuffer.
-
-- open a second command line:
-- cmd2: `docker run --rm --name rnode-repl-client --network host -it rchain/rnode:latest --grpc-port 40402 repl`
-- past rholang code into it:
-
-  ```javascript
-  new helloworld, stdout(`rho:io:stdout`) in { contract helloworld( world ) = { for( @msg <- world ) { stdout!(msg) } } | new world, world2 in { helloworld!(*world) | world!("Hello World") | helloworld!(*world2) | world2!("Hello World again") } }
-  ```
-
-  ![repl](public/images/docs/build/rholang/repl.png)
-
-* go to cmd1 -> there you can see the evaluation result ("Hello World again" "Hello World"):
-
-  ![eval](public/images/docs/build/rholang/eval-result.png)
+   > ⚠️ If you get the following errors in your console:  
+   > _docker: Error response from daemon: open \\.\pipe\docker_engine_linux_ or  
+   > _docker: Error response from daemon: status code not OK but 500:_ then wait and restart vscode again.

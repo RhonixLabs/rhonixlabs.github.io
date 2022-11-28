@@ -1,5 +1,3 @@
 {
-  "add-to-project": "Add to Existing Project",
-  "create-new": "Create a New Monorepo",
-  "existing-monorepo": "Add to Existing Monorepo"
+  "wallet": "Interact with a wallet"
 }
