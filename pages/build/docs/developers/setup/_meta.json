@@ -1,4 +1,6 @@
 {
-  "running-tasks": "Running Tasks",
-  "filtering": "Filtering Workspaces"
+  "overview": "Overview",
+  "installing-rnode": "Installing RNode",
+  "running-rnode-docker": "Running RNode (Docker)",
+  "running-rnode": "Running RNode (non-Docker)"
 }

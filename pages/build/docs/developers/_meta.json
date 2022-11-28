@@ -1,7 +1,8 @@
 {
   "overview": "Overview",
   "setup": "Setup",
-  "build": "Build",
+  "rholang": "Rholang",
+  "cli": "CLI",
   "libraries": "Libraries & SDKs",
-  "examples": "Code Examples"
+  "tutorials": "Tutorials"
 }
