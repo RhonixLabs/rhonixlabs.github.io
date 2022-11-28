@@ -1,8 +1,3 @@
----
-title: Filtering Workspaces
-description: Only build the workspaces you care about
----
-
 # Cost of matching in replay
 
 written by Mike Stay and Kyle Butt
@@ -37,6 +32,7 @@ The constant K is used something like phlo, in that if the work to do the match 
 
 The proposal also quadratically penalizes users for writing code where a single ack channel is reused in a series of sequential operations:
 
+```
 job1!(*ack) |
 for (\_ <- ack) {
 job2!(*ack) |
@@ -48,6 +44,7 @@ done!()
 }
 }
 }
+```
 
 ## Arity matching
 

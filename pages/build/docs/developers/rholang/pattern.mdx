@@ -1,8 +1,3 @@
----
-title: Filtering Workspaces
-description: Only build the workspaces you care about
----
-
 # Pattern matching
 
 There are two kinds of value in Rholang, names and processes. Patterns are names or processes with free variables and logical connectives, which appear to the left of an arrow in a `for` or a `match`:
@@ -117,7 +112,7 @@ people!(@"name"!("Jack") | @"age"!(50) | @"eyes"!("grey") | @"seq"!(0))
 
 Then we can think of the name `people` as a table in a database and query it. A rough translation of the SQL statement `SELECT age, name FROM people WHERE age > 35` in the context of the data above would be
 
-```javascript{numberLines: true}
+```ts
   new people, stdout(`rho:io:stdout`) in {
     people!(@"name"!("Joe") | @"age"!(20) | @"eyes"!("blue") | @"seq"!(0)) |
     people!(@"name"!("Julie") | @"age"!(30) | @"eyes"!("brown") | @"seq"!(0)) |
@@ -157,7 +152,7 @@ in either order.
 
 Patterns can also be used in a `match` production.
 
-```javascript{numberLines: true}
+```ts
   new sumProd in {
     contract sumProd(@arr, ret) = {
       new fold, sum, prod in {

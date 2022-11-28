@@ -1,15 +1,10 @@
----
-title: Filtering Workspaces
-description: Only build the workspaces you care about
----
-
 # Design patterns
 
 Here you find some patterns you will often use to solve same Tasks.
 
 ## Mutable state
 
-```javascript{numberLines: true}
+```ts
   new MakeCell in {
     // Makes a single cell in which you can store values
     contract MakeCell(@init, get, set) = {
@@ -74,7 +69,7 @@ Note the deep layers of callback. Rholang was designed to make concurrent comput
 
 ## Coat check
 
-```javascript{numberLines: true}
+```ts
   new MakeCoatCheck in {
     contract MakeCoatCheck(ret) = {
       new port, table in {
@@ -131,7 +126,7 @@ Note the deep layers of callback. Rholang was designed to make concurrent comput
 
 4.) We send _port_ out to the caller, so they can interact with the coat check.
 
-5, 11, 17) We define different methods which can be called by sending a message on _port_. This is done by specifying mutually exclusive patterns the message on _port_ can match, with the first element of the message being the method name and subsequent elements being the argument(s) and return channel. Using the _<=_ arrow instead of the _<-_ arrow means that the *for*s are "replicated". This gives them the same behavior as *contract*s, i.e. the process listening for messages on _port_ persists after spawning an instance of its body.
+5, 11, 17) We define different methods which can be called by sending a message on _port_. This is done by specifying mutually exclusive patterns the message on _port_ can match, with the first element of the message being the method name and subsequent elements being the argument(s) and return channel. Using the `_<=_` arrow instead of the `_<-_` arrow means that the *for*s are "replicated". This gives them the same behavior as *contract*s, i.e. the process listening for messages on _port_ persists after spawning an instance of its body.
 
 8.) We take advantage of being able to quote any process to make a name in order to create a unique name for each value to be stored at. The process \**ticket | *table* is produced by the concurrent composition of the processes produced by unquoting the names *ticket* and *table\*. That process can then be quoted to form a unique name that is then used to store the value by sending it on the name.
 
@@ -158,7 +153,7 @@ The dining philosophers problem has two philosophers that share only one set of 
 
 Here's how to solve the problem:
 
-```javascript{numberLines: true}
+```ts
   new philosopher1, philosopher2, north, south, knife, spoon in {
     north!(*knife) |
     south!(*spoon) |
@@ -333,7 +328,7 @@ new MakeGetForwarder in {
 
 We can implement revocation by creating a forwarder with a kill switch.
 
-```javascript{numberLines: true}
+```ts
   new MakeRevokableForwarder in {
     contract MakeRevokableForwarder(target, ret) = {
       new port, kill, forwardFlag in {

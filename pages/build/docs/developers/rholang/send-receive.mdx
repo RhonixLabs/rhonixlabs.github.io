@@ -1,19 +1,14 @@
----
-title: Filtering Workspaces
-description: Only build the workspaces you care about
----
-
 # Sending and Receiving
 
 Sending and receiving is one of the most important things to understand in Rholang.
 
 > Because Rholang is an asynchronous programming language, there is no return in a function.That's why you call a function `HelloWorld(args)` via sending on the `functions` name HelloWorld. You are sending via the ! syntax.
 
-> Because of the asynchrony you don't know when the `function` you called via HelloWorld!(args) is sending the processed data **back** over some other channel. Thats why there is no `return` in the `function`. Instead Rholang has the for(args<-channels) syntax for waiting until all the needed arguments are received over the channels.
+> Because of the asynchrony you don't know when the `function` you called via HelloWorld!(args) is sending the processed data **back** over some other channel. Thats why there is no `return` in the `function`. Instead Rholang has the `for(args<-channels)` syntax for waiting until all the needed arguments are received over the channels.
 
 ## Example
 
-```javascript{numberLines: true}
+```ts
 new HelloWorld, stdout(`rho:io:stdout`) in {
   HelloWorld!("Hello, world!") |
   for (@text <- HelloWorld) {
@@ -30,7 +25,7 @@ new HelloWorld, stdout(`rho:io:stdout`) in {
 
 4. Rholang runtime environments may choose to include built-in processes listening on channels. In this tutorial, we use new with the urn `rho:io:stdout` to request a channel where sent messages get printed to a console.
 
-> When you send data over a channel and there is no contract which is listening with for(args<-channels) for that channel, then these data is stored in the tuplespace (like a database), until some contract is starting to listening for it.
+> When you send data over a channel and there is no contract which is listening with `for(args<-channels)` for that channel, then these data is stored in the tuplespace (like a database), until some contract is starting to listening for it.
 
 ### Name Equivalence
 
@@ -66,7 +61,7 @@ Finally, channels also respect a change in variable name (alpha equivalence), so
 
 ## Replicated receive
 
-```javascript{numberLines: true}
+```ts
 new HelloWorld, stdout(`rho:io:stdout`) in {
   for (@text <= HelloWorld) {
     stdout!(text)
@@ -82,7 +77,7 @@ new HelloWorld, stdout(`rho:io:stdout`) in {
 
 ## Contracts as sugar for replicated receive
 
-```javascript{numberLines: true}
+```ts
 new HelloWorld, stdout(`rho:io:stdout`) in {
   contract HelloWorld(@text) = {
     stdout!(text)
@@ -96,7 +91,7 @@ new HelloWorld, stdout(`rho:io:stdout`) in {
 
 ## Replicated send
 
-```javascript{numberLines: true}
+```ts
 new HelloWorld, stdout(`rho:io:stdout`), stderr(`rho:io:stderr`) in {
   HelloWorld!!("Hello, world!") |
   for (@text <- HelloWorld) {
@@ -116,7 +111,7 @@ new HelloWorld, stdout(`rho:io:stdout`), stderr(`rho:io:stderr`) in {
 
 In order to have one message follow after another is known to have been received, we must use an acknowledgement message.
 
-```javascript{numberLines: true}
+```ts
 new chan, ack, stdoutAck(`rho:io:stdoutAck`) in {
   chan!(0) |
   for (_ <- ack) {
@@ -136,7 +131,7 @@ new chan, ack, stdoutAck(`rho:io:stdoutAck`) in {
 
 ## Sending and receiving multiple processes
 
-```javascript{numberLines: true}
+```ts
 new chan, stdout(`rho:io:stdout`) in {
   chan!(1,2,3) |
   chan!((4,5,6)) |
