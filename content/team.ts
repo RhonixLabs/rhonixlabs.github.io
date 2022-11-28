@@ -3,8 +3,14 @@ const TURBO_TEAM: Record<string, AuthorDetails> = {
     name: "nzpr",
     twitterUsername: "nzpr",
     picture: "/images/people/nzpr.jpg",
+  },
+  joshy: {
+    name: "Joshy Orndorff",
+    twitterUsername: "joshy",
+    picture: "/images/people/nzpr.jpg",
   }
 };
+
 
 export type Author = keyof typeof TURBO_TEAM;
 export type AuthorDetails = {

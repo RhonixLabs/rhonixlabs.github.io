@@ -1,0 +1,18 @@
+{
+  "overview": "Overview",
+  "sending": "Sending",
+  "receiving": "Receiving",
+  "names-and-processes": "Names and Processes",
+  "send-and-peek": "Send and Peek",
+  "join": "Join",
+  "unforgable-names": "Unforgable Names",
+  "bundles-interpolation": "Bundles Interpolation",
+  "state-channels": "State Channels",
+  "object-capabilities": "Object Capabilities",
+  "additional-syntax": "Additional Syntax",
+  "pattern-matching": "Pattern Matching",
+  "data-structures": "Data Structures",
+  "recursion": "Recursion",
+  "game-example": "Game Example",
+  "off-chain": "Off Chain"
+}
