@@ -55,7 +55,9 @@ const nextConfig = {
     newNextLinkBehavior: true,
     legacyBrowsers: false,
   },
-
+  images: {
+    unoptimized: true,
+  },
   rewrites() {
     return {
       beforeFiles: [
