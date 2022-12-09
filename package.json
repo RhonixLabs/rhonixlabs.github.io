@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "build": "next build && next export",
+    "build": "next build &&DEPLOY_TARGET=gh-pages next export",
     "lint": "next lint",
     "rss": "node scripts/generate-rss.js",
     "schema": "turbo-gen ./public/schema.json"

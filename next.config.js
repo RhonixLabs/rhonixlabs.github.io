@@ -5,9 +5,6 @@ const withNextra = require("nextra")({
   unstable_staticImage: true,
 });
 
-const withPlugins = require("next-compose-plugins");
-const withOptimizedImages = require("next-optimized-images");
-
 const OLD_TURBOREPO_ROUTES = [
   "/docs",
   "/docs/ci/circleci",
@@ -56,8 +53,8 @@ const nextConfig = withNextra({
     legacyBrowsers: false,
   },
   images: {
-    loader: "cloudinary",
-    path: "/",
+    loader: "imgix",
+    path: "https://wayootest005.github.io",
   },
   webpack: (config, { webpack }) => {
     config.plugins.push(
@@ -70,7 +67,6 @@ const nextConfig = withNextra({
     // return the modified config
     return config;
   },
-
   rewrites() {
     return {
       beforeFiles: [
@@ -203,7 +199,5 @@ const nextConfig = withNextra({
     ];
   },
 });
-
-const plugins = [withOptimizedImages];
 
 module.exports = nextConfig;
