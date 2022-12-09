@@ -20,29 +20,40 @@ export function LandingLetter() {
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            Since the beginning of bitcoin &apos;s time for a new beginning in
-            compiler infrastructure for the entire web ecosystem. Webpack has
-            been downloaded over 3 billion times. It&apos;s become an integral
-            part of building for the web. But just like Babel and Terser,
-            it&apos;s time to go all-in on native. I joined Vercel and assembled
-            a team of world class engineers to build the web&apos;s next
-            generation bundler.
+            Since the beginning of bitcoin and ethereum the blockchain space has
+            evolved quite far. Lots of new dApps have been developed, hacked and
+            improved. But up to know there is no dApp or network what has visa
+            like speed, costs and safety. The reason for that is current
+            networks do not horizontally scale with adding more node to the
+            networks, means having linearly more performance gains. Without that
+            the blockchain ecosystem will no become the dream of composable
+            dApps, which run on the largest decentralized computer.
           </p>
           <br />
           <p>
-            This team has taken lessons from 10 years of Webpack, combined with
-            the innovations in incremental computation from Turborepo and
-            Google&apos;s Bazel, and invented an architecture ready to withstand
-            the next 10 years.
+            The Rhonix team looks back on a many technologies which are based in
+            science. With that we have a programming language, called rholang,
+            which is based on the latest research of the reflective high order
+            calulus. This lanugage enables us to have concurrency in our core
+            language. Detecting when conflicts emerge is now easier than ever.
+            Why should somebody in the us wait for a transaction to finalize,
+            when he is doing business in singapur? Only if there conflicts in
+            their ordering, these transaction orders have to be resolved. With
+            these lessons learned, we use our rholang language and our novel
+            runtime, for having scalability directly build into the language.
           </p>
           <br />
           <p>
-            With that, we&apos;re excited to introduce Turbopack, our
-            Rust-powered successor to Webpack. It will harness the power of our
-            build system, Turborepo, for massive performance improvements.
-            Turbopack is the new foundation of high-performance bare-metal
-            tooling and is now open source—we&apos;re excited to share it with
-            you.
+            That's why I thought bringing a runtime to the community, which
+            solves horizontally scalability, is leaderless, has finality, low
+            energy cost, has sharding, uses proove of stake and has a
+            programming langugage, which is inherent concurrent, is of large
+            value for companies and people.
+          </p>
+          <br />
+          <p>
+            With the Rhonix runtime we are just doing that. And with having
+            running mainnet it is not the future, it is today possible.
           </p>
         </FadeIn>
         <FadeIn
@@ -65,7 +76,7 @@ export function LandingLetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="Image of Tobias Koopers"
-              src="/images/people/nzpr.jpg"
+              src="/images/people/nzpr.jpeg"
               width={64}
               height={64}
               className="rounded-full"

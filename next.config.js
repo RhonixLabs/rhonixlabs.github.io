@@ -196,7 +196,7 @@ module.exports = withPlugins([
     optimizedImages,
     {
       mozjpeg: {
-        quality: 80,
+        quality: 100,
       },
       pngquant: {
         speed: 3,
