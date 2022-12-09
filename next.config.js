@@ -5,6 +5,9 @@ const withNextra = require("nextra")({
   unstable_staticImage: true,
 });
 
+const withPlugins = require("next-compose-plugins");
+const optimizedImages = require("next-optimized-images");
+
 const OLD_TURBOREPO_ROUTES = [
   "/docs",
   "/docs/ci/circleci",
@@ -46,17 +49,12 @@ const OLD_TURBOREPO_ROUTES = [
   "/docs/upgrading-to-v1",
 ];
 
-const nextConfig = withNextra({
+const nextConfig = {
   reactStrictMode: true,
   experimental: {
     newNextLinkBehavior: true,
     legacyBrowsers: false,
   },
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  assetPrefix: "",
 
   rewrites() {
     return {
@@ -189,6 +187,26 @@ const nextConfig = withNextra({
       },
     ];
   },
-});
+};
 
-module.exports = nextConfig;
+module.exports = withPlugins([
+  [
+    optimizedImages,
+    {
+      mozjpeg: {
+        quality: 80,
+      },
+      pngquant: {
+        speed: 3,
+        strip: true,
+        verbose: true,
+      },
+      imagesPublicPath: "/_next/static/images/",
+    },
+  ],
+  {
+    basePath: "",
+    assetPrefix: "",
+  },
+  withNextra(nextConfig),
+]);
