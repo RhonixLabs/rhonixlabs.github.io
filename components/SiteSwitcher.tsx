@@ -13,7 +13,9 @@ export function useTurboSite(): "learn" | "build" | "explore" | undefined {
     return "build";
   }
 
-
+  if (pathname.startsWith("/explore")) {
+    return "explore";
+  }
 
   return undefined;
 }
@@ -47,7 +49,7 @@ function SiteSwitcher() {
             "after:hidden": !site,
             "after:translate-x-[52px]": site === "build",
             "after:translate-x-[99px]": site === "explore",
-      
+
             "after:w-[56px]": site === "explore",
           }
         )}
@@ -59,9 +61,21 @@ function SiteSwitcher() {
           { "hover:text-black dark:hover:text-white": site }
         )}
       >
-        <SiteSwitcherLink href="/learn" text="Learn" isActive={site === "learn"} />
-        <SiteSwitcherLink href="/build" text="Build" isActive={site === "build"} />
-        <SiteSwitcherLink href="/explore" text="Explore" isActive={site === "explore"} />
+        <SiteSwitcherLink
+          href="/learn"
+          text="Learn"
+          isActive={site === "learn"}
+        />
+        <SiteSwitcherLink
+          href="/build"
+          text="Build"
+          isActive={site === "build"}
+        />
+        <SiteSwitcherLink
+          href="/explore"
+          text="Explore"
+          isActive={site === "explore"}
+        />
       </span>
     </div>
   );
