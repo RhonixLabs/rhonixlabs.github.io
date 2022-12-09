@@ -7,25 +7,26 @@ import { CTAButton } from "../home-shared/CTAButton";
 import Link from "next/link";
 import { Gradient } from "../home-shared/Gradient";
 
-export function PackLetter() {
+export function LandingLetter() {
   return (
     <section className="relative flex flex-col items-center px-6 py-16 font-sans md:py-24 lg:py-32 gap-14">
       <FadeIn>
         <HeroText>
-          Let&apos;s move
+          Decentralized technologie&apos;s for
           <br />
-          the web forward
+          the masses
         </HeroText>
       </FadeIn>
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            It&apos;s time for a new beginning in compiler infrastructure for
-            the entire web ecosystem. Webpack has been downloaded over 3 billion
-            times. It&apos;s become an integral part of building for the web.
-            But just like Babel and Terser, it&apos;s time to go all-in on
-            native. I joined Vercel and assembled a team of world class
-            engineers to build the web&apos;s next generation bundler.
+            Since the beginning of bitcoin &apos;s time for a new beginning in
+            compiler infrastructure for the entire web ecosystem. Webpack has
+            been downloaded over 3 billion times. It&apos;s become an integral
+            part of building for the web. But just like Babel and Terser,
+            it&apos;s time to go all-in on native. I joined Vercel and assembled
+            a team of world class engineers to build the web&apos;s next
+            generation bundler.
           </p>
           <br />
           <p>
@@ -88,8 +89,8 @@ export function PackLetter() {
               className="hidden -mb-3 -ml-3 dark:block"
             />
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
-              <p className="font-bold">Tobias Koppers</p>
-              <p>Creator of Webpack</p>
+              <p className="font-bold">Ting Yang</p>
+              <p>Founder of Rhonix</p>
             </div>
           </div>
         </FadeIn>
@@ -97,7 +98,7 @@ export function PackLetter() {
       <FadeIn noVertical className="relative flex justify-center w-full mt-16">
         <div className="max-w-[180px] w-full">
           <CTAButton>
-            <Link href="/pack/docs" className="block py-3 font-sans">
+            <Link href="/build/docs" className="block py-3 font-sans">
               Start Building
             </Link>
           </CTAButton>

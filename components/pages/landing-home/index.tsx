@@ -1,7 +1,7 @@
-import { PackBenchmarks } from "./PackBenchmarks";
-import { PackHero } from "./PackHero";
-import { PackLetter } from "./PackLetter";
-import { PackFeatures } from "./PackFeatures";
+import { PackBenchmarks as LandingBenchmarks } from "./LandingBenchmarks";
+import { LandingHero } from "./LandingHero";
+import { LandingLetter } from "./LandingLetter";
+import { LandingFeatures } from "./LandingFeatures";
 import { GradientSectionBorder } from "../home-shared/GradientSectionBorder";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 
@@ -10,13 +10,13 @@ export default function Home() {
     <>
       <LandingPageGlobalStyles />
       <main className="relative">
-        <PackHero />
+        <LandingHero />
         <GradientSectionBorder>
-          <PackBenchmarks />
-          <PackFeatures />
+          <LandingBenchmarks />
+          <LandingFeatures />
         </GradientSectionBorder>
         <GradientSectionBorder>
-          <PackLetter />
+          <LandingLetter />
         </GradientSectionBorder>
       </main>
     </>

@@ -27,43 +27,23 @@ function FooterHeader({ children }: { children: ReactNode }) {
 }
 
 const navigation = {
-  general: [
-    { name: "Blog", href: "/blog" },
-    { name: "Releases", href: "https://github.com/vercel/turbo/releases" },
-  ],
-  repo: [
-    { name: "Documentation", href: "/repo/docs" },
-    {
-      name: "API Reference",
-      href: "/repo/docs/reference/command-line-reference",
-    },
-    { name: "FAQ", href: "/repo/docs/faq" },
-  ],
-  pack: [
-    { name: "Documentation", href: "/pack/docs" },
-    { name: "Features", href: "/pack/docs/features" },
-  ],
+  general: [{ name: "Blog", href: "/blog" }],
+  learn: [{ name: "Documentation", href: "/learn/docs" }],
+  build: [{ name: "Documentation", href: "/build/docs" }],
   support: [
     {
       name: "GitHub",
-      href: "https://github.com/vercel/turbo",
+      href: "https://github.com/RhonixLabs/rhonix",
     },
     {
       name: "Discord",
-      href: "https://turbo.build/discord",
+      href: "https://rhonix/discord",
     },
   ],
   company: [
-    { name: "Vercel", href: "https://vercel.com" },
-    {
-      name: "Open Source Software",
-      href: "https://vercel.com/oss?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-ossLink",
-    },
-    {
-      name: "Contact Sales",
-      href: "https://vercel.com/contact/turborepo?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-enterpriseLink",
-    },
-    { name: "Twitter", href: "https://twitter.com/vercel" },
+    { name: "Rhonix", href: "https://rhonix.io" },
+
+    { name: "Twitter", href: "https://twitter.com/rhonix" },
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
@@ -92,9 +72,9 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Turborepo</FooterHeader>
+                <FooterHeader>Learn</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.repo.map((item) => (
+                  {navigation.learn.map((item) => (
                     <li key={item.name}>
                       <FooterLink href={item.href}>{item.name}</FooterLink>
                     </li>
@@ -102,9 +82,9 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Turbopack</FooterHeader>
+                <FooterHeader>Build</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.pack.map((item) => (
+                  {navigation.build.map((item) => (
                     <li key={item.name}>
                       <FooterLink href={item.href}>{item.name}</FooterLink>
                     </li>
@@ -143,30 +123,12 @@ export function FooterContent() {
               </div>
             </div>
           </div>
-          <div className="mt-12 xl:!mt-0">
-            <FooterHeader>Subscribe to our newsletter</FooterHeader>
-            <p className="mt-4 text-sm text-gray-600 dark:text-[#888888]">
-              Subscribe to the Turbo newsletter and stay updated on new releases
-              and features, guides, and case studies.
-            </p>
-            <SubmitForm />
-          </div>
         </div>
 
         <div className="pt-8 mt-8 sm:flex sm:items-center sm:justify-between">
           <div>
-            <a
-              className="text-current"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="vercel.com homepage"
-              href="https://vercel.com?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-logoLink"
-            >
-              <VercelLogo />
-            </a>
             <p className="mt-4 text-xs text-gray-500 dark:text-[#888888]">
-              &copy; {new Date().getFullYear()} Vercel, Inc. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Rhonix. All rights reserved.
             </p>
           </div>
         </div>

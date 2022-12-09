@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { BenchmarkCategory } from "./PackBenchmarks";
+import { BenchmarkCategory } from "./LandingBenchmarks";
 import classNames from "classnames";
 import gradients from "../home-shared/gradients.module.css";
 
@@ -11,28 +11,29 @@ const TABS: {
   tooltip: string;
 }[] = [
   {
-    id: "cold",
-    title: "Cold Start",
+    id: "energy",
+    title: "Energy consumption",
     soon: false,
-    tooltip: "First run",
+    tooltip: "Energy used",
   },
   {
-    id: "file_change",
-    title: "File Change",
+    id: "scale",
+    title: "Horizontally scalable",
+    soon: false,
+    tooltip: "Horizontally scalable",
+  },
+
+  {
+    id: "finality",
+    title: "Finality",
     soon: false,
     tooltip: "Hot Reload (HMR)",
   },
   {
-    id: "code_build",
-    title: "Code Build",
-    soon: true,
-    tooltip: "First Build",
-  },
-  {
-    id: "build_from_cache",
-    title: "Build from Cache",
-    soon: true,
-    tooltip: "Second Build",
+    id: "transactions",
+    title: "Transactions",
+    soon: false,
+    tooltip: "Speed of transactions",
   },
 ];
 
@@ -49,7 +50,7 @@ function SoonBadge() {
   );
 }
 
-export function PackBenchmarkTabs({
+export function LandingBenchmarkTabs({
   onTabChange,
 }: {
   onTabChange: (tab: BenchmarkCategory) => void;

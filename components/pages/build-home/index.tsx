@@ -1,5 +1,5 @@
 import { PackBenchmarks } from "./PackBenchmarks";
-import { PackHero } from "./PackHero";
+import { PackHero as BuildHero } from "./BuildHero";
 import { PackLetter } from "./PackLetter";
 import { PackFeatures } from "./PackFeatures";
 import { GradientSectionBorder } from "../home-shared/GradientSectionBorder";
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <LandingPageGlobalStyles />
       <main className="relative">
-        <PackHero />
+        <BuildHero />
         <GradientSectionBorder>
           <PackBenchmarks />
           <PackFeatures />

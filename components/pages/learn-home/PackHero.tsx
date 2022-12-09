@@ -79,7 +79,8 @@ export function PackHero() {
           />
           <HeroText h1>Rhonix 101 for starters</HeroText>
           <SectionSubtext hero>
-            Based on the latest research from the reflective high order calulus our runtime scales linear with added nodes
+            Based on the latest research from the reflective high order calulus
+            our runtime scales linear with added nodes
           </SectionSubtext>
         </FadeIn>
         <FadeIn
@@ -89,21 +90,10 @@ export function PackHero() {
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
               <Link href="/pack/docs" className="block py-3">
-                Get Started
+                Discover Rhonox
               </Link>
             </CTAButton>
-            <CTAButton outline>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/vercel/turbo"
-                className="block py-3"
-              >
-                GitHub
-              </a>
-            </CTAButton>
           </div>
-          <p className="text-sm text-[#666666]">License: MPL-2.0</p>
         </FadeIn>
         <FadeIn delay={0.5} className="relative w-full">
           <div className="absolute bottom-0 w-full dark:from-black from-white to-transparent h-72 bg-gradient-to-t" />

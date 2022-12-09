@@ -1,5 +1,5 @@
-import { BenchmarkNumberOfModules } from "./PackBenchmarks";
-import { PackDropdown } from "./PackDropdown";
+import { BenchmarkNumberOfModules } from "./LandingBenchmarks";
+import { PackDropdown } from "./LandingDropdown";
 
 export function PackBenchmarksPicker(props: {
   setNumberOfModules: (num: BenchmarkNumberOfModules) => void;

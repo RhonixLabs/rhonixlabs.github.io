@@ -16,7 +16,7 @@ import {
   BenchmarkCategory,
   BenchmarkData,
   BenchmarkNumberOfModules,
-} from "./PackBenchmarks";
+} from "./LandingBenchmarks";
 
 interface BenchmarksGraphProps {
   category: BenchmarkCategory;
@@ -32,7 +32,9 @@ export function BenchmarksGraph({
   pinTime,
 }: BenchmarksGraphProps) {
   const data: BenchmarkData = benchmarkData[category][numberOfModules];
+  console.log(data);
   const keys = bars.map((bar) => bar.key);
+  console.log(bars);
   const longestTime = Math.max(...keys.map((key) => data[key])) * 1000;
   const longestTimeWithPadding = longestTime * 1.15;
   const graphRef = useRef(null);
@@ -53,6 +55,7 @@ export function BenchmarksGraph({
         className="relative flex flex-col flex-1 gap-6 md:gap-10"
       >
         {bars.map((bar) => {
+          console.log(data[bar.key]);
           return (
             <GraphBar
               key={bar.key}
@@ -225,31 +228,6 @@ const GraphTimer = ({
 }) => {
   return (
     <div className={`flex flex-row gap-2 w-24 justify-end items-center z-10`}>
-      {turbo && (
-        <div className="relative flex w-8 h-8 ">
-          <Image
-            alt="Turbopack"
-            src="/images/docs/pack/turbo-benchmark-icon-light.svg"
-            width={32}
-            height={32}
-            className="block dark:hidden"
-          />
-          <Image
-            alt="Turbopack"
-            src="/images/docs/pack/turbo-benchmark-icon-dark.svg"
-            width={32}
-            height={32}
-            className="hidden dark:block"
-          />
-          <Gradient
-            pink
-            width="100%"
-            height="100%"
-            small
-            className="opacity-0 dark:opacity-60"
-          />
-        </div>
-      )}
       <p className="font-mono">
         <Time value={timer} maxValue={duration} />
       </p>
@@ -306,16 +284,6 @@ function GraphLabel({
       }`}
     >
       <p>{label}</p>
-      {turbo && (
-        <p
-          className={cn(
-            "font-space-grotesk m-0",
-            gradients.benchmarkTurboLabel
-          )}
-        >
-          turbo
-        </p>
-      )}
       {esbuild && (
         <p className="font-space-grotesk m-0 text-[#666666]">esbuild</p>
       )}
