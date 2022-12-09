@@ -15,48 +15,31 @@ export function RepoHero() {
         noVertical
         className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-16 lg:pt-20 flex justify-between gap-8 items-center flex-col relative z-0"
       >
-        <FadeIn className="z-50 flex items-center justify-center w-full ">
+        <FadeIn className="z-50 flex items-center justify-center w-full">
           <div className="absolute min-w-[614px] min-h-[614px]">
-            {/* TODO: On dark mode, there should be a "breathing" gradient inside the inner circle */}
             <Image
-              alt="Turborepo"
-              src="/images/docs/repo/repo-hero-circles-dark.svg"
+              alt="Turbopack"
+              src="/images/docs/pack/turbopack-hero-hexagons-dark.png"
               width={614}
               height={614}
-              className="hidden dark:block"
-            />
-            <Image
-              alt="Turborepo"
-              src="/images/docs/repo/repo-hero-circles-light.svg"
-              width={614}
-              height={614}
-              className="block dark:hidden"
             />
           </div>
-          <div className="absolute z-50 flex items-center justify-center w-64 h-64">
+          <div className="absolute z-50 flex items-center justify-center w-256 h-256">
             <Gradient
               small
-              width={120}
-              height={120}
+              width={256}
+              height={256}
               conic
-              className="dark:opacity-100 opacity-40"
+              className="dark:opacity-30 opacity-20"
             />
           </div>
 
-          <div className="w-[120px] h-[120px] z-50">
+          <div className="w-[256px] z-50 mt-[-8.075px] mb-[-8.075px]">
             <Image
               alt=""
-              src={`/images/docs/repo/repo-hero-logo-dark.svg`}
-              width={120}
-              height={120}
-              className="hidden dark:block"
-            />
-            <Image
-              alt=""
-              src={`/images/docs/repo/repo-hero-logo-light.svg`}
-              width={120}
-              height={120}
-              className="block dark:hidden"
+              src={`/images/docs/shared/logos/rhonix-logo-large.png`}
+              width={256}
+              height={256}
             />
           </div>
         </FadeIn>
@@ -71,14 +54,10 @@ export function RepoHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <RepoLogo
-            alt="Turborepo"
-            width="200"
-            className="w-[160px] md:w-[200px] fill-black dark:fill-white"
-          />
           <HeroText h1>A world of dApps</HeroText>
           <SectionSubtext hero>
-            With more and more dApps using the rhonix decentralized network, join us.
+            With more and more dApps using the rhonix decentralized network,
+            join us.
           </SectionSubtext>
         </FadeIn>
         <FadeIn

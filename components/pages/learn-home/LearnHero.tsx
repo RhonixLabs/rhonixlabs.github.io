@@ -8,7 +8,6 @@ import { HeroText, SectionSubtext } from "../home-shared/Headings";
 import { Gradient } from "../home-shared/Gradient";
 import { FadeIn } from "../home-shared/FadeIn";
 import { CTAButton } from "../home-shared/CTAButton";
-import PackLogo from "../../logos/PackLogo";
 
 export function PackHero() {
   return (
@@ -21,43 +20,27 @@ export function PackHero() {
           <div className="absolute min-w-[614px] min-h-[614px]">
             <Image
               alt="Turbopack"
-              src="/images/docs/pack/turbopack-hero-hexagons-dark.svg"
+              src="/images/docs/pack/turbopack-hero-hexagons-dark.png"
               width={614}
               height={614}
-              className="hidden dark:block"
-            />
-            <Image
-              alt="Turbopack"
-              src="/images/docs/pack/turbopack-hero-hexagons-light.svg"
-              width={614}
-              height={614}
-              className="block dark:hidden"
             />
           </div>
-          <div className="absolute z-50 flex items-center justify-center w-64 h-64">
+          <div className="absolute z-50 flex items-center justify-center w-256 h-256">
             <Gradient
               small
-              width={120}
-              height={120}
+              width={256}
+              height={256}
               conic
-              className="dark:opacity-100 opacity-40"
+              className="dark:opacity-30 opacity-20"
             />
           </div>
 
-          <div className="w-[120px] z-50 mt-[-8.075px] mb-[-8.075px]">
+          <div className="w-[256px] z-50 mt-[-8.075px] mb-[-8.075px]">
             <Image
               alt=""
-              src={`/images/docs/pack/turbopack-hero-logo-dark.svg`}
-              width={120}
-              height={136.15}
-              className="hidden dark:block"
-            />
-            <Image
-              alt=""
-              src={`/images/docs/pack/turbopack-hero-logo-light.svg`}
-              width={120}
-              height={136.15}
-              className="block dark:hidden"
+              src={`/images/docs/shared/logos/rhonix-logo-large.png`}
+              width={256}
+              height={256}
             />
           </div>
         </FadeIn>
@@ -72,15 +55,11 @@ export function PackHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <PackLogo
-            alt="Turbopack"
-            width="200"
-            className="w-[160px] md:w-[200px]  fill-black dark:fill-white"
-          />
           <HeroText h1>Rhonix 101 for starters</HeroText>
           <SectionSubtext hero>
-            Based on the latest research from the reflective high order calulus
-            our runtime scales linear with added nodes
+            Start with understanding how the architecture is designed and what
+            set's Rhonix apart from other chains. After that you can start with
+            building dApps.
           </SectionSubtext>
         </FadeIn>
         <FadeIn
@@ -89,7 +68,7 @@ export function PackHero() {
         >
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
-              <Link href="/pack/docs" className="block py-3">
+              <Link href="/learn/docs" className="block py-3">
                 Discover Rhonox
               </Link>
             </CTAButton>

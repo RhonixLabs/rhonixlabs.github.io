@@ -68,7 +68,12 @@ export function LandingHero() {
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
               <Link href="/learn/" className="block py-3">
-                Learn about Rhonix
+                Learn
+              </Link>
+            </CTAButton>
+            <CTAButton>
+              <Link href="/learn/" className="block py-3">
+                Develop
               </Link>
             </CTAButton>
             <CTAButton outline>

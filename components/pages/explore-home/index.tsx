@@ -1,6 +1,5 @@
-import { RepoHero } from "./RepoHero";
-import { RepoFeatures } from "./RepoFeatures";
-import { RepoLetter } from "./RepoLetter";
+import { RepoHero as ExploreHero } from "./ExploreHero";
+
 import { GradientSectionBorder } from "../home-shared/GradientSectionBorder";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 
@@ -9,13 +8,7 @@ export default function Home() {
     <>
       <LandingPageGlobalStyles />
       <main className="relative">
-        <RepoHero />
-        <GradientSectionBorder>
-          <RepoFeatures />
-        </GradientSectionBorder>
-        <GradientSectionBorder>
-          <RepoLetter />
-        </GradientSectionBorder>
+        <ExploreHero />
       </main>
     </>
   );

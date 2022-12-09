@@ -1,4 +1,4 @@
-import { PackHero } from "./PackHero";
+import { PackHero as LearnHero } from "./LearnHero";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <LandingPageGlobalStyles />
       <main className="relative">
-        <PackHero />
+        <LearnHero />
       </main>
     </>
   );
