@@ -56,18 +56,8 @@ const nextConfig = withNextra({
     loader: "akamai",
     path: "",
   },
-  assetPrefix: "./",
-  webpack: (config, { webpack }) => {
-    config.plugins.push(
-      new webpack.DefinePlugin({
-        __SENTRY_DEBUG__: false,
-        __SENTRY_TRACING__: false,
-      })
-    );
+  assetPrefix: "",
 
-    // return the modified config
-    return config;
-  },
   rewrites() {
     return {
       beforeFiles: [
@@ -201,4 +191,4 @@ const nextConfig = withNextra({
   },
 });
 
-module.exports = withNextra(nextConfig);
+module.exports = nextConfig;
