@@ -53,9 +53,10 @@ const nextConfig = withNextra({
     legacyBrowsers: false,
   },
   images: {
-    loader: "imgix",
-    path: "https://wayootest005.github.io",
+    loader: "akamai",
+    path: "",
   },
+  assetPrefix: "./",
   webpack: (config, { webpack }) => {
     config.plugins.push(
       new webpack.DefinePlugin({
