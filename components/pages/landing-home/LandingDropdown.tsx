@@ -1,6 +1,6 @@
 import { useState, Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import { BenchmarkNumberOfModules } from "./PackBenchmarks";
+import { BenchmarkNumberOfModules } from "./LandingBenchmarks";
 
 export function PackDropdown({
   onOptionSelected,

@@ -1,14 +1,9 @@
-const { withSentryConfig } = require("@sentry/nextjs");
 const withNextra = require("nextra")({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.js",
   unstable_flexsearch: true,
   unstable_staticImage: true,
 });
-
-const sentryWebpackPluginOptions = {
-  silent: true,
-};
 
 const OLD_TURBOREPO_ROUTES = [
   "/docs",
@@ -56,17 +51,6 @@ const nextConfig = withNextra({
   experimental: {
     newNextLinkBehavior: true,
     legacyBrowsers: false,
-  },
-  webpack: (config, { webpack }) => {
-    config.plugins.push(
-      new webpack.DefinePlugin({
-        __SENTRY_DEBUG__: false,
-        __SENTRY_TRACING__: false,
-      })
-    );
-
-    // return the modified config
-    return config;
   },
   rewrites() {
     return {
@@ -201,4 +185,4 @@ const nextConfig = withNextra({
   },
 });
 
-module.exports = withSentryConfig(nextConfig, sentryWebpackPluginOptions);
+module.exports = nextConfig;
