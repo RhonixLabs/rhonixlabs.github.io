@@ -201,4 +201,4 @@ const nextConfig = withNextra({
   },
 });
 
-module.exports = nextConfig;
+module.exports = withNextra(nextConfig);
