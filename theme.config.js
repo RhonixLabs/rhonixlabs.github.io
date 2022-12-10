@@ -137,10 +137,10 @@ const theme = {
         <meta property="og:image" content={ogUrl} />
         <meta property="og:locale" content="en_IE" />
         <meta property="og:site_name" content="Rhonix" />
-        <link rel="prefetch" href="/repo" as="document" />
-        <link rel="prefetch" href="/repo/docs" as="document" />
-        <link rel="prefetch" href="/pack" as="document" />
-        <link rel="prefetch" href="/pack/docs" as="document" />
+        <link rel="prefetch" href="/learn" as="document" />
+        <link rel="prefetch" href="/learn/docs" as="document" />
+        <link rel="prefetch" href="/build" as="document" />
+        <link rel="prefetch" href="/build/docs" as="document" />
       </>
     );
   },
