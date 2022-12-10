@@ -50,7 +50,7 @@ jobs:
       - name: Setup Pnpm
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7.9.3
+          version: 7.18.1
           run_install: true
       - name: Setup Pages
         uses: actions/configure-pages@v2
