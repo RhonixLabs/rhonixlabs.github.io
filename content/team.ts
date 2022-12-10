@@ -1,4 +1,4 @@
-const TURBO_TEAM: Record<string, AuthorDetails> = {
+const RHONIX_TEAM: Record<string, AuthorDetails> = {
   nzpr: {
     name: "nzpr",
     twitterUsername: "nzpr",
@@ -11,11 +11,11 @@ const TURBO_TEAM: Record<string, AuthorDetails> = {
   },
 };
 
-export type Author = keyof typeof TURBO_TEAM;
+export type Author = keyof typeof RHONIX_TEAM;
 export type AuthorDetails = {
   name: string;
   twitterUsername?: string;
   picture: string;
 };
 
-export default TURBO_TEAM;
+export default RHONIX_TEAM;
