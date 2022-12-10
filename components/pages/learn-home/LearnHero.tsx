@@ -61,7 +61,7 @@ export function PackHero() {
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
               <Link href="/learn/docs" className="block py-3">
-                Discover Rhonox
+                Discover Rhonix
               </Link>
             </CTAButton>
           </div>
