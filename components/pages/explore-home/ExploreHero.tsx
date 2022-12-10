@@ -58,33 +58,9 @@ export function RepoHero() {
           <SectionSubtext hero>
             With more and more dApps using the rhonix decentralized network,
             join us.
+            <br />
+            Tbd. List of dApps which are available. Select from list.
           </SectionSubtext>
-        </FadeIn>
-        <FadeIn
-          delay={0.3}
-          className="z-50 flex flex-col items-center w-full max-w-md gap-5 px-6 md:max-w-lg"
-        >
-          <div className="flex flex-col w-full gap-3 md:!flex-row">
-            <CTAButton>
-              <Link href="/repo/docs" className="block py-3">
-                Get Started
-              </Link>
-            </CTAButton>
-            <CTAButton outline>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/vercel/turbo"
-                className="block py-3"
-              >
-                GitHub
-              </a>
-            </CTAButton>
-          </div>
-          <p className="text-sm text-[#666666]">License: MPL-2.0</p>
-        </FadeIn>
-        <FadeIn delay={0.5} className="relative w-full">
-          <div className="absolute bottom-0 w-full dark:from-black from-white to-transparent h-72 bg-gradient-to-t" />
         </FadeIn>
       </FadeIn>
     </>

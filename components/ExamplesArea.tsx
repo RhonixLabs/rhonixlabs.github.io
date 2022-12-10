@@ -7,38 +7,10 @@ export const ExamplesArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: GitHubIcon,
-          description: `Minimal Turborepo example for learning the
-              fundamentals.`,
-          name: "Basic",
+          description: `Multiple rholang smart contracts like List, Casper, Registry, ERC20 Wallet (RevVault)`,
+          name: "Rholang smart contracts",
         }}
-        href="https://github.com/vercel/turbo/tree/main/examples/basic"
-      ></DetailedFeatureLink>
-      <DetailedFeatureLink
-        feature={{
-          Icon: GitHubIcon,
-          description:
-            "Unify your site's look and feel by sharing a design system across multiple apps.",
-          name: "Design System",
-        }}
-        href="https://github.com/vercel/turbo/tree/main/examples/design-system"
-      ></DetailedFeatureLink>
-      <DetailedFeatureLink
-        feature={{
-          Icon: GitHubIcon,
-          description:
-            "Learn how to integrate with Tailwind, the popular CSS framework.",
-          name: "With Tailwind CSS",
-        }}
-        href="https://github.com/vercel/turbo/tree/main/examples/with-tailwind"
-      ></DetailedFeatureLink>
-      <DetailedFeatureLink
-        feature={{
-          Icon: GitHubIcon,
-          description:
-            "Want to see a super-complex, kitchen-sink example? Includes multiple frameworks, both frontend and backend.",
-          name: "Kitchen Sink",
-        }}
-        href="https://github.com/vercel/turbo/blob/main/examples/kitchen-sink"
+        href="https://github.com/RhonixLabs/rhonix/tree/dev/casper/src/main/resources"
       ></DetailedFeatureLink>
     </div>
   );

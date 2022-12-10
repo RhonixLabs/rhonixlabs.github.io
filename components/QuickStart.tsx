@@ -17,26 +17,42 @@ export const QuickStartArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: PencilIcon,
-          description: `Add Turborepo to any JavaScript or TypeScript project in minutes.`,
-          name: "Add to existing project",
+          description: `Setup local rnode instance with docker `,
+          name: "Setup local rnode instance",
         }}
-        href="/repo/docs/getting-started/add-to-project"
+        href="/build/docs/developers/libraries/use-docker"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
           Icon: SparklesIcon,
-          description: `Build a brand-new monorepo with shared packages powered by Turborepo.`,
-          name: "Create a new monorepo",
+          description: `Build dApps with the community SDK`,
+          name: "Use the SDK",
         }}
-        href="/repo/docs/getting-started/create-new"
+        href="/build/docs/developers/libraries/use-sdk"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
           Icon: ServerIcon,
-          description: `Incrementally add Turborepo to your existing monorepo codebase.`,
-          name: "Add to existing monorepo",
+          description: `Use the VSCode extension for rholang`,
+          name: "Rholang VSCode extension",
         }}
-        href="/repo/docs/getting-started/existing-monorepo"
+        href="/build/docs/developers/build/use-vscode"
+      ></DetailedFeatureLink>
+      <DetailedFeatureLink
+        feature={{
+          Icon: ServerIcon,
+          description: `Rholang Overview`,
+          name: "Rholang Syntax",
+        }}
+        href="/build/docs/developers/rholang/overview"
+      ></DetailedFeatureLink>
+      <DetailedFeatureLink
+        feature={{
+          Icon: ServerIcon,
+          description: `Rholang Tutorial`,
+          name: "Community Rholang Tutorial",
+        }}
+        href="/build/docs/developers/tutorials/overview"
       ></DetailedFeatureLink>
     </div>
   );

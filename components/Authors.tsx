@@ -9,7 +9,7 @@ export function Authors({ authors }: { authors: Array<Author> }) {
     <div className="w-full border-b border-gray-400 authors border-opacity-20">
       <div
         className={cn(
-          "flex flex-wrap justify-center py-8 mx-auto gap-7",
+          "flex flex-wrap justify-left py-8 mx-auto gap-7",
           authors.length > 4 && "max-w-3xl"
         )}
       >

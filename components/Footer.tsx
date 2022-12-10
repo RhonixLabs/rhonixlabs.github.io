@@ -58,7 +58,7 @@ export function FooterContent() {
         Footer
       </h2>
       <div className="w-full py-8 mx-auto">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="grid grid-cols-1 gap-8 xl:col-span-2">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 md:gap-8">
               <div className="mt-12 md:!mt-0">

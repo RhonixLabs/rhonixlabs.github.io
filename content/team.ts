@@ -7,7 +7,7 @@ const TURBO_TEAM: Record<string, AuthorDetails> = {
   joshy: {
     name: "Joshy Orndorff",
     twitterUsername: "joshy",
-    picture: "/images/people/nzpr.jpeg",
+    picture: "/images/people/josh.png",
   },
 };
 
