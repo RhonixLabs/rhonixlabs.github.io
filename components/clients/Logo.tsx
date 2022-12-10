@@ -28,8 +28,8 @@ export function Logo({
         theme === "light" ? "/logos/white" : "/logos/color"
       )}
       alt={`${user.caption}'s Logo`}
-      width={styles.width}
-      height={styles.height}
+      width={100}
+      height={75}
       priority={true}
       style={styles}
       className={cn("mx-8", {
