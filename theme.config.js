@@ -12,12 +12,6 @@ const SITE_ROOT = "https://rhonix.io";
  * @type {import('nextra-theme-docs').DocsThemeConfig}
  */
 const theme = {
-  project: {
-    icon: Github,
-  },
-  chat: {
-    icon: Discord,
-  },
   docsRepositoryBase: "https://github.com/RhonixLabs/rhonix.github.io",
   getNextSeoProps: function SEO() {
     const router = useRouter();
@@ -64,7 +58,6 @@ const theme = {
 
     return <>Last updated on {dateString}</>;
   },
-  unstable_flexsearch: true,
   unstable_staticImage: true,
   toc: {
     float: true,
@@ -154,7 +147,15 @@ const theme = {
   editLink: {
     text: "Edit this page on GitHub",
   },
-  navbar: Navigation,
+  navbar: {
+    component: Navigation,
+    extraContent: (
+      <>
+        <Github />
+        <Discord />
+      </>
+    ),
+  },
   search: {
     placeholder: "Search documentation…",
   },
