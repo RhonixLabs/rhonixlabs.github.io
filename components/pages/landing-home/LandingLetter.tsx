@@ -57,14 +57,10 @@ export function LandingLetter() {
             running mainnet, this is not future, it is possible today.
           </p>
         </FadeIn>
-        <FadeIn
-          noVertical
-          viewTriggerOffset
-          className="relative h-2 md:h-12 lg:h-12"
-        >
+        <FadeIn noVertical viewTriggerOffset className="relative h-2 h-12 h-12">
           <span
             className={cn(
-              "w-full h-[1px] -bottom-8 md:-bottom-4 lg:-bottom-4 absolute",
+              "w-full h-[1px] -bottom-8 -bottom-4 absolute",
               gradients.letterLine
             )}
           />
