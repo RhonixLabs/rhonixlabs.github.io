@@ -77,7 +77,7 @@ const theme = {
   logoLink: false,
   head: function Head() {
     const router = useRouter();
-    const { systemTheme = "dark" } = useTheme();
+    const { systemTheme = "light" } = useTheme();
     const { frontMatter } = useConfig();
     const fullUrl =
       router.asPath === "/" ? SITE_ROOT : `${SITE_ROOT}${router.asPath}`;
@@ -162,7 +162,7 @@ const theme = {
     component: Footer,
   },
   nextThemes: {
-    defaultTheme: "dark",
+    defaultTheme: "light",
   },
 };
 export default theme;
