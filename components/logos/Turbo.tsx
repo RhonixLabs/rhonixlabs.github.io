@@ -3,7 +3,7 @@ type LogoProps = {
   height?: number;
 };
 
-export const TurboLogoCondensed = ({
+export const RhonixLogoCondensed = ({
   height = 32,
   className = "",
 }: LogoProps) => (
@@ -42,7 +42,7 @@ export const TurboLogoCondensed = ({
   </svg>
 );
 
-const Turbo = ({ height = 32, className = "" }: LogoProps) => (
+const Rhonix = ({ height = 32, className = "" }: LogoProps) => (
   <svg
     className={className}
     width="112"
@@ -98,4 +98,4 @@ const Turbo = ({ height = 32, className = "" }: LogoProps) => (
   </svg>
 );
 
-export default Turbo;
+export default Rhonix;

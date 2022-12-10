@@ -1,4 +1,4 @@
-.benchmarkTurbo {
+.benchmarkRhonix {
   background: linear-gradient(288.43deg, #ff1e56 28.29%, #9c51a1 78.78%);
   box-shadow: 0px 0px 16px #f02662;
   :global(.light) & {
@@ -48,7 +48,7 @@
   }
 }
 
-.benchmarkTurboLabel {
+.benchmarkRhonixLabel {
   background: linear-gradient(288.43deg, #ff1e56 28.29%, #9c51a1 78.78%);
   color: transparent;
   background-clip: text;
@@ -113,7 +113,7 @@
   }
 }
 
-.turbopackHeaderText {
+.RhonixHeaderText {
   background: linear-gradient(
       90deg,
       rgba(200, 221, 255, 0.75) 0%,

@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
 import Image from "next/image";
-import { TurboUser } from "./users";
+import { RhonixUser as RhonixUser } from "./users";
 
 const DEFAULT_SIZE = {
   width: 100,
@@ -13,7 +13,7 @@ export function Logo({
   theme,
   isLink,
 }: {
-  user: TurboUser;
+  user: RhonixUser;
   theme: "dark" | "light";
   isLink: boolean;
 }) {

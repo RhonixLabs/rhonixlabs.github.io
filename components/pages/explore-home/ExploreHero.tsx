@@ -16,14 +16,6 @@ export function RepoHero() {
         className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-16 lg:pt-20 flex justify-between gap-8 items-center flex-col relative z-0"
       >
         <FadeIn className="z-50 flex items-center justify-center w-full">
-          <div className="absolute min-w-[614px] min-h-[614px]">
-            <Image
-              alt="Turbopack"
-              src="/images/docs/pack/turbopack-hero-hexagons-dark.png"
-              width={614}
-              height={614}
-            />
-          </div>
           <div className="absolute z-50 flex items-center justify-center w-256 h-256">
             <Gradient
               small

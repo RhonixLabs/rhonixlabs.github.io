@@ -1,4 +1,4 @@
-const TurboLogo = (props) => (
+const RhonixLogo = (props) => (
   <svg
     {...props}
     viewBox="0 0 460 97"
@@ -51,4 +51,4 @@ const TurboLogo = (props) => (
   </svg>
 );
 
-export default TurboLogo;
+export default RhonixLogo;

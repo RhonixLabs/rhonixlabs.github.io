@@ -189,7 +189,7 @@ function GraphBar({
           <motion.div
             className={cn(
               "h-12 rounded w-0 relative",
-              turbo ? gradients.benchmarkTurbo : gradients.benchmark,
+              turbo ? gradients.benchmarkRhonix : gradients.benchmark,
               { [gradients.barBorder]: !turbo }
             )}
             variants={graphBarVariants}

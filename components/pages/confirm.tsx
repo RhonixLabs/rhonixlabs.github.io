@@ -23,7 +23,7 @@ export default function Confirm() {
                   <p>
                     Thanks,
                     <br />
-                    The Turbo Team
+                    The Rhonix Team
                   </p>
                 </div>
               </div>

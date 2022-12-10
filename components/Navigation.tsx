@@ -1,8 +1,8 @@
 import { Navbar } from "nextra-theme-docs";
-import { useTurboSite } from "./SiteSwitcher";
+import { useRhonixSite as useRhonixSite } from "./SiteSwitcher";
 
 function Navigation(props) {
-  const site = useTurboSite();
+  const site = useRhonixSite();
 
   /*
     Inject a dynamic docs link when NOT on root
@@ -20,10 +20,11 @@ function Navigation(props) {
     });
   }
 
-
   // remove the top level repo and pack links
   const headerItems = props.items.filter((item) => {
-    return item.name !== "learn" && item.name !== "build" && item.name !== "explore";
+    return (
+      item.name !== "learn" && item.name !== "build" && item.name !== "explore"
+    );
   });
 
   // items last to override the default

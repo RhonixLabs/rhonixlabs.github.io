@@ -8,7 +8,7 @@ import {
 import { DetailedFeatureLink } from "./Feature";
 import { CSSIcon, JSIcon, TSIcon } from "./Icons";
 
-export const TurbopackFeatures = () => {
+export const RhonixFeatures = () => {
   return (
     <div className="grid grid-cols-1 mt-12 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:gap-x-8 lg:gap-y-12">
       <DetailedFeatureLink

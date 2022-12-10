@@ -2,7 +2,7 @@ import cn from "classnames";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-export function useTurboSite(): "learn" | "build" | "explore" | undefined {
+export function useRhonixSite(): "learn" | "build" | "explore" | undefined {
   const { pathname } = useRouter();
 
   if (pathname.startsWith("/learn")) {
@@ -36,7 +36,7 @@ function SiteSwitcherLink({ href, text, isActive }) {
 }
 
 function SiteSwitcher() {
-  const site = useTurboSite();
+  const site = useRhonixSite();
 
   return (
     <div className="relative flex items-center justify-between p-2 text-xl group">
