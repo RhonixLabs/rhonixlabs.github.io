@@ -143,7 +143,7 @@ const theme = {
         <meta property="twitter:image" content={ogUrl} />
         <meta property="og:image" content={ogUrl} />
         <meta property="og:locale" content="en_IE" />
-        <meta property="og:site_name" content="Turbo" />
+        <meta property="og:site_name" content="Rhonix" />
         <link rel="prefetch" href="/repo" as="document" />
         <link rel="prefetch" href="/repo/docs" as="document" />
         <link rel="prefetch" href="/pack" as="document" />

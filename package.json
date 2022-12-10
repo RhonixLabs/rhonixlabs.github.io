@@ -2,14 +2,13 @@
   "name": "docs",
   "version": "1.0.0",
   "private": true,
-  "description": "turbo.build",
+  "description": "rhonix docs",
   "scripts": {
     "dev": "next",
     "start": "next start",
     "build": "next build && next export",
     "lint": "next lint",
-    "rss": "node scripts/generate-rss.js",
-    "schema": "turbo-gen ./public/schema.json"
+    "rss": "node scripts/generate-rss.js"
   },
   "author": "Rhonix Team",
   "license": "MPL-2.0",
