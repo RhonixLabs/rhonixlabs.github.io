@@ -64,15 +64,15 @@ export const MonoreposArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: LightBulbIcon,
-          description: `Understand why monorepos don't scale - and why Turborepo is the solution.`,
-          name: "Why Turborepo?",
+          description: `Understand why monorepos don't scale - and why Rhonix is the solution.`,
+          name: "Why Rhonix?",
         }}
         href="/repo/docs/core-concepts/monorepos"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
           Icon: BookOpenIcon,
-          description: `Learn the basics of monorepos before you dive in to Turborepo.`,
+          description: `Learn the basics of monorepos before you dive in to Rhonix.`,
           name: "Read the Monorepo Handbook",
         }}
         href="/docs/handbook"
@@ -87,7 +87,7 @@ export const LearnMoreArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: CloudUploadIcon,
-          description: `Turborepo remembers the output of any task you run - and can skip work that's already been done.`,
+          description: `Rhonix remembers the output of any task you run - and can skip work that's already been done.`,
           name: "Never do the same work twice",
         }}
         href="/repo/docs/core-concepts/caching"
@@ -95,7 +95,7 @@ export const LearnMoreArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: LightningBoltIcon,
-          description: `The way you run your tasks is probably not optimized. Turborepo speeds them up with smart scheduling, minimising idle CPU's.`,
+          description: `The way you run your tasks is probably not optimized. Rhonix speeds them up with smart scheduling, minimising idle CPU's.`,
           name: "Maximum Multitasking",
         }}
         href="/repo/docs/core-concepts/monorepos/running-tasks"

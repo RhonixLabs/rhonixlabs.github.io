@@ -30,13 +30,13 @@ code {
   font-display: swap;
 }
 
-.turborepoCardBg {
+.rhonixrepoCardBg {
   background: #fff;
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.03),
     0px 2px 4px rgba(0, 0, 0, 0.05), 0px 12px 24px rgba(0, 0, 0, 0.05);
 }
 
-.dark .turborepoCardBg {
+.dark .rhonixrepoCardBg {
   /* background: rgba(0, 0, 0, 0.8); */
   background: #000;
   border: 1px solid rgba(255, 255, 255, 0.1);

@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation";
 import HeaderLogo from "./components/HeaderLogo";
 import { Discord, Github } from "./components/Social";
 
-const SITE_ROOT = "https://turbo.build";
+const SITE_ROOT = "https://rhonix.io";
 
 /**
  * @type {import('nextra-theme-docs').DocsThemeConfig}
@@ -18,17 +18,20 @@ const theme = {
   chat: {
     icon: Discord,
   },
-  docsRepositoryBase: "https://github.com/vercel/turbo/blob/main/docs",
+  docsRepositoryBase: "https://github.com/RhonixLabs/rhonix.github.io",
   getNextSeoProps: function SEO() {
     const router = useRouter();
     const { frontMatter } = useConfig();
 
-    let section = "Turbo";
-    if (router?.pathname.startsWith("/pack")) {
-      section = "Turbopack";
+    let section = "Rhonix";
+    if (router?.pathname.startsWith("/learn")) {
+      section = "Learn";
     }
-    if (router?.pathname.startsWith("/repo")) {
-      section = "Turborepo";
+    if (router?.pathname.startsWith("/build")) {
+      section = "Build";
+    }
+    if (router?.pathname.startsWith("/explore")) {
+      section = "Explore";
     }
 
     const defaultTitle = frontMatter.overrideTitle || section;
@@ -132,8 +135,8 @@ const theme = {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@turborepo" />
-        <meta name="twitter:creator" content="@turborepo" />
+        <meta name="twitter:site" content="@rhonix" />
+        <meta name="twitter:creator" content="@rhonix" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={fullUrl} />
         <link rel="canonical" href={fullUrl} />

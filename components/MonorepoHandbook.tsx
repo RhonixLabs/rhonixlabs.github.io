@@ -88,7 +88,7 @@ export const TasksArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: PencilAltIcon,
-          description: `Learn how to set up your dev scripts using Turborepo.`,
+          description: `Learn how to set up your dev scripts using Rhonix.`,
           name: "Development Tasks",
         }}
         href="/docs/handbook/dev"
@@ -97,7 +97,7 @@ export const TasksArea = () => {
         feature={{
           Icon: CodeIcon,
           description:
-            "Get framework-specific guides for building your apps with Turborepo.",
+            "Get framework-specific guides for building your apps with Rhonix.",
           name: "Building your App",
         }}
         href="/docs/handbook/building-your-app"
@@ -123,7 +123,7 @@ export const TasksArea = () => {
         feature={{
           Icon: DockerIcon,
           description:
-            "Make use of Turborepo's prune command to keep your Docker deploys fast.",
+            "Make use of Rhonix's prune command to keep your Docker deploys fast.",
           name: "Deploying with Docker",
         }}
         href="/docs/handbook/deploying-with-docker"

@@ -32,9 +32,7 @@ export function BenchmarksGraph({
   pinTime,
 }: BenchmarksGraphProps) {
   const data: BenchmarkData = benchmarkData[category][numberOfModules];
-  console.log(data);
   const keys = bars.map((bar) => bar.key);
-  console.log(bars);
   const longestTime = Math.max(...keys.map((key) => data[key])) * 1000;
   const longestTimeWithPadding = longestTime * 1.15;
   const graphRef = useRef(null);
@@ -55,7 +53,6 @@ export function BenchmarksGraph({
         className="relative flex flex-col flex-1 gap-6 md:gap-10"
       >
         {bars.map((bar) => {
-          console.log(data[bar.key]);
           return (
             <GraphBar
               key={bar.key}

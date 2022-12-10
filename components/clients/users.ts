@@ -10,15 +10,6 @@ export type TurboUser = {
 
 export const users: Array<TurboUser> = [
   {
-    caption: "Vercel",
-    image: "/images/logos/vercel.svg",
-    infoLink: "https://vercel.com/",
-    pinned: true,
-    style: {
-      width: 150,
-    },
-  },
-  {
     caption: "AWS",
     image: "/images/logos/aws.svg",
     infoLink: "https://aws.amazon.com/",

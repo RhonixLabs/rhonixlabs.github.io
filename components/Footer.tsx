@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState, ReactNode, ReactElement } from "react";
 import cn from "classnames";
 import { ThemeSwitch } from "nextra-theme-docs";
-import VercelLogo from "./logos/Vercel";
 
 function FooterLink({ href, children }: { href: string; children: ReactNode }) {
   const classes =
