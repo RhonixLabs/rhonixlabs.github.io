@@ -1,6 +1,16 @@
 import type Image from "next/image";
 import EcosystemIconDark from "../public/images/docs/shared/feature-icons/ecosystem-dark.svg";
 import EcosystemIconLight from "../public/images/docs/shared/feature-icons/ecosystem-light.svg";
+import CommunityIconLight from "../public/images/docs/shared/feature-icons/community-light.svg";
+import CommunityIconDark from "../public/images/docs/shared/feature-icons/community-dark.svg";
+import CostIconDark from "../public/images/docs/shared/feature-icons/cost-dark.svg";
+import CostIconLight from "../public/images/docs/shared/feature-icons/cost-light.svg";
+import DecentralizedIconDark from "../public/images/docs/shared/feature-icons/decentralized-dark.svg";
+import DecentralizedIconLight from "../public/images/docs/shared/feature-icons/decentralized-light.svg";
+import FinalityIconDark from "../public/images/docs/shared/feature-icons/finality-dark.svg";
+import FinalityIconLight from "../public/images/docs/shared/feature-icons/finality-light.svg";
+import MergeIconDark from "../public/images/docs/shared/feature-icons/merge-dark.svg";
+import MergeIconLight from "../public/images/docs/shared/feature-icons/merge-light.svg";
 import LightningIconDark from "../public/images/docs/shared/feature-icons/lightning-dark.svg";
 import LightningIconLight from "../public/images/docs/shared/feature-icons/lightning-light.svg";
 import BarsIconDark from "../public/images/docs/shared/feature-icons/bars-dark.svg";
@@ -108,8 +118,8 @@ const PACK_FEATURES: Features = [
   {
     name: "Leaderless block merge",
     description: `Merging blocks, which have no conflict leads to scale of transactions`,
-    iconDark: BarsIconDark,
-    iconLight: BarsIconLight,
+    iconDark: MergeIconDark,
+    iconLight: MergeIconLight,
     page: "all",
   },
   {
@@ -122,29 +132,29 @@ const PACK_FEATURES: Features = [
   {
     name: "Low cost transactions",
     description: `Due to Proove of stake, transactions do not require much overhead`,
-    iconDark: LightningIconDark,
-    iconLight: LightningIconLight,
+    iconDark: CostIconDark,
+    iconLight: CostIconLight,
     page: "all",
   },
   {
     name: "Finality of transactions",
     description: `Transactions, which are final, can't be undone later`,
-    iconDark: ServerComponentsIconDark,
-    iconLight: ServerComponentsIconLight,
+    iconDark: FinalityIconDark,
+    iconLight: FinalityIconLight,
     page: "all",
   },
   {
     name: "Open community",
     description: `A community, which loves math and computing and want to move technology forward`,
-    iconDark: MultiEnvTargetsIconDark,
-    iconLight: MultiEnvTargetsIconLight,
+    iconDark: CommunityIconDark,
+    iconLight: CommunityIconLight,
     page: "all",
   },
   {
     name: "Truely decentralized",
     description: `Due to our leaderless architecture for POS, there are no single point of failures`,
-    iconDark: MultiEnvTargetsIconDark,
-    iconLight: MultiEnvTargetsIconLight,
+    iconDark: DecentralizedIconDark,
+    iconLight: DecentralizedIconLight,
     page: "all",
   },
 ];

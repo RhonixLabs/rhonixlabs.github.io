@@ -220,7 +220,7 @@
   height: var(--height);
   right: var(--gradient-x-offset);
   top: var(--gradient-y-offset);
-  background: linear-gradient(180deg, #ff3358 0%, #ff4fd8 100%);
+  background: linear-gradient(180deg, #ffee8f 0%, #fcad54 100%);
   border-radius: 100%;
   mix-blend-mode: normal;
   filter: blur(50px);
