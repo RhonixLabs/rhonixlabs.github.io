@@ -15,11 +15,11 @@ At the other end, every validator is a degenerate sort of blockchain unto itself
 
 In between, we have independent groups of validators that come to agreement among themselves. The other shards do not check their work. This is not as secure as a single blockchain, but does allow subproblems to be worked on independently.
 
-RChain’s sharding solution is designed to provide both ends of this spectrum as well as several points in between, allowing dApp developers to decide where they want to make the tradeoff.
+Rhonix’s sharding solution is designed to provide both ends of this spectrum as well as several points in between, allowing dApp developers to decide where they want to make the tradeoff.
 
 ## Network structure
 
-A single shard\_ consists of a collection of computers running copies of the RChain node software, called validators. Each validator stakes a large quantity of a cryptocurrency called Rev. “Staking” means that if they deviate in a detectable way from the consensus protocol, they get slashed, losing their stake. A validator that has staked Rev is called bonded. The owners of validator nodes typically acquire Rev by purchasing it with some other currency, either directly from the RChain cooperative or on an exchange. The specific amount required to stake the shard is a parameter of the shard.
+A single shard\_ consists of a collection of computers running copies of the Rhonix node software, called validators. Each validator stakes a large quantity of a cryptocurrency called Rev. “Staking” means that if they deviate in a detectable way from the consensus protocol, they get slashed, losing their stake. A validator that has staked Rev is called bonded. The owners of validator nodes typically acquire Rev by purchasing it with some other currency, either directly from the Rhonix cooperative or on an exchange. The specific amount required to stake the shard is a parameter of the shard.
 
 ## The “root shard”
 
@@ -29,17 +29,17 @@ All Rev is minted in the root shard. To reward validators, the cooperative will 
 
 ## Child shards
 
-Any shard can issue its own staking token, but we do not expect that each shard’s staking token will be listed on an exchange. Instead, RChain shards have two special contracts called the depository and the mint. The depository is, among other things, a multisig wallet that contains a cryptocurrency meant to back the issuance of cryptocurrency in another shard. The mint is a multisig contract that creates new currency.
+Any shard can issue its own staking token, but we do not expect that each shard’s staking token will be listed on an exchange. Instead, Rhonix shards have two special contracts called the depository and the mint. The depository is, among other things, a multisig wallet that contains a cryptocurrency meant to back the issuance of cryptocurrency in another shard. The mint is a multisig contract that creates new currency.
 
-To create a new shard as part of the RChain network, a set of clients of a shard we’ll call the parent shard jointly create a depository contract and deposit funds into it. The clients then each run a validator node in a new shard we’ll call the child shard. The validators create a mint in the child shard and create the same quantity of funds. They then bond in the child using some of the newly minted funds. The validators monitor both the depository and the mint for incoming messages.
+To create a new shard as part of the Rhonix network, a set of clients of a shard we’ll call the parent shard jointly create a depository contract and deposit funds into it. The clients then each run a validator node in a new shard we’ll call the child shard. The validators create a mint in the child shard and create the same quantity of funds. They then bond in the child using some of the newly minted funds. The validators monitor both the depository and the mint for incoming messages.
 
 When the depository in the parent receives a “transfer” message with a purse and a public key, it deposits the funds from the purse into its own purse. The validators then instruct the mint in the child to create funds and deposit them into a wallet that responds to messages signed by the corresponding private key.
 
 When the mint in the child receives a “transfer” message with a purse and a public key, it burns the funds in the purse. The validators then instruct the depository in the parent to withdraw funds from its purse and deposit them into a wallet that responds to messages signed by the corresponding private key.
 
-The mint and depository contracts that ship with the RChain node software will only mint as many Rev in the child shard as are in the depository in the parent shard, but that does not guarantee that the validators of the child shard will behave properly. A client of the shard is always susceptible to collusion by enough of the validators. The validators could mint more currency than is in the corresponding depository; if they did, the price of the child currency would fall with respect to the backing currency in the parent. The validators could simply drain the depository. What the validators of a child shard cannot do is create more of the backing currency in the parent; so even if they misbehave in their own subtree, they cannot affect the money supply in the rest of the tree.
+The mint and depository contracts that ship with the Rhonix node software will only mint as many Rev in the child shard as are in the depository in the parent shard, but that does not guarantee that the validators of the child shard will behave properly. A client of the shard is always susceptible to collusion by enough of the validators. The validators could mint more currency than is in the corresponding depository; if they did, the price of the child currency would fall with respect to the backing currency in the parent. The validators could simply drain the depository. What the validators of a child shard cannot do is create more of the backing currency in the parent; so even if they misbehave in their own subtree, they cannot affect the money supply in the rest of the tree.
 
-To defend against the validators of an ancestor shard walking off with all the money, it is in the interest of a child shard validator to also bond and validate in its parents all the way to the root. Since the RChain cooperative only issues validator rewards in the root, it is up to the validators of a child shard to decide whether to pass validation rewards down to their children or not.
+To defend against the validators of an ancestor shard walking off with all the money, it is in the interest of a child shard validator to also bond and validate in its parents all the way to the root. Since the Rhonix cooperative only issues validator rewards in the root, it is up to the validators of a child shard to decide whether to pass validation rewards down to their children or not.
 
 ## The future: composite shards
 
@@ -51,10 +51,10 @@ If the validators of a child shard grow suspicious of the parent shard in which 
 
 ## Cross-chain shards
 
-Two RChain shards are fundamentally separate blockchains already. If a set of validators want to run a fork of the RChain software, they may. If a validator set chooses to create, say, a multisig ERC20 contract whose value is backed by a depository on RChain, one could consider Ethereum to be a child shard of the RChain network.
+Two Rhonix shards are fundamentally separate blockchains already. If a set of validators want to run a fork of the Rhonix software, they may. If a validator set chooses to create, say, a multisig ERC20 contract whose value is backed by a depository on Rhonix, one could consider Ethereum to be a child shard of the Rhonix network.
 
-We’ve seen currencies fork, but we haven’t yet seen them merge. RChain is set to change that: a subset of validators of a child shard can choose to withdraw their share of the funds from the depository and form a new, independent child shard with its own money supply and governance structure.
+We’ve seen currencies fork, but we haven’t yet seen them merge. Rhonix is set to change that: a subset of validators of a child shard can choose to withdraw their share of the funds from the depository and form a new, independent child shard with its own money supply and governance structure.
 
 ## Conclusion
 
-RChain’s sharding architecture offers a wide spectrum of choices allowing clients to trade off security, performance, and centralization. It also allows interaction between future forks of RChain and other blockchains.
+Rhonix’s sharding architecture offers a wide spectrum of choices allowing clients to trade off security, performance, and centralization. It also allows interaction between future forks of Rhonix and other blockchains.

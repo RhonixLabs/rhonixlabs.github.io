@@ -4,10 +4,10 @@ This chapter describes how you can use the rholang-sdk as a template for your we
 
 - Rholang bundler (rholang to js/ts bundler)
 - A testing framework based on jest for evaluating your deploys.
-- All need libraries for interacting with the rchain network (locally/testnet/mainnet) are included.
+- All need libraries for interacting with the rhonix network (locally/testnet/mainnet) are included.
 - A frontend app, which is a nft template web application written in typescript and executed on vercel.com (static site).
 - Interaction with the metamask plugin and the nft template web app.
-- Cloudflare workers for caching rholang exploratory deploys from the rchain network.
+- Cloudflare workers for caching rholang exploratory deploys from the rhonix network.
 
 ## Installing the SDK
 
@@ -123,7 +123,7 @@ Vercel.com lets you create a free static site, where you get a free subdomain.
 
 ## Using Cloudflare workers with rnode and your webApp
 
-Cloudflare workers lets you deploy serverless code, which can be used for small code execution. Together with cloudlflare workers key-value store one can use it for having a very fast response time, when thousands of user are doing exploratory-deploys on the Rchain network.
+Cloudflare workers lets you deploy serverless code, which can be used for small code execution. Together with cloudlflare workers key-value store one can use it for having a very fast response time, when thousands of user are doing exploratory-deploys on the Rhonix network.
 
 The repository for the cloudflare worker is [here](https://github.com/rholang/cloudflare-nft). But you can just use the existing one by making a request to https://worker-typescript-template.nftland.workers.dev or import the functions Fx.exploreDeployFx from the @rholang/connectors library.
 
@@ -137,6 +137,6 @@ The repository for the cloudflare worker is [here](https://github.com/rholang/cl
 
 ### Concept
 
-When the first user visits the website, then explore-deploys are send to the cloudflare worker. Every explore-deploy to the cloudlfare worker is stored in their key-value store. If this request was never fetched, then for the first time it will send a request to the rchain network. The response is cached. When a second user is requesting the same explore-deploy rholang code, then cloudlflare is sending the cached response back, which is very fast. When some smart-contract has changed on the rchain network (deploy), then the rnode instance will send to the cloudlflare-worker a notice, that the cache is not up-to-date anymore.
+When the first user visits the website, then explore-deploys are send to the cloudflare worker. Every explore-deploy to the cloudlfare worker is stored in their key-value store. If this request was never fetched, then for the first time it will send a request to the rhonix network. The response is cached. When a second user is requesting the same explore-deploy rholang code, then cloudlflare is sending the cached response back, which is very fast. When some smart-contract has changed on the rhonix network (deploy), then the rnode instance will send to the cloudlflare-worker a notice, that the cache is not up-to-date anymore.
 
 ![sdk-13](public/images/docs/build/sdk/sdk-13.png)

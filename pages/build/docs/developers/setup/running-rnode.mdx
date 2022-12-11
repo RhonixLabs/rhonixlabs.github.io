@@ -9,7 +9,7 @@ Rnode is the instance, where the smart-contracts are executed. This chapter desc
 
 ## Install RNode
 
-We deliver RNode software in a variety of installation packages. Installation packages are available at both [RChain](https://developer.rchain.coop) and [Github](https://github.com/rchain/rchain/releases). We recommend using the latest release.
+We deliver RNode software in a variety of installation packages. Installation packages are available at both [Github](https://github.com/RhonixLabs/rhonix/releases). We recommend using the latest release.
 
 > In the command examples below, you must update based on the version number of RNode you want by replacing "x" with the numbers in your installation version.
 
@@ -49,7 +49,7 @@ You can run RNode on Raspberry pi. An example of this, including installation an
 
 ## To connect to an existing network
 
-> Please fill in the `<bootstrap ID>`. The current network ID is posted on [RChain public testnet information](https://rchain.atlassian.net/wiki/spaces/CORE/pages/678756429/RChain+public+testnet+information).
+> Please fill in the `<bootstrap ID>`.
 
 ```ts
 rnode run --network-id <arg> --shard-id <arg> --bootstrap <arg> --finalization-rate <arg> --fault-tolerance-threshold <arg> --synchrony-constraint-threshold <arg> --fork-choice-stale-threshold <arg> --fork-choice-check-if-stale-interval <arg> --drop-peer-after-retries <arg> --give-up-after-skipped <arg>

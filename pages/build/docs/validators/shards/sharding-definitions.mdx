@@ -48,7 +48,7 @@ Steps
 
 ### Transferring value across Shards
 
-By sharding the blockchain, in essence we create 'altcoins' in each shard. Rev will exist in the rchain shard (the root shard). All other shards will have token that will be 'backed' by Rev, much in the same way that currency can be backed by gold. Tokens in shards will be exchanged for Rev in the rchain shard with a 1:1 exchange rate.
+By sharding the blockchain, in essence we create 'altcoins' in each shard. Rev will exist in the rhonix shard (the root shard). All other shards will have token that will be 'backed' by Rev, much in the same way that currency can be backed by gold. Tokens in shards will be exchanged for Rev in the rhonix shard with a 1:1 exchange rate.
 
 The process of transferring token between 2 shards requires invoking a contract in the nearest common ancestor of both shards. The platform will only support the atomic transfer from a child to a parent and a parent to a child.
 
@@ -125,9 +125,9 @@ Users are familiar with urls and uri formats. Therefore it's reasonable to treat
 
 As part of testnet launch, the Core dev team will create the number of shards that are needed to demonstrate network performance of 20,000 tps (40,000 would be even better). The actual number of shards will depend on the performance of a single shard.
 
-The root shard will contain the genesis block for the network. It shall be called 'rchain'
+The root shard will contain the genesis block for the network. It shall be called 'rhonix'
 
-If shards A and B are both children of the root shard, they would be referenced as rchain/A and rchain/B
+If shards A and B are both children of the root shard, they would be referenced as rhonix/A and rhonix/B
 
 ## Viewing Shards and Shard information
 
@@ -167,7 +167,7 @@ Question: If the validator has funds locked up in the K/N contract, those funds 
 
 ## The Blessed Mint Contract and Sharding
 
-The blessed Mint contract will exist in each shard. While the master Rev mint contract (our version of 'gold') exists only in the rchain shard at the root of the tree, all other shards have pegged their token supply to the token supply in the root shard. The mint contracts in all the shards have to mint tokens at the same time, such that the exchange rate for Rev between the shards remain 1:1 all the way up to the rchain shard (root shard). The blessed Mint contract will be a K/N contract that is created by the K/N Sharding contract
+The blessed Mint contract will exist in each shard. While the master Rev mint contract (our version of 'gold') exists only in the rhonix shard at the root of the tree, all other shards have pegged their token supply to the token supply in the root shard. The mint contracts in all the shards have to mint tokens at the same time, such that the exchange rate for Rev between the shards remain 1:1 all the way up to the rhonix shard (root shard). The blessed Mint contract will be a K/N contract that is created by the K/N Sharding contract
 
 ## Exodus Block
 
