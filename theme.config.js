@@ -12,8 +12,11 @@ const SITE_ROOT = "https://rhonix.io";
  * @type {import('nextra-theme-docs').DocsThemeConfig}
  */
 const theme = {
+  sidebar: {
+    defaultMenuCollapseLevel: Number.POSITIVE_INFINITY,
+  },
   docsRepositoryBase: "https://github.com/RhonixLabs/rhonix.github.io",
-  getNextSeoProps: function SEO() {
+  useNextSeoProps: function SEO() {
     const router = useRouter();
     const { frontMatter } = useConfig();
 
@@ -36,6 +39,7 @@ const theme = {
       titleTemplate: `%s – ${section}`,
     };
   },
+
   gitTimestamp({ timestamp }) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [dateString, setDateString] = useState(timestamp.toISOString());
@@ -84,10 +88,10 @@ const theme = {
     } else if (frontMatter?.ogImage) {
       ogUrl = `${SITE_ROOT}${frontMatter.ogImage}`;
     } else {
-      const type = asPath.startsWith("/repo")
-        ? "repo"
-        : asPath.startsWith("/pack")
-        ? "pack"
+      const type = asPath.startsWith("/learn")
+        ? "learn"
+        : asPath.startsWith("/build")
+        ? "build"
         : "";
       const title = frontMatter.title
         ? `&title=${encodeURIComponent(frontMatter.title)}`
