@@ -45,11 +45,8 @@ export function LandingLetter() {
           </p>
           <br />
           <p>
-            That's why I thought bringing a runtime to the community which
-            solves horizontally scalability, is leaderless, has finality, low
-            energy cost, sharding, uses proove of stake and has a programming
-            langugage, which is inherent concurrent, is of large value for
-            companies and people.
+            That's why I thought bringing a runtime to this space, which solves
+            these problems, is of large value for companies and people.
           </p>
           <br />
           <p>
