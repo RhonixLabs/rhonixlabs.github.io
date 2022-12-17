@@ -27,12 +27,12 @@ export function PackHero() {
             />
           </div>
 
-          <div className="w-[256px] z-50 mt-[-8.075px] mb-[-8.075px]">
+          <div className="w-[801px] z-50 mt-[-8.075px] mb-[-8.075px]">
             <Image
               alt=""
               src={`/images/docs/shared/logos/rhonix-logo-large.png`}
-              width={256}
-              height={256}
+              width={801}
+              height={801}
             />
           </div>
         </FadeIn>

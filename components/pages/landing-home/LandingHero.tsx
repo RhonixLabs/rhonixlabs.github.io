@@ -14,7 +14,7 @@ export function LandingHero() {
     <>
       <FadeIn
         noVertical
-        className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-16 lg:pt-20 flex justify-between gap-8 items-center flex-col relative z-0"
+        className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-5 lg:pt-5 flex justify-between gap-8 items-center flex-col relative z-0"
       >
         <FadeIn className="z-50 flex items-center justify-center w-full">
           <div className="absolute z-50 flex items-center justify-center w-256 h-256">
@@ -27,12 +27,12 @@ export function LandingHero() {
             />
           </div>
 
-          <div className="w-[256px] z-50 mt-[-8.075px] mb-[-8.075px]">
+          <div className="w-[961px] z-50 mt-[-8.075px] mb-[-8.075px]">
             <Image
               alt=""
               src={`/images/docs/shared/logos/rhonix-logo-large.png`}
-              width={256}
-              height={256}
+              width={961}
+              height={961}
             />
           </div>
         </FadeIn>

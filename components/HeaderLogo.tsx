@@ -8,8 +8,8 @@ function HeaderLogo() {
   return (
     <>
       <Link href="/" title="Home" className="hover:opacity-75">
-        <RhonixLogo height={32} className={styles.desktopLogo} />
-        <RhonixLogoCondensed height={32} className={styles.mobileLogo} />
+        <RhonixLogo height={64} className={styles.desktopLogo} />
+        <RhonixLogoCondensed height={64} className={styles.mobileLogo} />
       </Link>
       <div className={styles.siteSwitcher}>
         <SiteSwitcher />

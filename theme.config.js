@@ -75,6 +75,7 @@ const theme = {
   head: function Head() {
     const router = useRouter();
     const { systemTheme = "light" } = useTheme();
+    console.log(systemTheme);
     const { frontMatter } = useConfig();
     const fullUrl =
       router.asPath === "/" ? SITE_ROOT : `${SITE_ROOT}${router.asPath}`;
