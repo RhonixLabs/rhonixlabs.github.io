@@ -29,6 +29,7 @@ const Rhonix = ({ height = 32, className = "" }: LogoProps) => {
           src={`/images/docs/shared/logos/rhonix-logo-navbar-desktop-light.svg`}
           width={180}
           height={height}
+          priority
           className={className}
         />
       </div>
@@ -36,6 +37,7 @@ const Rhonix = ({ height = 32, className = "" }: LogoProps) => {
         <Image
           alt="Rhonix"
           src={`/images/docs/shared/logos/rhonix-logo-navbar-desktop-dark.svg`}
+          priority
           width={180}
           height={height}
           className={className}
