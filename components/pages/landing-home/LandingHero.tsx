@@ -14,7 +14,7 @@ export function LandingHero() {
     <>
       <FadeIn
         noVertical
-        className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-5 lg:pt-5 flex justify-between gap-8 items-center flex-col relative z-0"
+        className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-3 lg:pt-3 flex justify-between gap-8 items-center flex-col relative z-0"
       >
         <FadeIn className="z-50 flex items-center justify-center w-full">
           <div className="absolute z-50 flex items-center justify-center w-256 h-256">
