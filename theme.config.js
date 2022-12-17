@@ -167,7 +167,7 @@ const theme = {
     component: Footer,
   },
   nextThemes: {
-    defaultTheme: "light",
+    defaultTheme: "dark",
   },
 };
 export default theme;
