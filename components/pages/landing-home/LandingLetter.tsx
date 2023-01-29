@@ -20,20 +20,14 @@ export function LandingLetter() {
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            Since the beginning of bitcoin and ethereum, the blockchain space
-            has evolved quite far. Lots of new dApps have been developed, hacked
-            and improved. But, up to now there is no dApp or network which has
-            visa like speed, costs and safety. The reason for that is, that
-            current networks do not horizontally scale by adding more nodes to
-            the networks, meaning having linearly more performance gains.
-            Without that, the blockchain ecosystem would not become the dream of
-            composable dApps, which run on the largest decentralized computer.
+            Since the beginning of the internet, web service were run on centralized server farms and scaling these services were not trivial. 
+            Decentralized network are challenging this by utilizing technologies, where failure and scalability is directly modelled into their technologies.
+            But since decentralized network had scalability issues, these platforms are not fully realizing their full potential for business.
           </p>
           <br />
           <p>
-            The Rhonix team looks back on many technologies that are based in
-            science. With that, we have a programming language called rholang
-            which is based on the latest research from the reflective high order
+            The Rhonix team looks back on these technologies, and advances forward with a fully new scientific paradigm shift. We are using a new developed programming language, called rholang,
+            which is based on the latest research from the reflective higher order
             calculus. This language enables us to have concurrency in our core
             language. Detecting when conflicts emerge is now easier than ever.
             Why should a transaction in Canada wait for a transaction from
@@ -45,13 +39,7 @@ export function LandingLetter() {
           </p>
           <br />
           <p>
-            That's why I thought bringing a runtime to this space, which solves
-            these problems, is of large value for companies and people.
-          </p>
-          <br />
-          <p>
-            With the Rhonix runtime we are just doing that. And with having a
-            running mainnet, this is not future, it is possible today.
+            With the Rhonix runtime, we are just doing that. And with launching our upcoming testnet 2.0, this is not future, it is possible today.
           </p>
         </FadeIn>
         <FadeIn noVertical viewTriggerOffset className="relative h-2 h-12 h-12">
@@ -95,7 +83,7 @@ export function LandingLetter() {
             />
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
               <p className="font-bold">Ting Yang</p>
-              <p>Founder of Rhonix</p>
+              <p>CEO of Rhonix Labs FZE</p>
             </div>
           </div>
         </FadeIn>

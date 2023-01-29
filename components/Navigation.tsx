@@ -10,7 +10,7 @@ function Navigation(props) {
     2. Points to /pack/docs when on /pack
   */
   const leadingItem = props.items[0];
-  if (leadingItem?.id !== "contextual-docs" && site) {
+  if (leadingItem?.id !== "contextual-docs" && site && site !== "explore") {
     props.items.unshift({
       title: "Docs",
       type: "page",

@@ -48,10 +48,10 @@ export function PackHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <HeroText h1>Developers, Developers, Developers, </HeroText>
+          <HeroText h1>Devs, Devs, Devs, </HeroText>
           <SectionSubtext hero>
             Our goal is, that you write and deploy dApps as easy as possible.
-            For developers as for validators.
+            For developers as well as for validators.
           </SectionSubtext>
         </FadeIn>
         <FadeIn

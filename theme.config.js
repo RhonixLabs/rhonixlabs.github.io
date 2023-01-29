@@ -74,7 +74,7 @@ const theme = {
   logoLink: false,
   head: function Head() {
     const router = useRouter();
-    const { systemTheme = "light" } = useTheme();
+    const { systemTheme = "system" } = useTheme();
     const { frontMatter } = useConfig();
     const fullUrl =
       router.asPath === "/" ? SITE_ROOT : `${SITE_ROOT}${router.asPath}`;

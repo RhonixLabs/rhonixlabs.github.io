@@ -13,6 +13,10 @@
   "learn": "Learn",
   "build": "Build",
   "explore": "Explore",
+  "unpublished": {
+    "title": "Unpublished",
+    "display": "hidden"
+  },
   "blog": {
     "title": "Blog",
     "theme": {
