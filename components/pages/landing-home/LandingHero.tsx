@@ -47,7 +47,7 @@ export function LandingHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <HeroText h1>The scalable Layer 1 runtime for dApps</HeroText>
+          <HeroText h1>The scalable layer 1 runtime for dApps</HeroText>
           <SectionSubtext hero>
             Based on the latest research from the reflective higher order
             calculus, our runtime can scale linear with new added nodes
@@ -64,7 +64,7 @@ export function LandingHero() {
               </Link>
             </CTAButton>
             <CTAButton>
-              <Link href="/learn/" className="block py-3">
+              <Link href="/build/" className="block py-3">
                 Develop
               </Link>
             </CTAButton>

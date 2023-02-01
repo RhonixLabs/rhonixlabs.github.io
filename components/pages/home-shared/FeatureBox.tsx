@@ -13,29 +13,33 @@ export function FeatureBox({
   description: ReactNode;
 }) {
   return (
-    <div className="box-border relative flex flex-col gap-5 p-8 overflow-hidden text-black no-underline border dark:text-white rounded-xl dark:border-neutral-800">
-      <Image
-        src={iconDark}
-        width={64}
-        height={64}
-        aria-hidden="true"
-        alt=""
-        className="hidden dark:block"
-      />
-      <Image
-        src={iconLight}
-        width={64}
-        height={64}
-        aria-hidden="true"
-        alt=""
-        className="block dark:hidden"
-      />
+    <div className="font-sans cardShadow dark:bg-neutral-900 relative flex flex-col gap-5 p-8 overflow-hidden text-black no-underline dark:text-white rounded-3xl">
       <div className="flex flex-col gap-2">
-        <h3 className="m-0 font-bold leading-5 text-gray-900 font-space-grotesk dark:text-white">
+        <h3 className="leading-9 text-5xl m-0 font-bold  text-gray-900 font-sans dark:text-white">
           {name}
         </h3>
 
-        <p className="m-0 leading-6 opacity-70">{description}</p>
+        <div className="flex ">
+          <p className="text-base m-0 grow opacity-70">{description}</p>
+          <div className="w-20 h-20 grow ml-10">
+            <Image
+              src={iconDark}
+              width={64}
+              height={64}
+              aria-hidden="true"
+              alt=""
+              className="hidden dark:block"
+            />
+            <Image
+              src={iconLight}
+              width={64}
+              height={64}
+              aria-hidden="true"
+              alt=""
+              className="block dark:hidden"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

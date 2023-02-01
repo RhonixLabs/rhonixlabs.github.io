@@ -35,8 +35,8 @@ const navigation = {
       href: "https://github.com/RhonixLabs/rhonix",
     },
     {
-      name: "Discord",
-      href: "https://rhonix/discord",
+      name: "Discurse",
+      href: "https://community.rhonix.io",
     },
   ],
   company: [

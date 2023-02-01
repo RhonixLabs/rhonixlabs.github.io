@@ -51,7 +51,7 @@ export function PackBenchmarks() {
 
   return (
     <FadeIn className="relative flex flex-col items-center justify-center w-full gap-10 py-16 font-sans md:py-24 lg:py-32">
-      <div className="flex flex-col items-center gap-5 md:gap-6">
+      <div className="flex flex-col items-center gap-5 md:gap-6 px-6">
         <SectionHeader>Scaling on steroids</SectionHeader>
         <SectionSubtext>
           Guided by math, Rhonix archives performance by scaling horizontally.

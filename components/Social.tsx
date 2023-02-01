@@ -1,4 +1,5 @@
 import { DiscordIcon, GitHubIcon } from "nextra/icons";
+import { DiscourseIcon } from "./icons/DiscourseIcon";
 
 function Github() {
   return (
@@ -18,7 +19,7 @@ function Github() {
 function Discord() {
   return (
     <a
-      href="https://rhonix.de/discord"
+      href="https://discord.gg/t3t79FWk"
       className="hidden p-2 text-current sm:flex hover:opacity-75"
       title="Rhonix Discord server"
       target="_blank"
@@ -29,4 +30,18 @@ function Discord() {
   );
 }
 
-export { Github, Discord };
+function Discourse() {
+  return (
+    <a
+      href="https://community.rhonix.io"
+      className="hidden p-2 text-current sm:flex hover:opacity-75"
+      title="Rhonix Discourse Forum"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <DiscourseIcon />
+    </a>
+  );
+}
+
+export { Github, Discourse };

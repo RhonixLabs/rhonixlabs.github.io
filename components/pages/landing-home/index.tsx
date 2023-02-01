@@ -4,6 +4,7 @@ import { LandingLetter } from "./LandingLetter";
 import { LandingFeatures } from "./LandingFeatures";
 import { GradientSectionBorder } from "../home-shared/GradientSectionBorder";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
+import { RoadmapSection } from "../home-shared/roadmap/RoadmapSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <GradientSectionBorder>
           <LandingBenchmarks />
           <LandingFeatures />
+          <RoadmapSection />
         </GradientSectionBorder>
         <GradientSectionBorder>
           <LandingLetter />

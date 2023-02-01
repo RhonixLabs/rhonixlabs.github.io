@@ -4,7 +4,7 @@ import { useConfig, useTheme } from "nextra-theme-docs";
 import { Footer } from "./components/Footer";
 import Navigation from "./components/Navigation";
 import HeaderLogo from "./components/HeaderLogo";
-import { Discord, Github } from "./components/Social";
+import { Discourse, Github } from "./components/Social";
 
 const SITE_ROOT = "https://rhonix.io";
 
@@ -13,7 +13,7 @@ const SITE_ROOT = "https://rhonix.io";
  */
 const theme = {
   sidebar: {
-    defaultMenuCollapseLevel: Number.POSITIVE_INFINITY,
+    defaultMenuCollapseLevel: 0,
   },
   docsRepositoryBase: "https://github.com/RhonixLabs/rhonix.github.io",
   useNextSeoProps: function SEO() {
@@ -156,7 +156,7 @@ const theme = {
     extraContent: (
       <>
         <Github />
-        <Discord />
+        <Discourse />
       </>
     ),
   },
@@ -167,7 +167,7 @@ const theme = {
     component: Footer,
   },
   nextThemes: {
-    defaultTheme: "dark",
+    defaultTheme: "system",
   },
 };
 export default theme;
