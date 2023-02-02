@@ -120,14 +120,14 @@ const XLarge = () => {
           <path d="M445.1,274.2h-24.9v2.8h24.9V274.2z" />
           <path d="M386.3,278.7v-20.5h2.8v20.5" />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M1325.7,227.9H1301v30.2h24.7V227.9z" />
           <path d="M649.9,235.9l9.2-18.7l3.2,9.3l9.3-3.2l3.2,9.3l9.3-3.2l-9.2,18.7L649.9,235.9z" />
           <path d="M871.3,227.9h-24.7v30.2h24.7V227.9z" />
           <path d="M713.6,227.9h-24.7v30.2h24.7V227.9z" />
           <path d="M400.1,227.9h-24.7v30.2h24.7V227.9z" />
         </g>
-        <g className="fill-vega-pink">
+        <g className="fill-rho-pink">
           <path d="M616.6,227.6h-24.7v30.2h24.7V227.6z" />
           <path d="M1174.4,226.9h-24.7v30.2h24.7V226.9z" />
         </g>

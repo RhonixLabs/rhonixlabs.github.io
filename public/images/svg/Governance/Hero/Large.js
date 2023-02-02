@@ -119,14 +119,14 @@ const Large = () => {
           <path d="M144.8,227.6h-20.7v2.3h20.7V227.6z" />
           <path d="M96,231.3v-17.1h2.3v17.1" />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M877.3,189.1h-20.6v25.1h20.6V189.1z" />
           <path d="M315.2,195.7l7.7-15.6l2.6,7.7l7.7-2.6l2.6,7.7l7.7-2.6l-7.7,15.6L315.2,195.7z" />
           <path d="M499.4,189.1h-20.6v25.1h20.6V189.1z" />
           <path d="M368.2,189.1h-20.6v25.1h20.6V189.1z" />
           <path d="M107.4,189.1H86.9v25.1h20.6L107.4,189.1L107.4,189.1z" />
         </g>
-        <g className="fill-vega-pink">
+        <g className="fill-rho-pink">
           <path d="M287.5,188.8h-20.6v25.1h20.6V188.8z" />
           <path d="M751.4,188.3h-20.6v25.1h20.6V188.3z" />
         </g>

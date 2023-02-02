@@ -72,10 +72,7 @@ const Phase5 = () => {
           <path d="M24,39v21h3v6h3v-6h3v6h3v-6h3V39H24z M27,48v-3h3v3H27z M36,48h-3v-3h3V48z" />
           <rect x="36" y="51" width="9" height="3" />
         </g>
-        <path
-          className="fill-vega-mint"
-          d="M42.5,48H54l-3-4.5l3-4.5H42.5V48z"
-        />
+        <path className="fill-rho-mint" d="M42.5,48H54l-3-4.5l3-4.5H42.5V48z" />
       </svg>
     </div>
   );

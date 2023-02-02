@@ -71,7 +71,7 @@ const Phase5 = () => {
           <rect x="20.6" y="78.3" width="2.9" height="8.8" />
           <rect x="17.7" y="75.4" width="2.9" height="2.9" />
         </g>
-        <g className="fill-vega-pink">
+        <g className="fill-rho-pink">
           <polygon
             points="58.7,51.4 57.7,51.4 57.7,60.8 54.5,60.8 54.5,73.1 57.7,73.1 57.7,82.5 58.7,82.5 58.7,73.1 
 		61.9,73.1 61.9,60.8 58.7,60.8"
@@ -81,7 +81,7 @@ const Phase5 = () => {
 		78.7,65.8 78.7,60.4 81.9,60.4"
           />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <polygon
             points="68.7,35.9 67.7,35.9 67.7,45.2 64.5,45.2 64.5,57.6 67.7,57.6 67.7,67 68.7,67 68.7,57.6 71.9,57.6 
 		71.9,45.2 68.7,45.2"

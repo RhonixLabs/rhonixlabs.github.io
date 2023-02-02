@@ -1,6 +1,6 @@
 import React from "react";
 
-const RoadMapVegaDude = (props) => {
+const RoadMapRhoDude = (props) => {
   return (
     <svg
       {...props}
@@ -27,4 +27,4 @@ const RoadMapVegaDude = (props) => {
   );
 };
 
-export default RoadMapVegaDude;
+export default RoadMapRhoDude;

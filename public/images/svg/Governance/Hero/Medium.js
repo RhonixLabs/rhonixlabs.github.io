@@ -102,14 +102,14 @@ const Medium = () => {
           <path d="M88.6,191.8H67.9v2.3h20.7C88.6,194.1,88.6,191.8,88.6,191.8z" />
           <path d="M39.7,195.5v-17.1H42v17.1" />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M686.3,153.3h-20.6v25.1h20.6V153.3z" />
           <path d="M287.7,159.9l7.7-15.6l2.6,7.7l7.7-2.6l2.6,7.7l7.7-2.6l-7.7,15.6L287.7,159.9z" />
           <path d="M471.8,153.3h-20.6v25.1h20.6V153.3z" />
           <path d="M340.7,153.3h-20.6v25.1h20.6V153.3z" />
           <path d="M51.2,153.3H30.6v25.1h20.6V153.3z" />
         </g>
-        <g className="fill-vega-pink">
+        <g className="fill-rho-pink">
           <path d="M260,153h-20.6v25.1H260V153z" />
         </g>
         <g className="dark:fill-white fill-black">

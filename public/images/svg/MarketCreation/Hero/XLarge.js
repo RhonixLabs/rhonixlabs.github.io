@@ -127,7 +127,7 @@ const XLarge = () => {
           <rect x="420" y="52" width="2" height="2" />
           <path d="M672,66H408V48h264V66z M408,224V68h264v96.5c0,0,0.8,0.2,2,0.4V68h0v-2h0V46H406v1v177H408z" />
         </g>
-        <g className="fill-vega-pink">
+        <g className="fill-rho-pink">
           <polygon
             points="533.2,110.7 532.2,110.7 532.2,145.2 526.9,145.2 526.9,169.6 532.2,169.6 532.2,204.1 533.2,204.1 
 		533.2,169.6 538.6,169.6 538.6,145.2 533.2,145.2"
@@ -149,7 +149,7 @@ const XLarge = () => {
 		579.9,173.9 580.9,173.9 580.9,163.2 586.2,163.2"
           />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M331.2,111.7L322,93l-3.2,9.3l-9.3-3.2l-3.2,9.3l-9.3-3.2l9.2,18.7L331.2,111.7z" />
           <g>
             <polygon

@@ -24,7 +24,7 @@ const UniverseBottom2 = () => {
           d="M308.6,192.6l7.4-45.1l-71.4-11.7l-7.4,45.1L308.6,192.6z"
         />
         <path
-          className="fill-vega-pink"
+          className="fill-rho-pink"
           d="M274.1,179.6l0.8-4.8l-4.8-0.8l-0.8,4.8L274.1,179.6z"
         />
         <g className="fill-[#E2E2E2]">

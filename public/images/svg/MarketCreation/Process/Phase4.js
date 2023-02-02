@@ -92,7 +92,7 @@ const Phase4 = () => {
           <rect x="80.5" y="46" width="2" height="4" />
           <rect x="76.5" y="44" width="4" height="2" />
         </g>
-        <g className="fill-vega-yellow">
+        <g className="fill-rho-yellow">
           <path d="M70.5,50h-2v2h2V50z" />
           <path d="M76.5,50h-2v2h2V50z" />
           <path d="M74.5,52h-4v2h4V52z" />
@@ -102,11 +102,11 @@ const Phase4 = () => {
           <path d="M68.5,56v6h2v-6H68.5z" />
           <path d="M74.5,56v6h2v-6H74.5z" />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M110.8,67.5h-9v9h9V67.5z" />
           <path d="M68.3,1.5h-9v9h9V1.5z" />
         </g>
-        <path className="fill-vega-pink" d="M49,67.5h-9v9h9V67.5z" />
+        <path className="fill-rho-pink" d="M49,67.5h-9v9h9V67.5z" />
       </svg>
     </div>
   );

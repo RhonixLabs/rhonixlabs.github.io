@@ -227,12 +227,12 @@ const Large = () => {
             <path d="M201.2,90.7h-24v16h24V90.7z" />
           </g>
         </g>
-        <g className="fill-vega-blue">
+        <g className="fill-rho-blue">
           <path d="M870.2,92.7h-6v6h6V92.7z" />
           <path d="M650.5,93h-6v6h6V93z" />
         </g>
-        <path className="fill-vega-pink" d="M199.2,92.7h-6v6h6V92.7z" />
-        <g className="fill-vega-mint">
+        <path className="fill-rho-pink" d="M199.2,92.7h-6v6h6V92.7z" />
+        <g className="fill-rho-mint">
           <path d="M438.9,92.7h-6v6h6V92.7z" />
           <path d="M492.3,61.6l7.4-13.2l-6.9,1.9l-1.9-6.8l-6.8,1.9l-1.9-6.8l-7.4,13.2L492.3,61.6z" />
         </g>

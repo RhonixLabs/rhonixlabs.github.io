@@ -5,6 +5,7 @@ import { LandingFeatures } from "./LandingFeatures";
 import { GradientSectionBorder } from "../home-shared/GradientSectionBorder";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 import { RoadmapSection } from "../home-shared/roadmap/RoadmapSection";
+import Testnet from "@images/svg/Roadmap/Testnet";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <GradientSectionBorder>
           <LandingBenchmarks />
           <LandingFeatures />
+
+          <Testnet></Testnet>
           <RoadmapSection />
         </GradientSectionBorder>
         <GradientSectionBorder>

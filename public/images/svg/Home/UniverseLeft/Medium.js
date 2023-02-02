@@ -78,7 +78,7 @@ const Medium = () => {
           <path d="M88.4,416.5H86v2.4h2.4V416.5z" />
         </g>
         <path
-          className="fill-vega-pink"
+          className="fill-rho-pink"
           d="M160.2,137.9l-2.1-1.2l-1.2,2.1l2.1,1.2L160.2,137.9z"
         />
       </svg>

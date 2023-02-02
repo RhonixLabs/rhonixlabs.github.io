@@ -22,7 +22,7 @@ const Medium = () => {
           d="M128.6,276.8l7.4-45.1L64.6,220l-7.4,45.1L128.6,276.8z"
         />
         <path
-          className="vega-fill-pink"
+          className="rho-fill-pink"
           d="M94.1,263.9l0.8-4.8l-4.8-0.8l-0.8,4.8L94.1,263.9z"
         />
         <g className="fill-[#E2E2E2]">

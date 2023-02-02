@@ -32,7 +32,7 @@ const WalletHowTo = ({ className }) => {
                 <path d="M122.8,20.8v75.9h2V42.8h101.7v53.9h2V20.8H122.8z M124.8,40.8v-18h101.7v18H124.8z" />
               </g>
               <path
-                className="fill-vega-mint"
+                className="fill-rho-mint"
                 d="M270.2,78.6h11.5l-3-4.5l3-4.5h-11.5V78.6z"
               />
               <g className="dark:fill-white fill-black">

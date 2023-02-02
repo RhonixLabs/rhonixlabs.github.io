@@ -61,7 +61,7 @@ export const RoadMap = ({ data, ...rest }: Props) => {
       <div className="relative">
         <div className="absolute inset-0">
           <div
-            className="absolute top-0 left-0 right-0 h-px bg-vega-dark-300"
+            className="absolute top-0 left-0 right-0 h-px bg-rho-dark-300"
             style={{ top: `${timelineHeight}px` }}
           ></div>
         </div>
@@ -140,7 +140,7 @@ export const RoadMap = ({ data, ...rest }: Props) => {
                       className={`flex h-full flex-col justify-between transition duration-300 ${
                         idx === selectedPlanet
                           ? "text-black dark:text-white"
-                          : "text-vega-light-300 dark:text-vega-dark-300"
+                          : "text-rho-light-300 dark:text-rho-dark-300"
                       }
                       
                       ${
@@ -164,7 +164,7 @@ export const RoadMap = ({ data, ...rest }: Props) => {
                             className={`mx-auto bg-white dark:bg-black ${
                               idx === selectedPlanet
                                 ? ""
-                                : "border-vega-light-300 dark:border-vega-dark-300"
+                                : "border-rho-light-300 dark:border-rho-dark-300"
                             }`}
                           >
                             Current Status
@@ -194,8 +194,8 @@ export const RoadMap = ({ data, ...rest }: Props) => {
               key={selectedPlanet}
             >
               <div className="mx-auto mt-12 max-w-[27.5rem]">
-                <div className="mb-12 rounded-xl border border-vega-light-300 py-7 px-7 dark:border-vega-dark-300">
-                  <div className="prose-invert:text-vega-dark-400 prose prose-h2:mb-[0.75rem] prose-h2:border-none prose-h2:text-[1.5rem] prose-h2:uppercase prose-h2:leading-[1] prose-ul:p-0 prose-ul:pl-3.5 prose-li:list-square prose-li:text-[1.125rem] prose-li:leading-[1.4] dark:prose-invert">
+                <div className="mb-12 rounded-xl border border-rho-light-300 py-7 px-7 dark:border-rho-dark-300">
+                  <div className="prose-invert:text-rho-dark-400 prose prose-h2:mb-[0.75rem] prose-h2:border-none prose-h2:text-[1.5rem] prose-h2:uppercase prose-h2:leading-[1] prose-ul:p-0 prose-ul:pl-3.5 prose-li:list-square prose-li:text-[1.125rem] prose-li:leading-[1.4] dark:prose-invert">
                     {data[selectedPlanet].description.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}

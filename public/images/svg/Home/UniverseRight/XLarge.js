@@ -23,7 +23,7 @@ const XLarge = () => {
           d="M185.9,309.3l9.3-56.4L106,238.2l-9.3,56.4L185.9,309.3z"
         />
         <path
-          className="fill-vega-pink"
+          className="fill-rho-pink"
           d="M142.8,293.1l1-5.9l-5.9-1l-1,5.9L142.8,293.1z"
         />
         <g className="fill-[#E2E2E2]">

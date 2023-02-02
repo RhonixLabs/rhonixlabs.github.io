@@ -196,7 +196,7 @@ const Medium = () => {
           <polyline points="0,268.7 768,268.7 768,266.7 0,266.7 		" />
         </g>
         <path
-          className="fill-vega-mint"
+          className="fill-rho-mint"
           d="M498.2,44.4L489,25.7l-3.2,9.3l-9.3-3.2l-3.2,9.3l-9.3-3.2l9.2,18.7L498.2,44.4z"
         />
       </svg>

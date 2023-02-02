@@ -1,6 +1,6 @@
 import React from "react";
 
-const VegaIcon = () => {
+const RhoIcon = () => {
   return (
     <svg
       width="29"
@@ -31,4 +31,4 @@ const VegaIcon = () => {
   );
 };
 
-export default VegaIcon;
+export default RhoIcon;

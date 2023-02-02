@@ -9,7 +9,7 @@ import {
   MQSmall,
 } from "../../../../utils/media-queries.js";
 
-const UseVegaResponsive = () => {
+const UseRhoResponsive = () => {
   return (
     <div>
       <MQSmall>
@@ -29,4 +29,4 @@ const UseVegaResponsive = () => {
     </div>
   );
 };
-export default UseVegaResponsive;
+export default UseRhoResponsive;

@@ -30,7 +30,7 @@ const WalletHowToSmall = ({ className }) => {
             <path d="M73.5,20.8v75.9h2V42.8h101.7v53.9h2V20.8H73.5z M75.5,40.8v-18h101.7v18H75.5z" />
           </g>
           <path
-            fill="fill-vega-mint"
+            fill="fill-rho-mint"
             d="M220.9,78.6h11.5l-3-4.5l3-4.5h-11.5V78.6z"
           />
           <g className="fill-black dark:fill-white">

@@ -79,7 +79,7 @@ const UniverseTop = () => {
           <path d="M171.4,165H169v2.4h2.4V165z" />
         </g>
         <path
-          className="vega-fill-pink"
+          className="rho-fill-pink"
           d="M260.2,80.6l-2.1-1.2l-1.2,2.1l2.1,1.2L260.2,80.6z"
         />
       </svg>

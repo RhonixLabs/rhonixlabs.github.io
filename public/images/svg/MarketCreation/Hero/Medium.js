@@ -132,7 +132,7 @@ const Medium = () => {
           />
         </g>
 
-        <g className="fill-vega-pink">
+        <g className="fill-rho-pink">
           <polygon
             points="378.2,102.4 377.3,102.4 377.3,134.4 372.3,134.4 372.3,157 377.3,157 377.3,188.9 378.2,188.9 
 		378.2,157 383.1,157 383.1,134.4 378.2,134.4 	"
@@ -154,7 +154,7 @@ const Medium = () => {
 		421.4,161 422.3,161 422.3,151.1 427.3,151.1 	"
           />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M191.2,103.4l-8.5-17.3l-2.9,8.6l-8.6-2.9l-2.9,8.6l-8.6-2.9l8.5,17.3L191.2,103.4z" />
           <g>
             <polygon

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const HeroVegabond = ({ className }) => {
+const HeroRhobond = ({ className }) => {
   return (
     <svg
       width="560"
@@ -8,7 +8,7 @@ const HeroVegabond = ({ className }) => {
       viewBox="0 0 560 615"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className ? className : ''}
+      className={className ? className : ""}
     >
       <rect
         x="160"
@@ -665,7 +665,7 @@ const HeroVegabond = ({ className }) => {
         </clipPath>
       </defs>
     </svg>
-  )
-}
+  );
+};
 
-export default HeroVegabond
+export default HeroRhobond;

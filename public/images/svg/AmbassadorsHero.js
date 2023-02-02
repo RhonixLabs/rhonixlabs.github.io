@@ -245,7 +245,7 @@ const AmbassadorsHero = ({ className }) => {
           <path d="M617.7,175v29h2.4v-29" />
           <path d="M627.3,175v29h2.4v-29" />
         </g>
-        <g className="fill-vega-pink">
+        <g className="fill-rho-pink">
           <path d="M279,87.2l-2.3-0.7l-0.7,2.2l2.3,0.7L279,87.2z" />
           <path d="M300.7,93.9l-2.3-0.7l-0.7,2.2l2.3,0.7L300.7,93.9z" />
           <path d="M289.9,90.5l-2.3-0.7l-0.7,2.2l2.3,0.7L289.9,90.5z" />
@@ -255,13 +255,13 @@ const AmbassadorsHero = ({ className }) => {
           <path d="M640.5,90.8l-2.3-0.7l-0.7,2.2l2.3,0.7L640.5,90.8z" />
           <path d="M626.2,90.7l-3.6,11.7l23.9,7.3l3.6-11.7l-7.8,4.1l-4.2-7.8l-7.7,4.1L626.2,90.7" />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M513.4,87l-2.3-0.7l-0.7,2.2l2.3,0.7L513.4,87z" />
           <path d="M535.1,93.7l-2.3-0.7l-0.7,2.2l2.3,0.7L535.1,93.7z" />
           <path d="M524.2,90.3l-2.3-0.7l-0.7,2.2l2.3,0.7L524.2,90.3z" />
           <path d="M509.9,90.3l-3.6,11.7l23.9,7.3l3.6-11.7l-7.8,4.1l-4.2-7.8l-7.7,4.1L509.9,90.3" />
         </g>
-        <g className="fill-vega-yellow">
+        <g className="fill-rho-yellow">
           <path d="M396.1,87.4l-2.3-0.7l-0.7,2.2l2.3,0.7L396.1,87.4z" />
           <path d="M417.8,94.1l-2.3-0.7l-0.7,2.2l2.3,0.7L417.8,94.1z" />
           <path d="M407,90.8l-2.3-0.7l-0.7,2.2l2.3,0.7L407,90.8z" />

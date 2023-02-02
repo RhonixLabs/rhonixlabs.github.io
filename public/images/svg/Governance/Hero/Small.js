@@ -23,12 +23,12 @@ const Small = () => {
           <path d="M296.1,59.1h-34.2v54h34.2L296.1,59.1L296.1,59.1z" />
           <path d="M191.1,59.1H157v54h34.2L191.1,59.1L191.1,59.1z" />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M110,58.9l6.1-12.4l2.1,6.2l6.2-2.1l2.1,6.2l6.2-2.1l-6.1,12.5L110,58.9z" />
           <path d="M257.3,53.6h-16.5v20.1h16.5V53.6z" />
           <path d="M152.4,53.6h-16.5v20.1h16.5V53.6z" />
         </g>
-        <path className="fill-vega-pink" d="M87.9,53.4H71.4v20.1h16.5V53.4z" />
+        <path className="fill-rho-pink" d="M87.9,53.4H71.4v20.1h16.5V53.4z" />
         <g fill="black">
           <path d="M76.5,78.4l8,14.3l8-4.4v-2.1l-7.3,4l-7.1-12.7L76.5,78.4L76.5,78.4z" />
           <path d="M126.6,89.1l0.8,0.8v23.4h1.8V89.2l-2.6-2.6V89.1z" />

@@ -78,7 +78,7 @@ const Large = () => {
           <path d="M124.4,465.8H122v2.4h2.4V465.8z" />
         </g>
         <path
-          className="fill-vega-pink"
+          className="fill-rho-pink"
           d="M213.2,134.3l-2.1-1.2l-1.2,2.1l2.1,1.2L213.2,134.3z"
         />
       </svg>

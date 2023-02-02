@@ -100,7 +100,7 @@ const XXXLarge = () => {
           x="288.1"
           y="167.1"
           transform="matrix(0.5105 -0.8599 0.8599 0.5105 -3.2389 331.6088)"
-          className="fill-vega-pink"
+          className="fill-rho-pink"
           width="3"
           height="3"
         />

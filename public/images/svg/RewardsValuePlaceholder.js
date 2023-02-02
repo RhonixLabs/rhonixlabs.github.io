@@ -9,7 +9,7 @@ const RewardsValuePlaceholder = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g className="dark:fill-vega-dark-200 fill-vega-light-200">
+      <g className="dark:fill-rho-dark-200 fill-rho-light-200">
         <rect y="23.5" width="16" height="16" transform="rotate(-90 0 23.5)" />
         <rect
           x="22"

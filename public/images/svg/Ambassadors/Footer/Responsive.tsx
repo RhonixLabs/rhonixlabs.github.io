@@ -1,9 +1,9 @@
-import React from 'react'
-import Small from './Small'
-import Medium from './Medium'
-import { MQMediumUp, MQSmall } from '../../../../utils/media-queries.js'
+import React from "react";
+import Small from "./Small";
+import Medium from "./Medium";
+import { MQMediumUp, MQSmall } from "../../../../utils/media-queries.js";
 
-const UseVegaResponsive = () => {
+const UseRhoResponsive = () => {
   return (
     <div>
       <MQSmall>
@@ -13,6 +13,6 @@ const UseVegaResponsive = () => {
         <Medium />
       </MQMediumUp>
     </div>
-  )
-}
-export default UseVegaResponsive
+  );
+};
+export default UseRhoResponsive;

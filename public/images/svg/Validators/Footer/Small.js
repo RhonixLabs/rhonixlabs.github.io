@@ -100,7 +100,7 @@ const Small = () => {
           />
           <path d="M201.2,90.8h-24v16h24V90.8z" />
         </g>
-        <path className="vega-fill-pink" d="M199.2,92.8h-6v6h6V92.8z" />
+        <path className="rho-fill-pink" d="M199.2,92.8h-6v6h6V92.8z" />
       </svg>
     </div>
   );

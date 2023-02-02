@@ -146,11 +146,11 @@ const Medium = () => {
           />
           <path d="M79.5,91h-24v16h24V91z" />
         </g>
-        <g className="fill-vega-blue">
+        <g className="fill-rho-blue">
           <path d="M508.8,93h-6v6h6V93z" />
           <path d="M289.1,93h-6v6h6V93z" />
         </g>
-        <g className="fill-vega-mint">
+        <g className="fill-rho-mint">
           <path d="M77.5,93h-6v6h6V93z" />
           <path d="M130.9,61.9l7.4-13.2l-6.9,1.9l-1.9-6.8l-6.8,1.9l-1.9-6.8l-7.4,13.2L130.9,61.9z" />
         </g>

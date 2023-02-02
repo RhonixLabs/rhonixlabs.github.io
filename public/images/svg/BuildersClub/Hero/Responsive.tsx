@@ -8,7 +8,7 @@ import {
   MQMedium,
 } from "../../../../utils/media-queries.js";
 
-const UseVegaResponsive = () => {
+const UseRhoResponsive = () => {
   return (
     <div>
       <MQLarge>
@@ -22,4 +22,4 @@ const UseVegaResponsive = () => {
     </div>
   );
 };
-export default UseVegaResponsive;
+export default UseRhoResponsive;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const VegaBond = (props) => {
+const RhoBond = (props) => {
   return (
     <svg
       {...props}
@@ -26,10 +26,10 @@ const VegaBond = (props) => {
       <path
         d="M20.2706 18.7693H17.2676V21.7723H20.2706V18.7693Z"
         fill="#FF077F"
-        className="fill-vega-pink"
+        className="fill-rho-pink"
       />
     </svg>
   );
 };
 
-export default VegaBond;
+export default RhoBond;

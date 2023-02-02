@@ -198,7 +198,7 @@ const WalletRip = ({ className }) => {
           </g>
         </g>
         <path
-          className="fill-vega-mint"
+          className="fill-rho-mint"
           d="M692,369.8l12.7-12l-8.2-0.2l0.2-8.2l-8.2-0.2l0.2-8.2l-12.7,12L692,369.8z"
         />
       </svg>

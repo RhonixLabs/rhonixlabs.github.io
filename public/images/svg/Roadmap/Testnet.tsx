@@ -26,7 +26,7 @@ const Testnet = ({ className }: Params) => {
           <circle cx="105.5" cy="88.5" r="75.5" />
         </clipPath>
       </defs>
-      <g className="dark:fill-white fill-black">
+      <g className="dark:fill-white fill-dark">
         <path d="M31,146h-3v3h3V146z" />
         <path d="M28,149h-3v3h3V149z" />
         <path d="M31,152h-3v3h3V152z" />

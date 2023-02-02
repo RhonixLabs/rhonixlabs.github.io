@@ -95,7 +95,7 @@ const Phase3 = () => {
           <rect x="80.5" y="19" width="2" height="4" />
           <rect x="76.5" y="17" width="4" height="2" />
         </g>
-        <g className="fill-vega-yellow">
+        <g className="fill-rho-yellow">
           <path d="M70.5,23h-2v2h2V23z" />
           <path d="M76.5,23h-2v2h2V23z" />
           <path d="M74.5,25h-4v2h4V25z" />

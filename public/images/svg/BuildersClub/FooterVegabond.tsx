@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterVegabond = ({ className }) => {
+const FooterRhobond = ({ className }) => {
   return (
     <svg
       width="99"
@@ -76,4 +76,4 @@ const FooterVegabond = ({ className }) => {
   );
 };
 
-export default FooterVegabond;
+export default FooterRhobond;

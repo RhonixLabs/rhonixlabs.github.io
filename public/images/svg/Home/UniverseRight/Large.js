@@ -22,7 +22,7 @@ const Large = () => {
           d="M160.1,233.4l7.4-45.1l-71.4-11.7l-7.4,45.1L160.1,233.4z"
         />
         <path
-          className="fill-vega-pink"
+          className="fill-rho-pink"
           d="M125.6,220.4l0.8-4.8l-4.8-0.8l-0.8,4.8L125.6,220.4z"
         />
         <g className="fill-[#E2E2E2]">

@@ -210,7 +210,7 @@ const Large = () => {
           <polyline points="0,266.7 1080,266.7 1080,264.7 0,264.7" />
         </g>
         <path
-          className="vega-fill-mint"
+          className="rho-fill-mint"
           d="M654.2,44.4L645,25.7l-3.2,9.3l-9.3-3.2l-3.2,9.3l-9.3-3.2l9.2,18.7L654.2,44.4z"
         />
       </svg>

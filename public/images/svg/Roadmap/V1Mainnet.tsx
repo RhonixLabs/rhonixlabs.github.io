@@ -21,7 +21,7 @@ const V1Mainnet = ({ className }: Params) => {
           <ellipse cx="70" cy="61.5" rx="50" ry="50" />
         </clipPath>
       </defs>
-      <g className="dark:fill-white fill-black">
+      <g className="fill-current">
         <path d="M9,6H6v3h3V6z" />
         <path d="M12,3V0H9v3v3h3V3z" />
         <path d="M6,9H0v3h6V9z" />

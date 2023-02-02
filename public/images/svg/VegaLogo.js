@@ -1,6 +1,6 @@
 import React from "react";
 
-const VegaLogo = () => {
+const RhoLogo = () => {
   return (
     <svg width="111" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -11,4 +11,4 @@ const VegaLogo = () => {
   );
 };
 
-export default VegaLogo;
+export default RhoLogo;
