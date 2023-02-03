@@ -1,4 +1,4 @@
-import "../styles.css";
+import "./index.css";
 import "../custom.css";
 
 import { SSRProvider } from "@react-aria/ssr";

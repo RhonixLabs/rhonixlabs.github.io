@@ -16,8 +16,6 @@ export default function Home() {
         <GradientSectionBorder>
           <LandingBenchmarks />
           <LandingFeatures />
-
-          <Testnet></Testnet>
           <RoadmapSection />
         </GradientSectionBorder>
         <GradientSectionBorder>
