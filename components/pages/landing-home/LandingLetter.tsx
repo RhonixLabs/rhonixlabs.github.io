@@ -17,7 +17,7 @@ export function LandingLetter() {
           the masses
         </HeroText>
       </FadeIn>
-      <div className="flex flex-col max-w-xl leading-6  text-lg md:text-lg lg:text-lg">
+      <div className="flex flex-col max-w-xl leading-6  text-sm  md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
             Since the beginning of the internet, web service were run on

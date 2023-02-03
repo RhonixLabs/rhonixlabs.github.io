@@ -60,65 +60,79 @@ export function FooterContent() {
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="grid grid-cols-1 gap-8 xl:col-span-2">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 md:gap-8">
-              <div className="mt-12 md:!mt-0">
-                <FooterHeader>Resources</FooterHeader>
-                <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.general.map((item) => (
-                    <li key={item.name}>
-                      <FooterLink href={item.href}>{item.name}</FooterLink>
-                    </li>
-                  ))}
-                </ul>
+              <div className="mt-12 md:!mt-0 flex justify-center">
+                <div>
+                  <FooterHeader>Resources</FooterHeader>
+                  <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
+                    {navigation.general.map((item) => (
+                      <li key={item.name}>
+                        <FooterLink href={item.href}>{item.name}</FooterLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className="mt-12 md:!mt-0">
-                <FooterHeader>Learn</FooterHeader>
-                <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.learn.map((item) => (
-                    <li key={item.name}>
-                      <FooterLink href={item.href}>{item.name}</FooterLink>
-                    </li>
-                  ))}
-                </ul>
+              <div className="mt-12 md:!mt-0 flex justify-center">
+                <div>
+                  <FooterHeader>Learn</FooterHeader>
+                  <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
+                    {navigation.learn.map((item) => (
+                      <li key={item.name}>
+                        <FooterLink href={item.href}>{item.name}</FooterLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className="mt-12 md:!mt-0">
-                <FooterHeader>Build</FooterHeader>
-                <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.build.map((item) => (
-                    <li key={item.name}>
-                      <FooterLink href={item.href}>{item.name}</FooterLink>
-                    </li>
-                  ))}
-                </ul>
+              <div className="mt-12 md:!mt-0 flex justify-center">
+                <div>
+                  <div>
+                    <FooterHeader>Build</FooterHeader>
+                    <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
+                      {navigation.build.map((item) => (
+                        <li key={item.name}>
+                          <FooterLink href={item.href}>{item.name}</FooterLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div className="mt-12 md:!mt-0">
-                <FooterHeader>Company</FooterHeader>
-                <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <FooterLink href={item.href}>{item.name}</FooterLink>
-                    </li>
-                  ))}
-                </ul>
+              <div className="mt-12 md:!mt-0 flex justify-center">
+                <div>
+                  <FooterHeader>Company</FooterHeader>
+                  <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
+                    {navigation.company.map((item) => (
+                      <li key={item.name}>
+                        <FooterLink href={item.href}>{item.name}</FooterLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className="mt-12 md:!mt-0">
-                <FooterHeader>Legal</FooterHeader>
-                <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <FooterLink href={item.href}>{item.name}</FooterLink>
-                    </li>
-                  ))}
-                </ul>
+              <div className="mt-12 md:!mt-0 flex justify-center">
+                <div>
+                  <FooterHeader>Legal</FooterHeader>
+                  <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
+                    {navigation.legal.map((item) => (
+                      <li key={item.name}>
+                        <FooterLink href={item.href}>{item.name}</FooterLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className="mt-12 md:!mt-0">
-                <FooterHeader>Support</FooterHeader>
-                <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <FooterLink href={item.href}>{item.name}</FooterLink>
-                    </li>
-                  ))}
-                </ul>
+              <div className="mt-12 md:!mt-0 flex justify-center">
+                <div>
+                  <FooterHeader>Support</FooterHeader>
+                  <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
+                    {navigation.support.map((item) => (
+                      <li key={item.name}>
+                        <FooterLink href={item.href}>{item.name}</FooterLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
