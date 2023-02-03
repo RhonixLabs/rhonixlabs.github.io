@@ -58,7 +58,7 @@ export const RoadMap = ({ data, ...rest }: Props) => {
 
   return (
     <div id="roadmap" {...rest}>
-      <div className="relative">
+      <div className="relative ">
         <div className="absolute inset-0">
           <div
             className="absolute top-0 left-0 right-0 h-px bg-rho-dark-300"
@@ -67,7 +67,7 @@ export const RoadMap = ({ data, ...rest }: Props) => {
         </div>
         <div className="relative z-10">
           <Container>
-            <div className="relative flex">
+            <div className="relative ">
               <div className="pointer-events-none absolute inset-0 z-10">
                 <div className="grid text-center sm:grid-cols-3">
                   <div className="hidden aspect-[251/210] items-end justify-center sm:flex">
@@ -134,7 +134,7 @@ export const RoadMap = ({ data, ...rest }: Props) => {
                 {data.map((block, idx) => (
                   <SwiperSlide
                     key={idx}
-                    className="group pointer-events-auto cursor-pointer"
+                    className="group pointer-events-auto cursor-pointer "
                   >
                     <div
                       className={`flex h-full flex-col justify-between transition duration-300 ${

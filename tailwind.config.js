@@ -31,6 +31,9 @@ module.exports = {
           "monospace",
         ],
       },
+      fontSize: {
+        "5xl": "2.5rem",
+      },
       spacing: {
         "space-1": "0.25rem",
         "space-2": "0.5rem",

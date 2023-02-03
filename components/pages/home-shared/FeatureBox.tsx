@@ -15,7 +15,7 @@ export function FeatureBox({
   return (
     <div className="font-sans cardShadow dark:bg-neutral-900 relative flex flex-col gap-5 p-8 overflow-hidden text-black no-underline dark:text-white rounded-3xl">
       <div className="flex flex-col gap-2">
-        <h3 className="leading-11 text-5xl m-0 font-bold  text-gray-900 font-sans dark:text-white">
+        <h3 className="leading-10 text-5xl m-0 font-bold  text-gray-900 font-sans dark:text-white">
           {name}
         </h3>
 
