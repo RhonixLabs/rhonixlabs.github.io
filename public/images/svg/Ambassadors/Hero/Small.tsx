@@ -1,6 +1,6 @@
-import React from 'react'
-import GradientContentClub from '../../../../images/content-club-hero-bg.jpg'
-import GradientBuildersClub from '../../../../images/builders-club-hero-bg.jpg'
+import React from "react";
+import GradientContentClub from "../../../../images/content-club-hero-bg.jpg";
+import GradientBuildersClub from "../../../../images/builders-club-hero-bg.jpg";
 
 const Small = () => {
   return (
@@ -215,17 +215,17 @@ const Small = () => {
           id="image1_1957_10466"
           width="879"
           height="301"
-          xlinkHref={GradientContentClub}
+          xlinkHref={GradientContentClub.src}
         />
         <image
           id="image2_1957_10466"
           width="1274"
           height="441"
-          xlinkHref={GradientBuildersClub}
+          xlinkHref={GradientBuildersClub.src}
         />
       </defs>
     </svg>
-  )
-}
+  );
+};
 
-export default Small
+export default Small;

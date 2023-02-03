@@ -1,5 +1,5 @@
-import React from 'react'
-import GradientBuildersClub from '../../../../images/builders-club-hero-bg.jpg'
+import React from "react";
+import GradientBuildersClub from "../../../../images/builders-club-hero-bg.jpg";
 
 const Medium = () => {
   return (
@@ -151,11 +151,11 @@ const Medium = () => {
           id="image0_1990_10652"
           width="1274"
           height="441"
-          xlinkHref={GradientBuildersClub}
+          xlinkHref={GradientBuildersClub.src}
         />
       </defs>
     </svg>
-  )
-}
+  );
+};
 
-export default Medium
+export default Medium;
