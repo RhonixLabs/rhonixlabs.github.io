@@ -7,7 +7,7 @@ export const ExamplesArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: GitHubIcon,
-          description: `Multiple rholang smart contracts like List, Casper, Registry, ERC20 Wallet (RevVault)`,
+          description: `Multiple rholang smart contracts like List, Weaver, Registry, ERC20 Wallet (RevVault)`,
           name: "Rholang smart contracts",
         }}
         href="https://github.com/RhonixLabs/rhonix/tree/dev/casper/src/main/resources"

@@ -1,12 +1,12 @@
 import React from "react";
-import MainnetBackground from "@images/roadmap/mainnet-background.jpg";
+import MainnetBackground from "@images/roadmap/sharding.png";
 import Image from "next/image";
 
 export interface Params {
   className?: string;
 }
 
-const V2Mainnet = ({ className }: Params) => {
+const Sharding = ({ className }: Params) => {
   return (
     <svg
       width="223.1"
@@ -63,4 +63,4 @@ const V2Mainnet = ({ className }: Params) => {
     </svg>
   );
 };
-export default V2Mainnet;
+export default Sharding;

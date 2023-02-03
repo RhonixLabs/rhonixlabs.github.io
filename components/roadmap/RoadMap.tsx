@@ -5,11 +5,11 @@ import { Container } from "@components/Container";
 import { Button } from "@components/button";
 import Link from "next/link";
 import Tag from "@components/Tag";
-import V2Mainnet from "@images/svg/Roadmap/V2Mainnet";
-import V1Mainnet from "@images/svg/Roadmap/V1Mainnet";
-import AlphaMainnet from "@images/svg/Roadmap/AlphaMainnet";
-import RestrictedMainnet from "@images/svg/Roadmap/RestrictedMainnet";
+import Validators from "@images/svg/Roadmap/Validators";
+import Sharding from "@images/svg/Roadmap/Sharding";
+import Mainnet from "@images/svg/Roadmap/Mainnet";
 import Testnet from "@images/svg/Roadmap/Testnet";
+import PreTestnet from "@images/svg/Roadmap/PreTestnet";
 import Bond from "@images/svg/Roadmap/Bond";
 import Rectangle from "@images/svg/Roadmap/Rectangle";
 import ArrowLeft from "@images/svg/ArrowLeft";
@@ -25,7 +25,7 @@ type Props = {
 export const RoadMap = ({ data, ...rest }: Props) => {
   const planets = useRef<any[]>([]);
   const swiperRef = useRef<SwiperRef>();
-  const currentStatus = 1;
+  const currentStatus = 0;
   const [timelineHeight, setTimelineHeight] = useState(0);
   const [selectedPlanet, setSelectedPlanet] = useState(0);
   planets.current = data.map((_, i) => planets.current[i] ?? createRef());
@@ -33,19 +33,17 @@ export const RoadMap = ({ data, ...rest }: Props) => {
   const roadmapImage = (idx) => {
     switch (idx) {
       case 4:
-        return <V2Mainnet className="mx-auto h-auto w-full max-w-[13rem]" />;
+        return <Validators className="mx-auto h-auto w-full max-w-[13rem]" />;
       case 3:
-        return <V1Mainnet className="mx-auto h-auto w-full max-w-[7.5rem]" />;
+        return <Sharding className="mx-auto h-auto w-full max-w-[7.5rem]" />;
       case 2:
-        return (
-          <AlphaMainnet className="mx-auto h-auto w-full max-w-[15.625rem]" />
-        );
+        return <Mainnet className="mx-auto h-auto w-full max-w-[15.625rem]" />;
       case 1:
-        return (
-          <RestrictedMainnet className="mx-auto h-auto w-full max-w-[6.8125rem]" />
-        );
+        return <Testnet className="mx-auto h-auto w-full max-w-[6.8125rem]" />;
       case 0:
-        return <Testnet className="mx-auto h-auto w-full max-w-[12.0625rem]" />;
+        return (
+          <PreTestnet className="mx-auto h-auto w-full max-w-[12.0625rem]" />
+        );
       default:
         return <div>Not found</div>;
     }
@@ -201,9 +199,9 @@ export const RoadMap = ({ data, ...rest }: Props) => {
                     ))}
                   </div>
                 </div>
-                <div className="text-center">
+                <div className="text-center hidden">
                   <Button>
-                    <Link href="/learn/" className="block py-3">
+                    <Link href="/learn/" className="block py-3 ">
                       View detailed roadmap
                     </Link>
                   </Button>

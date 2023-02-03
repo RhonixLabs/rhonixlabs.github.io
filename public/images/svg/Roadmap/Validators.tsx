@@ -1,11 +1,11 @@
 import React from "react";
-import AlphaMainnetBackground from "@images/roadmap/alpha-mainnet-background.jpg";
+import AlphaMainnetBackground from "@images/roadmap/validators.png";
 
 export interface Params {
   className?: string;
 }
 
-const AlphaMainnet = ({ className }: Params) => {
+const Validators = ({ className }: Params) => {
   return (
     <svg
       width="266.8"
@@ -50,4 +50,4 @@ const AlphaMainnet = ({ className }: Params) => {
     </svg>
   );
 };
-export default AlphaMainnet;
+export default Validators;

@@ -20,7 +20,7 @@ export const DiscourseIcon = ({ height = 24, className = "" }: LogoProps) => {
           className={className}
         />
       </div>
-      <div className="hidden dark:contents">
+      <div className="dark:block hidden invert">
         <Image
           alt="Discourse"
           src={`/images/logos/white/discourse-logo.svg`}

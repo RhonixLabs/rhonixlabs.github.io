@@ -1,5 +1,5 @@
 import React from "react";
-import TestnetBackground from "@images/roadmap/testnet-background.jpg";
+import TestnetBackground from "@images/roadmap/testnet.png";
 import Image from "next/image";
 
 export interface Params {

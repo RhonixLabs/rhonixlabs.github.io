@@ -7,7 +7,7 @@ description: Powerset shards (Proposal)
 
 ## Validators
 
-A validator is a participant in the casper protocol. Casper requires each validator to know what the entire set of validators is. Let V be the set of validators.
+A validator is a participant in the weaver protocol. Weaver requires each validator to know what the entire set of validators is. Let V be the set of validators.
 
 ## Regions
 
@@ -65,7 +65,7 @@ Joins between names that are not in the same namespace is a type error. If a pro
 
 If neither knows about the other, but a process wants to join messages from both, then there will have to be a forwarder process from B and Y independently to B∨Y, where the join takes place. This does not, of course, match the semantics of a cross-namespace join! A semantics-preserving translation would suffer from the transitive closure problem.
 
-## Casper contracts
+## Weaper POS contracts
 
 Bonding, unbonding, slashing, and distributing rewards will be implemented on chain as "blessed" Rholang contracts. The stuff that sends messages over the network will be implemented in scala and will communicate with the blessed contracts via the tuplespace.
 

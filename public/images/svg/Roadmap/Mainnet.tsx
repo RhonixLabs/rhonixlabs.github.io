@@ -1,12 +1,12 @@
 import React from "react";
-import MainnetBackground from "@images/roadmap/mainnet-background.jpg";
+import MainnetBackground from "@images/roadmap/mainnet.png";
 import Image from "next/image";
 
 export interface Params {
   className?: string;
 }
 
-const V1Mainnet = ({ className }: Params) => {
+const Mainnet = ({ className }: Params) => {
   return (
     <svg
       width="140"
@@ -42,4 +42,4 @@ const V1Mainnet = ({ className }: Params) => {
     </svg>
   );
 };
-export default V1Mainnet;
+export default Mainnet;
