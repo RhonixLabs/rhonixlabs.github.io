@@ -6,16 +6,12 @@ import { PackBenchmarksPicker as LandingBenchmarksPicker } from "./LandingBenchm
 import { LandingBenchmarkTabs as LandingBenchmarkTabs } from "./LandingBenchmarkTabs";
 
 export type BenchmarkNumberOfModules = "1000" | "5000" | "10000" | "30000";
-export type BenchmarkCategory =
-  | "scale"
-  | "finality"
-  | "transactions"
-  | "energy";
+export type BenchmarkCategory = "scale" | "finality" | "comms" | "energy";
 export interface BenchmarkData {
   rhonix: number;
   ethereum: number;
   cosmos: number;
-  solana: number;
+  aptos: number;
 }
 
 export interface BenchmarkBar {
@@ -39,8 +35,8 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
     label: "Cosmos",
   },
   {
-    key: "solana",
-    label: "Solana",
+    key: "aptos",
+    label: "Aptos",
   },
 ];
 

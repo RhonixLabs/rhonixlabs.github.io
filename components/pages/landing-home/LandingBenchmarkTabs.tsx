@@ -27,13 +27,13 @@ const TABS: {
     id: "finality",
     title: "Finality",
     soon: false,
-    tooltip: "Hot Reload (HMR)",
+    tooltip: "Finality",
   },
   {
-    id: "transactions",
-    title: "Transactions",
+    id: "comms",
+    title: "Comm Events",
     soon: false,
-    tooltip: "Speed of transactions",
+    tooltip: "Speed of computations",
   },
 ];
 
