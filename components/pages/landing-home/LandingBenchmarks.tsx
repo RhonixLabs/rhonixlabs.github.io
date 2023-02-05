@@ -2,16 +2,19 @@ import { useState } from "react";
 import { FadeIn } from "../home-shared/FadeIn";
 import { SectionHeader, SectionSubtext } from "../home-shared/Headings";
 import { BenchmarksGraph } from "./LandingBenchmarksGraph";
-import { PackBenchmarksPicker as LandingBenchmarksPicker } from "./LandingBenchmarksPicker";
 import { LandingBenchmarkTabs as LandingBenchmarkTabs } from "./LandingBenchmarkTabs";
 
-export type BenchmarkNumberOfModules = "1000" | "5000" | "10000" | "30000";
 export type BenchmarkCategory = "scale" | "finality" | "comms" | "energy";
+
 export interface BenchmarkData {
   rhonix: number;
   ethereum: number;
   cosmos: number;
   aptos: number;
+  rhonix1: number;
+  rhonix5: number;
+  rhonix10: number;
+  rhonix100: number;
 }
 
 export interface BenchmarkBar {
@@ -40,9 +43,27 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
   },
 ];
 
-export function PackBenchmarks() {
-  const [numberOfModules, setNumberOfModules] =
-    useState<BenchmarkNumberOfModules>("1000");
+export const rhonixScaleBars: BenchmarkBar[] = [
+  {
+    key: "rhonix1",
+    label: "Rhonix 1-node",
+    turbo: true,
+  },
+  {
+    key: "rhonix5",
+    label: "Rhonix 5-nodes",
+  },
+  {
+    key: "rhonix10",
+    label: "Rhonix 10-nodes",
+  },
+  {
+    key: "rhonix100",
+    label: "Rhonix 100-nodes",
+  },
+];
+
+export function LandingBenchmarks() {
   const [category, setCategory] = useState<BenchmarkCategory>("energy");
 
   return (
@@ -55,11 +76,12 @@ export function PackBenchmarks() {
       </div>
       <div className="flex flex-col items-center w-full">
         <LandingBenchmarkTabs onTabChange={setCategory} />
-        <BenchmarksGraph
-          category={category}
-          numberOfModules={numberOfModules}
-          bars={DEFAULT_BARS}
-        />
+        {category === "scale" && (
+          <BenchmarksGraph category={category} bars={rhonixScaleBars} />
+        )}
+        {category !== "scale" && (
+          <BenchmarksGraph category={category} bars={DEFAULT_BARS} />
+        )}
       </div>
     </FadeIn>
   );

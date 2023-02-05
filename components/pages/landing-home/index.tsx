@@ -1,4 +1,4 @@
-import { PackBenchmarks as LandingBenchmarks } from "./LandingBenchmarks";
+import { LandingBenchmarks } from "./LandingBenchmarks";
 import { LandingHero } from "./LandingHero";
 import { LandingLetter } from "./LandingLetter";
 import { LandingFeatures } from "./LandingFeatures";

@@ -15,24 +15,27 @@ import {
   BenchmarkBar,
   BenchmarkCategory,
   BenchmarkData,
-  BenchmarkNumberOfModules,
 } from "./LandingBenchmarks";
+import Mainnet from "@images/svg/Roadmap/Mainnet";
+import PreTestnet from "@images/svg/Roadmap/PreTestnet";
+import Sharding from "@images/svg/Roadmap/Sharding";
+import Testnet from "@images/svg/Roadmap/Testnet";
+import Validators from "@images/svg/Roadmap/Validators";
 
 interface BenchmarksGraphProps {
   category: BenchmarkCategory;
-  numberOfModules: BenchmarkNumberOfModules;
   bars: BenchmarkBar[];
   pinTime?: true;
 }
 
 export function BenchmarksGraph({
   category,
-  numberOfModules,
   bars,
   pinTime,
 }: BenchmarksGraphProps) {
-  const data: BenchmarkData = benchmarkData[category][numberOfModules];
+  const data: BenchmarkData = benchmarkData[category];
   const keys = bars.map((bar) => bar.key);
+  console.log(bars);
   const longestTime = Math.max(...keys.map((key) => data[key])) * 1000;
   const longestTimeWithPadding = longestTime * 1.15;
   const graphRef = useRef(null);
@@ -62,6 +65,7 @@ export function BenchmarksGraph({
               longestTime={longestTimeWithPadding}
               inView={graphInView}
               pinTime={pinTime}
+              category={category}
             ></GraphBar>
           );
         })}
@@ -97,6 +101,7 @@ function GraphBar({
   inView,
   Label,
   pinTime,
+  category,
 }: {
   turbo?: boolean;
   duration: number;
@@ -105,6 +110,7 @@ function GraphBar({
   inView?: boolean;
   // Pin the time
   pinTime?: true;
+  category: BenchmarkCategory;
 }) {
   const controls = useAnimation();
   const [timer, setTimer] = useState(0);
@@ -203,33 +209,46 @@ function GraphBar({
           className="pr-2"
           transition={{ duration: 0.1 }}
         >
-          <GraphTimer
-            turbo={turbo}
-            timer={pinTime ? duration : timer}
+          <GraphBarValue
+            category={category}
+            pinTime={pinTime}
+            timer={timer}
             duration={duration}
-          />
+          ></GraphBarValue>
         </motion.div>
       </div>
     </div>
   );
 }
 
-const GraphTimer = ({
-  turbo,
-  timer,
-  duration,
-}: {
-  turbo: boolean;
-  timer: number;
+type GraphValueProps = {
+  category: BenchmarkCategory;
+  pinTime: boolean;
   duration: number;
-}) => {
-  return (
-    <div className={`flex flex-row gap-2 w-24 justify-end items-center z-10`}>
-      <p className="font-mono">
-        <Time value={timer} maxValue={duration} />
-      </p>
-    </div>
-  );
+  timer: number;
+};
+
+const GraphBarValue = ({
+  category,
+  pinTime,
+  duration,
+  timer,
+}: GraphValueProps) => {
+  const time = timeUnitConverter(timer, duration);
+  switch (category) {
+    case "energy":
+      return <GraphUnitTimer value={time["unitValue"]} unit="comms/sec" />;
+    case "scale":
+      return <GraphUnitTimer value={time["unitValue"]} unit="comms/sec" />;
+    case "comms":
+      return <GraphUnitTimer value={time["unitValue"]} unit="comms/sec" />;
+    default:
+      return <div>Not found</div>;
+  }
+};
+
+const GraphUnitTimer = ({ value, unit }: { value: string; unit: string }) => {
+  return <MeasureUnit value={value} unit={unit} />;
 };
 
 function roundTo(num: number, decimals: number) {
@@ -237,30 +256,32 @@ function roundTo(num: number, decimals: number) {
   return Math.round(num * factor) / factor;
 }
 
-const Time = ({
+const MeasureUnit = ({
   value,
-  maxValue,
+  unit,
 }: {
-  value: number;
-  maxValue: number;
+  value: string;
+  unit: string;
 }): JSX.Element => {
-  let unitValue: string;
-  let unit: string;
+  return (
+    <div className={`flex flex-row gap-2 justify-end items-center z-10`}>
+      <p className="font-mono">{value}</p>
+      <p className="font-mono"> {unit}</p>
+    </div>
+  );
+};
+
+const timeUnitConverter = (maxValue: number, value: number) => {
   if (maxValue < 1000) {
-    unitValue = Math.round(value).toFixed(0);
-    unit = "ms";
+    const unitValue = Math.round(value).toFixed(0);
+    const unit = "ms";
+    return { unitValue: unitValue, unit: unit };
   } else {
     const roundedValue = roundTo(value / 1000, 1);
-    unitValue = roundedValue.toFixed(1);
-    unit = "s";
+    const unitValue = roundedValue.toFixed(1);
+    const unit = "s";
+    return { unitValue: unitValue, unit: unit };
   }
-
-  return (
-    <>
-      {unitValue}
-      {unit}
-    </>
-  );
 };
 
 function GraphLabel({

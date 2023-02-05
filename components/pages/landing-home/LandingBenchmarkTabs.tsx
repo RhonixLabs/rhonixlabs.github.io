@@ -24,12 +24,6 @@ const TABS: {
   },
 
   {
-    id: "finality",
-    title: "Finality",
-    soon: false,
-    tooltip: "Finality",
-  },
-  {
     id: "comms",
     title: "Comm Events",
     soon: false,

@@ -10,7 +10,7 @@ function HeaderLogo() {
       <div className="flex items-center space-between w-full">
         <Link href="/" title="Home" className="hover:opacity-75">
           <RhonixIcon height={120} className={styles.desktopLogo} />
-          <RhonixIconCondensed height={24} className={styles.mobileLogo} />
+          <RhonixIconCondensed height={38} className={styles.mobileLogo} />
         </Link>
         <div className={styles.siteSwitcher}>
           <SiteSwitcher />
