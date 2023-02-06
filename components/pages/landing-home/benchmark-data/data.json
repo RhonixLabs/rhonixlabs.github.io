@@ -1,20 +1,20 @@
 {
   "energy": {
-    "rhonix": 1.1252525,
-    "ethereum": 4.76572914,
-    "cosmos": 3.4092260955,
-    "aptos": 7.73633697
+    "rhonix": 0.01,
+    "ethereum": 1.01,
+    "cosmos": 0.15,
+    "aptos": 0.1
   },
   "scale": {
-    "rhonix1": 4.76572914,
-    "rhonix5": 4.76572914,
-    "rhonix10": 3.4092260955,
-    "rhonix100": 7.73633697
+    "rhonix1": 10000,
+    "rhonix5": 20000,
+    "rhonix10": 50000,
+    "rhonix100": 95000
   },
-  "comms": {
-    "rhonix": 1.1252525,
-    "ethereum": 4.76572914,
-    "cosmos": 3.4092260955,
-    "aptos": 7.73633697
+  "transfers": {
+    "rhonix": 100.1252525,
+    "ethereum": 40.76572914,
+    "cosmos": 30.4092260955,
+    "aptos": 70.73633697
   }
 }

@@ -24,10 +24,10 @@ const TABS: {
   },
 
   {
-    id: "comms",
-    title: "Comm Events",
+    id: "transfers",
+    title: "NFT Transfers",
     soon: false,
-    tooltip: "Speed of computations",
+    tooltip: "Speed of execution of nft contracts",
   },
 ];
 

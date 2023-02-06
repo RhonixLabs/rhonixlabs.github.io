@@ -6,7 +6,7 @@ import {
   useAnimation,
   AnimationPlaybackControls,
 } from "framer-motion";
-import Image from "next/image";
+
 import { useEffect, useRef, useState } from "react";
 import benchmarkData from "./benchmark-data/data.json";
 import { Gradient } from "../home-shared/Gradient";
@@ -16,11 +16,6 @@ import {
   BenchmarkCategory,
   BenchmarkData,
 } from "./LandingBenchmarks";
-import Mainnet from "@images/svg/Roadmap/Mainnet";
-import PreTestnet from "@images/svg/Roadmap/PreTestnet";
-import Sharding from "@images/svg/Roadmap/Sharding";
-import Testnet from "@images/svg/Roadmap/Testnet";
-import Validators from "@images/svg/Roadmap/Validators";
 
 interface BenchmarksGraphProps {
   category: BenchmarkCategory;
@@ -35,7 +30,6 @@ export function BenchmarksGraph({
 }: BenchmarksGraphProps) {
   const data: BenchmarkData = benchmarkData[category];
   const keys = bars.map((bar) => bar.key);
-  console.log(bars);
   const longestTime = Math.max(...keys.map((key) => data[key])) * 1000;
   const longestTimeWithPadding = longestTime * 1.15;
   const graphRef = useRef(null);
@@ -132,7 +126,7 @@ function GraphBar({
 
   async function startAnimation() {
     const transition = {
-      duration: duration / 1000,
+      duration: (duration / longestTime) * 5,
       delay: START_DELAY,
     };
     setBarWidth((duration / longestTime) * 100);
@@ -177,7 +171,7 @@ function GraphBar({
     void playFullAnimation();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [duration, longestTime]);
-
+  console.log(barWidth);
   return (
     <div className="justify-center w-full gap-1 md:flex-row md:flex align-center">
       <div className="flex items-center w-48">{Label}</div>
@@ -237,11 +231,11 @@ const GraphBarValue = ({
   const time = timeUnitConverter(timer, duration);
   switch (category) {
     case "energy":
-      return <GraphUnitTimer value={time["unitValue"]} unit="comms/sec" />;
+      return <GraphUnitTimer value={time["unitValue"]} unit="Ws/tx" />;
     case "scale":
-      return <GraphUnitTimer value={time["unitValue"]} unit="comms/sec" />;
-    case "comms":
-      return <GraphUnitTimer value={time["unitValue"]} unit="comms/sec" />;
+      return <GraphUnitTimer value={time["unitValue"]} unit="Comms/sec" />;
+    case "transfers":
+      return <GraphUnitTimer value={time["unitValue"]} unit="Transfers/sec" />;
     default:
       return <div>Not found</div>;
   }
@@ -264,21 +258,28 @@ const MeasureUnit = ({
   unit: string;
 }): JSX.Element => {
   return (
-    <div className={`flex flex-row gap-2 justify-end items-center z-10`}>
-      <p className="font-mono">{value}</p>
+    <div className={`flex flex-row gap-2 justify-end items-center z-10 `}>
+      <p className="font-mono ">{value}</p>
       <p className="font-mono"> {unit}</p>
     </div>
   );
 };
 
-const timeUnitConverter = (maxValue: number, value: number) => {
+const timeUnitConverter = (value: number, maxValue: number) => {
   if (maxValue < 1000) {
     const unitValue = Math.round(value).toFixed(0);
     const unit = "ms";
     return { unitValue: unitValue, unit: unit };
-  } else {
+  } else if (maxValue > 1000 && maxValue < 10000) {
     const roundedValue = roundTo(value / 1000, 1);
     const unitValue = roundedValue.toFixed(1);
+    const unit = "s";
+    return { unitValue: unitValue, unit: unit };
+  } else {
+    const roundedValue = roundTo(value / 1000, 0);
+    const unitValue = roundedValue.toFixed(0);
+    // const unitValueK = `${unitValue} k`;
+
     const unit = "s";
     return { unitValue: unitValue, unit: unit };
   }

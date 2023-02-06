@@ -4,7 +4,7 @@ import { SectionHeader, SectionSubtext } from "../home-shared/Headings";
 import { BenchmarksGraph } from "./LandingBenchmarksGraph";
 import { LandingBenchmarkTabs as LandingBenchmarkTabs } from "./LandingBenchmarkTabs";
 
-export type BenchmarkCategory = "scale" | "finality" | "comms" | "energy";
+export type BenchmarkCategory = "scale" | "finality" | "transfers" | "energy";
 
 export interface BenchmarkData {
   rhonix: number;
@@ -47,7 +47,6 @@ export const rhonixScaleBars: BenchmarkBar[] = [
   {
     key: "rhonix1",
     label: "Rhonix 1-node",
-    turbo: true,
   },
   {
     key: "rhonix5",
@@ -60,6 +59,7 @@ export const rhonixScaleBars: BenchmarkBar[] = [
   {
     key: "rhonix100",
     label: "Rhonix 100-nodes",
+    turbo: true,
   },
 ];
 
