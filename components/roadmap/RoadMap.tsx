@@ -191,7 +191,7 @@ export const RoadMap = ({ data, ...rest }: Props) => {
               transition={{ duration: 1 }}
               key={selectedPlanet}
             >
-              <div className="mx-auto mt-12 max-w-[27.5rem]">
+              <div className="mx-auto mt-12 max-w-[27.5rem] px-4">
                 <div className="mb-12 rounded-xl border border-rho-light-300 py-7 px-7 dark:border-rho-dark-300">
                   <div className="prose-invert:text-rho-dark-400 prose prose-h2:mb-[0.75rem] prose-h2:border-none prose-h2:text-[1.5rem] prose-h2:uppercase prose-h2:leading-[1] prose-ul:p-0 prose-ul:pl-3.5 prose-li:list-square prose-li:text-[1.125rem] prose-li:leading-[1.4] dark:prose-invert">
                     {data[selectedPlanet].description.map((item, idx) => (

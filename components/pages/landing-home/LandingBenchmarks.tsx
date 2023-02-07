@@ -4,17 +4,17 @@ import { SectionHeader, SectionSubtext } from "../home-shared/Headings";
 import { BenchmarksGraph } from "./LandingBenchmarksGraph";
 import { LandingBenchmarkTabs as LandingBenchmarkTabs } from "./LandingBenchmarkTabs";
 
-export type BenchmarkCategory = "scale" | "finality" | "transfers" | "energy";
+export type BenchmarkCategory = "scale" | "finality" | "transfers" | "storage";
 
 export interface BenchmarkData {
-  rhonix: number;
-  ethereum: number;
-  cosmos: number;
-  aptos: number;
-  rhonix1: number;
-  rhonix5: number;
-  rhonix10: number;
-  rhonix100: number;
+  rhonix?: number;
+  ethereum?: number;
+  cosmos?: number;
+  aptos?: number;
+  rhonix1?: number;
+  rhonix2?: number;
+  rhonix5?: number;
+  rhonix10?: number;
 }
 
 export interface BenchmarkBar {
@@ -45,17 +45,17 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
 
 export const rhonixScaleBars: BenchmarkBar[] = [
   {
-    key: "rhonix100",
-    label: "Rhonix 100-nodes",
-    turbo: true,
-  },
-  {
     key: "rhonix10",
     label: "Rhonix 10-nodes",
+    turbo: true,
   },
   {
     key: "rhonix5",
     label: "Rhonix 5-nodes",
+  },
+  {
+    key: "rhonix2",
+    label: "Rhonix 2-nodes",
   },
   {
     key: "rhonix1",
@@ -64,7 +64,7 @@ export const rhonixScaleBars: BenchmarkBar[] = [
 ];
 
 export function LandingBenchmarks() {
-  const [category, setCategory] = useState<BenchmarkCategory>("energy");
+  const [category, setCategory] = useState<BenchmarkCategory>("scale");
 
   return (
     <FadeIn className="relative flex flex-col items-center justify-center w-full gap-10 py-16 font-sans md:py-24 lg:py-32">

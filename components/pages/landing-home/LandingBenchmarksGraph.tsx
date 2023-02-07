@@ -29,6 +29,7 @@ export function BenchmarksGraph({
   pinTime,
 }: BenchmarksGraphProps) {
   const data: BenchmarkData = benchmarkData[category];
+
   const keys = bars.map((bar) => bar.key);
   const longestTime = Math.max(...keys.map((key) => data[key])) * 1000;
   const longestTimeWithPadding = longestTime * 1.15;
@@ -171,7 +172,7 @@ function GraphBar({
     void playFullAnimation();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [duration, longestTime]);
-  console.log(barWidth);
+
   return (
     <div className="justify-center w-full gap-1 md:flex-row md:flex align-center">
       <div className="flex items-center w-48">{Label}</div>
@@ -230,12 +231,12 @@ const GraphBarValue = ({
 }: GraphValueProps) => {
   const time = timeUnitConverter(timer, duration);
   switch (category) {
-    case "energy":
-      return <GraphUnitTimer value={time["unitValue"]} unit="Ws/tx" />;
+    case "storage":
+      return <GraphUnitTimer value={time["unitValue"]} unit="ct/MB" />;
     case "scale":
       return <GraphUnitTimer value={time["unitValue"]} unit="Comms/sec" />;
-    case "transfers":
-      return <GraphUnitTimer value={time["unitValue"]} unit="Transfers/sec" />;
+    case "finality":
+      return <GraphUnitTimer value={time["unitValue"]} unit="sec" />;
     default:
       return <div>Not found</div>;
   }

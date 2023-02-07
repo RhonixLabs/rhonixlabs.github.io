@@ -11,10 +11,10 @@ const TABS: {
   tooltip: string;
 }[] = [
   {
-    id: "energy",
-    title: "Energy consumption",
+    id: "storage",
+    title: "Storage cost",
     soon: false,
-    tooltip: "Energy used",
+    tooltip: "Storage cost",
   },
   {
     id: "scale",
@@ -24,10 +24,10 @@ const TABS: {
   },
 
   {
-    id: "transfers",
-    title: "NFT Transfers",
+    id: "finality",
+    title: "Finality",
     soon: false,
-    tooltip: "Speed of execution of nft contracts",
+    tooltip: "Finality",
   },
 ];
 
@@ -49,7 +49,7 @@ export function LandingBenchmarkTabs({
 }: {
   onTabChange: (tab: BenchmarkCategory) => void;
 }) {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
 
   const onTabClick = (index: number) => {
     if (TABS[index].soon) return;
