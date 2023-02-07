@@ -1,5 +1,5 @@
 .benchmarkRhonix {
-  background: linear-gradient(288.43deg, #ffd700 28.29%, #ffd700 78.78%);
+  background: linear-gradient(288.43deg, #ef3700 28.29%, #ff7600 78.78%);
   box-shadow: 0 0 16px #fda228;
   :global(.light) & {
     background: linear-gradient(

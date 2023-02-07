@@ -56,11 +56,11 @@ export function FooterContent() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="w-full py-8 mx-auto">
+      <div className="w-full py-8 ">
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="grid grid-cols-1 gap-8 xl:col-span-2">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 md:gap-8">
-              <div className="mt-12 md:!mt-0 flex justify-center">
+              <div className="mt-12 md:!mt-0 flex ">
                 <div>
                   <FooterHeader>Resources</FooterHeader>
                   <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
@@ -72,7 +72,7 @@ export function FooterContent() {
                   </ul>
                 </div>
               </div>
-              <div className="mt-12 md:!mt-0 flex justify-center">
+              <div className="mt-12 md:!mt-0 flex ">
                 <div>
                   <FooterHeader>Learn</FooterHeader>
                   <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
@@ -84,7 +84,7 @@ export function FooterContent() {
                   </ul>
                 </div>
               </div>
-              <div className="mt-12 md:!mt-0 flex justify-center">
+              <div className="mt-12 md:!mt-0 flex ">
                 <div>
                   <div>
                     <FooterHeader>Build</FooterHeader>
@@ -98,7 +98,7 @@ export function FooterContent() {
                   </div>
                 </div>
               </div>
-              <div className="mt-12 md:!mt-0 flex justify-center">
+              <div className="mt-12 md:!mt-0 flex ">
                 <div>
                   <FooterHeader>Company</FooterHeader>
                   <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
@@ -110,7 +110,7 @@ export function FooterContent() {
                   </ul>
                 </div>
               </div>
-              <div className="mt-12 md:!mt-0 flex justify-center">
+              <div className="mt-12 md:!mt-0 flex ">
                 <div>
                   <FooterHeader>Legal</FooterHeader>
                   <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
@@ -122,7 +122,7 @@ export function FooterContent() {
                   </ul>
                 </div>
               </div>
-              <div className="mt-12 md:!mt-0 flex justify-center">
+              <div className="mt-12 md:!mt-0 flex ">
                 <div>
                   <FooterHeader>Support</FooterHeader>
                   <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">

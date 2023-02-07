@@ -15,30 +15,30 @@ export function FeatureBox({
   return (
     <div className="font-sans cardShadow dark:bg-neutral-900 relative flex flex-col gap-5 p-8 overflow-hidden text-black no-underline dark:text-white rounded-3xl">
       <div className="flex flex-col gap-2">
-        <h3 className="leading-10 text-5xl m-0 font-bold  text-gray-900 font-sans dark:text-white">
+        <h3 className="leading-10  text-5xl m-0 font-bold  text-gray-900 font-sans dark:text-white">
           {name}
         </h3>
 
-        <div className="flex ">
-          <p className="text-base m-0 grow opacity-70">{description}</p>
-          <div className="w-20 h-20 grow ml-10">
+        <p className="text-base m-0 mb-6 opacity-70">{description}</p>
+        <div className="absolute  -bottom-[15px] -right-[23px]">
+          {iconDark && (
             <Image
               src={iconDark}
-              width={64}
-              height={64}
               aria-hidden="true"
               alt=""
-              className="hidden dark:block"
+              className="hidden dark:block object-scale-down w-20 h-20"
             />
+          )}
+          {iconLight && (
             <Image
               src={iconLight}
-              width={64}
-              height={64}
+              width={100}
+              height={100}
               aria-hidden="true"
               alt=""
-              className="block dark:hidden"
+              className="block dark:hidden object-scale-down w-20 h-20"
             />
-          </div>
+          )}
         </div>
       </div>
     </div>

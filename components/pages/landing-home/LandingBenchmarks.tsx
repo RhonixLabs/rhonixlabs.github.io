@@ -30,36 +30,36 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
     turbo: true,
   },
   {
-    key: "ethereum",
-    label: "Ethereum",
+    key: "aptos",
+    label: "Aptos",
   },
   {
     key: "cosmos",
     label: "Cosmos",
   },
   {
-    key: "aptos",
-    label: "Aptos",
+    key: "ethereum",
+    label: "Ethereum",
   },
 ];
 
 export const rhonixScaleBars: BenchmarkBar[] = [
   {
-    key: "rhonix1",
-    label: "Rhonix 1-node",
-  },
-  {
-    key: "rhonix5",
-    label: "Rhonix 5-nodes",
+    key: "rhonix100",
+    label: "Rhonix 100-nodes",
+    turbo: true,
   },
   {
     key: "rhonix10",
     label: "Rhonix 10-nodes",
   },
   {
-    key: "rhonix100",
-    label: "Rhonix 100-nodes",
-    turbo: true,
+    key: "rhonix5",
+    label: "Rhonix 5-nodes",
+  },
+  {
+    key: "rhonix1",
+    label: "Rhonix 1-node",
   },
 ];
 
