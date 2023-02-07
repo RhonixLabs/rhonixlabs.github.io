@@ -23,21 +23,21 @@ export type Features = Array<Feature>;
 const PACK_FEATURES: Features = [
   {
     name: "Leaderless block merge",
-    description: `Merging blocks, which have no conflict leads to scale of transactions`,
+    description: `Merging blocks, which have no conflict, leads to scale of transactions`,
     iconDark: MergeIconLight,
     iconLight: MergeIconLight,
     page: "all",
   },
   {
     name: "Ecosystem-friendly",
-    description: `SDKs and Tutorials for the developers make building dApps easy`,
+    description: `SDKs and Tutorials for developers makes it easy building dApps`,
     iconDark: EcosystemIconLight,
     iconLight: EcosystemIconLight,
     page: "home",
   },
   {
     name: "Low cost transactions",
-    description: `Due to Proove of stake, transactions do not require much overhead`,
+    description: `Due to Prove of stake, transactions do not require much overhead`,
     iconDark: CostIconLight,
     iconLight: CostIconLight,
     page: "all",
