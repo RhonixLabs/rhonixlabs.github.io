@@ -44,8 +44,8 @@ export const milestones: Milestones =
   {
     date: "2024 Q2",
     name: "Validator clustors",
-    title: "Integrate large validators clustors",
-    description: ["Integrate large validators clustors", "Onboard institutions"]
+    title: "Integrate large validator clustors",
+    description: ["Integrate large validator clustors", "Onboard institutions"]
 
   }]
 

@@ -49,8 +49,8 @@ export function LandingHero() {
         >
           <HeroText h1>The scalable layer 1 runtime for dApps</HeroText>
           <SectionSubtext hero>
-            Based on the latest research from the reflective higher order
-            calculus, our runtime can scale linear with new added nodes
+            Based on the latest research in reflective higher-order calculus,
+            our runtime scales linearly as new nodes are added
           </SectionSubtext>
         </FadeIn>
         <FadeIn

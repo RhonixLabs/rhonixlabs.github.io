@@ -71,7 +71,8 @@ export function LandingBenchmarks() {
       <div className="flex flex-col items-center gap-5 md:gap-6 px-6">
         <SectionHeader>Scaling on steroids</SectionHeader>
         <SectionSubtext>
-          Guided by math, Rhonix archives performance by scaling horizontally.
+          Guided by mathematics and enabled by cutting-edge computer science,
+          Rhonix achieves outstanding performance through horizontal scaling.
         </SectionSubtext>
       </div>
       <div className="flex flex-col items-center w-full">

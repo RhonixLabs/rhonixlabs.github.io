@@ -4,7 +4,7 @@ import { useConfig, useTheme } from "nextra-theme-docs";
 import { Footer } from "./components/Footer";
 import Navigation from "./components/Navigation";
 import HeaderLogo from "./components/HeaderLogo";
-import { Discourse, Github } from "./components/Social";
+import { Discourse, Github, Signal } from "./components/Social";
 
 const SITE_ROOT = "https://rhonix.io";
 
@@ -157,6 +157,7 @@ const theme = {
       <>
         <Github />
         <Discourse />
+        <Signal />
       </>
     ),
   },
