@@ -20,13 +20,13 @@ export function LandingLetter() {
       <div className="flex flex-col max-w-xl leading-6  text-sm  md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            Since the beginning of the internet, web service were run on
-            centralized server farms and scaling these services were not
-            trivial. Decentralized network are challenging this by utilizing
-            technologies, where failure and scalability is directly modelled
-            into their platform. But since decentralized network had scalability
-            issues, these platforms are not fully realizing their full potential
-            for business.
+            Since the inception of the internet, web services have been run on
+            centralized server farms, and scaling these services has not been
+            trivial. Decentralized networks are challenging this approach by
+            utilizing technologies, where failure and scalability is directly
+            modelled into their platform. But since decentralized network had
+            scalability issues, these platforms are not fully realizing their
+            full potential for business.
           </p>
           <br />
           <p>
@@ -35,19 +35,19 @@ export function LandingLetter() {
             new developed programming language, called rholang, which is based
             on the latest research from the reflective higher order calculus.
             This language enables us to have concurrency in our core language.
-            Detecting when conflicts emerge is now easier than ever. Why should
-            a transaction in Canada wait for a transaction from Singapur to be
-            finalized, if there are no dependencies between them? Only if there
-            are conflicts in their ordering, these transaction orders have to be
-            resolved. With these lessons learned, we use our rholang language
-            and our novel runtime, to have scalability directly built into the
-            language.
+            Detecting when conflicts emerge is now easier than ever. There is no
+            need for a transaction in Canada to wait for a transaction from
+            Singapore to be finalized if there are no dependencies between them.
+            Only if there are conflicts in their ordering do these transactions
+            have to be resolved. With these lessons learned, we use our rholang
+            language and our novel runtime, to have scalability directly built
+            into the language.
           </p>
           <br />
           <p>
-            With the Rhonix runtime, we are just doing that. And with launching
-            our upcoming testnet 2.0, this is not the future, it is possible
-            today.
+            With the Rhonix runtime, we are making this a reality. And with
+            launching our upcoming testnet 2.0, this is not the future, it is
+            possible today.
           </p>
         </FadeIn>
         <FadeIn noVertical viewTriggerOffset className="relative h-2 h-12 h-12">
