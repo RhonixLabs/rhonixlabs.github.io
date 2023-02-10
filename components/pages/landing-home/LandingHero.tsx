@@ -13,11 +13,11 @@ import Spline from "@splinetool/react-spline";
 export function LandingHero() {
   return (
     <>
-      <div className="min-h-[50vh] hidden sm:block">
+      <div className="min-h-[40vh] hidden sm:block">
         <Spline scene="https://prod.spline.design/LccpC7EHaPgocnq4/scene.splinecode" />
       </div>
 
-      <div className="min-h-[50vh]">
+      <div className="min-h-[60vh]">
         <FadeIn
           noVertical
           className="font-sans w-auto pt-[48px]  md:pt-3 lg:pt-3 flex justify-between gap-8 items-center flex-col relative z-0"
