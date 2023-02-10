@@ -12,7 +12,7 @@ export function RepoHero() {
     <>
       <FadeIn
         noVertical
-        className="min-h-screen  font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-3 lg:pt-3 flex justify-between gap-8 items-center flex-col relative z-0"
+        className="min-h-screen font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-3 lg:pt-3 flex justify-between gap-8 items-center flex-col relative z-0"
       >
         <FadeIn className="z-50 flex items-center justify-center w-full">
           <div className="absolute z-50 flex items-center justify-center w-256 h-256">
@@ -39,10 +39,11 @@ export function RepoHero() {
           <HeroText h1>A world of dApps</HeroText>
           <SectionSubtext hero>
             With more and more dApps using the rhonix decentralized network,
-            join us.
-            <br />
-            Tbd. List of dApps which are available. Select from list.
+            join us. Tbd. List of dApps which are available. Select from list.
           </SectionSubtext>
+        </FadeIn>
+        <FadeIn delay={0.5} className="relative w-full">
+          <div className="absolute bottom-0 w-full dark:from-black from-white to-transparent h-72 bg-gradient-to-t" />
         </FadeIn>
       </FadeIn>
     </>
