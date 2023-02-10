@@ -14,8 +14,19 @@ export function PackHero() {
     <>
       <FadeIn
         noVertical
-        className=" mt-60 font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-3 lg:pt-3 flex justify-between gap-8 items-center flex-col relative z-0"
+        className="min-h-screen font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-3 lg:pt-3 flex justify-between gap-8 items-center flex-col relative z-0"
       >
+        <FadeIn className="z-50 flex items-center justify-center w-full">
+          <div className="absolute z-50 flex items-center justify-center w-256 h-256">
+            <Gradient
+              small
+              width={256}
+              height={256}
+              conic
+              className="dark:opacity-30 opacity-20"
+            />
+          </div>
+        </FadeIn>
         <Gradient
           width={1000}
           height={1000}
