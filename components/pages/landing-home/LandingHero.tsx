@@ -20,7 +20,7 @@ export function LandingHero() {
       <div className="min-h-[60vh]">
         <FadeIn
           noVertical
-          className="font-sans w-auto pt-[48px]  md:pt-3 lg:pt-3 flex justify-between gap-8 items-center flex-col relative z-0"
+          className="font-sans w-auto pt-10  md:pt-10 lg:pt-10 flex justify-between gap-8 items-center flex-col relative z-0"
         >
           <FadeIn
             delay={0.15}
