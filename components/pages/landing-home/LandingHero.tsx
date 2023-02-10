@@ -26,7 +26,7 @@ export function LandingHero() {
             delay={0.15}
             className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
           >
-            <HeroText h1>The scalable layer 1 runtime for dApps</HeroText>
+            <HeroText h1>Thes scalable layer 1 runtime for dApps</HeroText>
             <SectionSubtext hero>
               Based on the latest research in reflective higher-order calculus,
               our runtime scales linearly as new nodes are added
