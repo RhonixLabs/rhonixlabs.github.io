@@ -16,7 +16,7 @@ export function LandingHero() {
       <div className="min-h-[50vh] hidden sm:block">
         <Spline scene="https://prod.spline.design/LccpC7EHaPgocnq4/scene.splinecode" />
       </div>
-      //{" "}
+
       <div className="min-h-[50vh]">
         <FadeIn
           noVertical
