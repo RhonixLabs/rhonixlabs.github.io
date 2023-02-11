@@ -13,7 +13,7 @@ import Spline from "@splinetool/react-spline";
 export function LandingHero() {
   return (
     <>
-      <div className="min-h-[42vh]">
+      <div className="min-h-[12vh] sm:min-h-[42vh]">
         <Spline
           className="object-cover"
           scene="https://prod.spline.design/LccpC7EHaPgocnq4/scene.splinecode"
@@ -23,7 +23,7 @@ export function LandingHero() {
       <div className="min-h-[43vh]">
         <FadeIn
           noVertical
-          className="font-sans w-auto pt-10  md:pt-10 lg:pt-10 flex justify-between gap-8 items-center flex-col relative z-0"
+          className="font-sans w-auto pt-3  sm:pt-10 lg:pt-10 flex justify-between gap-8 items-center flex-col relative z-0"
         >
           <FadeIn
             delay={0.15}
