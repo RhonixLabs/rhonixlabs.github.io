@@ -229,7 +229,6 @@ const GraphBarValue = ({
   duration,
   timer,
 }: GraphValueProps) => {
-  console.log(timer);
   const time = timeUnitConverter(timer, duration);
   switch (category) {
     case "storage":

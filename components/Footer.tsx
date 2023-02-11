@@ -31,17 +31,23 @@ const navigation = {
   build: [{ name: "Documentation", href: "/build/docs" }],
   support: [
     {
-      name: "GitHub",
-      href: "https://github.com/RhonixLabs/rhonix",
+      name: "Discurse Forum",
+      href: "https://community.rhonix.io",
     },
     {
-      name: "Discurse",
-      href: "https://community.rhonix.io",
+      name: "Signal Community",
+      href: "https://signal.group/#CjQKIOGJd99QFmIarJiHL0g-6htrxZjnWqbBENF7MVR_qL_OEhC4tje83JFuhv-JO7j1ypjz",
+    },
+    {
+      name: "Discord Server",
+      href: "https://discord.gg/K2TCQmG3",
     },
   ],
   company: [
-    { name: "Rhonix", href: "https://rhonix.io" },
-
+    {
+      name: "GitHub",
+      href: "https://github.com/RhonixLabs/rhonix",
+    },
     { name: "Twitter", href: "https://twitter.com/rhonix" },
   ],
   legal: [

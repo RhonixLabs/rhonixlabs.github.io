@@ -46,20 +46,20 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
 export const rhonixScaleBars: BenchmarkBar[] = [
   {
     key: "rhonix10",
-    label: "Rhonix 10-nodes",
+    label: "Rhonix 32-cores",
     turbo: true,
   },
   {
     key: "rhonix5",
-    label: "Rhonix 5-nodes",
+    label: "Rhonix 16-cores",
   },
   {
     key: "rhonix2",
-    label: "Rhonix 2-nodes",
+    label: "Rhonix 8-cores",
   },
   {
     key: "rhonix1",
-    label: "Rhonix 1-node",
+    label: "Rhonix 4-cores",
   },
 ];
 

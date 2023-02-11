@@ -6,10 +6,10 @@
     "aptos": 10
   },
   "scale": {
-    "rhonix1": 10000,
-    "rhonix2": 20000,
-    "rhonix5": 50000,
-    "rhonix10": 95000
+    "rhonix1": 1000,
+    "rhonix2": 2000,
+    "rhonix5": 5000,
+    "rhonix10": 11000
   },
   "finality": {
     "rhonix": 1.9,
