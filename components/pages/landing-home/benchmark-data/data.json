@@ -1,7 +1,7 @@
 {
   "storage": {
-    "rhonix": 1,
-    "ethereum": 760,
+    "rhonix": 3000,
+    "ethereum": 1,
     "cosmos": 20,
     "aptos": 10
   },
@@ -12,9 +12,9 @@
     "rhonix10": 95000
   },
   "finality": {
-    "rhonix": 2,
-    "ethereum": 10,
-    "cosmos": 3,
-    "aptos": 4
+    "rhonix": 1.9,
+    "ethereum": 12,
+    "cosmos": 60,
+    "aptos": 2
   }
 }

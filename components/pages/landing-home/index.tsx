@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <LandingPageGlobalStyles />
-      <main className="relative">
+      <main className="relative ">
         <LandingHero />
         <GradientSectionBorder>
           <LandingBenchmarks />

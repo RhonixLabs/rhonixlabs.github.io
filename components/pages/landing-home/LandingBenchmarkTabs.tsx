@@ -12,7 +12,7 @@ const TABS: {
 }[] = [
   {
     id: "storage",
-    title: "Storage cost",
+    title: "Storage for 1$",
     soon: false,
     tooltip: "Storage cost",
   },

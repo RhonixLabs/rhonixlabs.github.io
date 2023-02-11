@@ -229,10 +229,12 @@ const GraphBarValue = ({
   duration,
   timer,
 }: GraphValueProps) => {
+  console.log(timer);
   const time = timeUnitConverter(timer, duration);
   switch (category) {
     case "storage":
-      return <GraphUnitTimer value={time["unitValue"]} unit="ct/MB" />;
+      const lowerValue = lowerConverter(time);
+      return <GraphUnitTimer value={lowerValue} unit="MB" />;
     case "scale":
       return <GraphUnitTimer value={time["unitValue"]} unit="Comms/sec" />;
     case "finality":
@@ -242,7 +244,7 @@ const GraphBarValue = ({
   }
 };
 
-const GraphUnitTimer = ({ value, unit }: { value: string; unit: string }) => {
+const GraphUnitTimer = ({ value, unit }: { value: number; unit: string }) => {
   return <MeasureUnit value={value} unit={unit} />;
 };
 
@@ -255,7 +257,7 @@ const MeasureUnit = ({
   value,
   unit,
 }: {
-  value: string;
+  value: number;
   unit: string;
 }): JSX.Element => {
   return (
@@ -268,21 +270,29 @@ const MeasureUnit = ({
 
 const timeUnitConverter = (value: number, maxValue: number) => {
   if (maxValue < 1000) {
-    const unitValue = Math.round(value).toFixed(0);
+    const unitValue = +Math.round(value).toFixed(0);
     const unit = "ms";
     return { unitValue: unitValue, unit: unit };
   } else if (maxValue > 1000 && maxValue < 10000) {
     const roundedValue = roundTo(value / 1000, 1);
-    const unitValue = roundedValue.toFixed(1);
+    const unitValue = +roundedValue.toFixed(1);
     const unit = "s";
     return { unitValue: unitValue, unit: unit };
   } else {
     const roundedValue = roundTo(value / 1000, 0);
-    const unitValue = roundedValue.toFixed(0);
+    const unitValue = +roundedValue.toFixed(0);
     // const unitValueK = `${unitValue} k`;
 
     const unit = "s";
     return { unitValue: unitValue, unit: unit };
+  }
+};
+
+const lowerConverter = (time) => {
+  if (time["unitValue"] <= 1) {
+    return `< ${time["unitValue"]}`;
+  } else {
+    return time["unitValue"];
   }
 };
 
