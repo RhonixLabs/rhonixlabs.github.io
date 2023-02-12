@@ -51,14 +51,14 @@ const PACK_FEATURES: Features = [
   },
   {
     name: "Open community",
-    description: `An open community embracing contributions from all members, fostering support and advancement of the technology.`,
+    description: `An open community embracing contributions from all members, fostering support and advancement of the technology`,
     iconDark: CommunityIconLight,
     iconLight: CommunityIconLight,
     page: "all",
   },
   {
-    name: "Truely decentralized",
-    description: `Our leaderless proof-of-stake architecture ensures there is no single point of failure, making Rhonix a truly decentralized technology accessible to the masses.`,
+    name: "Truly decentralized",
+    description: `Our leaderless proof-of-stake architecture ensures there is no single point of failure, making Rhonix a truly decentralized technology accessible to the masses`,
     iconDark: DecentralizedIconLight,
     iconLight: DecentralizedIconLight,
     page: "all",

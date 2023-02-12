@@ -24,28 +24,28 @@ export const milestones: Milestones =
     date: "2023 Q3",
     name: "Testnet 2.0",
     title: "Startup phase of the testnet 2.0",
-    description: ["Testnet 2.0 warmup", "Enable External Validators", "Upgrade Rhlang Engine to Rust", "Migrate dApps"]
+    description: ["Testnet 2.0 warmup", "Enable External Validators", "Upgrade Rholang Engine to Rust", "Migrate dApps"]
 
   },
   {
     date: "2023 Q4",
     name: "Mainnet 2.0",
     title: "Secure Mainnet 2.0 rollout",
-    description: ["Mainnet 2.0", "Exchanges"]
+    description: ["Mainnet 2.0", "List on Exchanges"]
 
   },
   {
     date: "2024 Q1",
     name: "Sharding",
     title: "Enable subshards",
-    description: ["Sharding enabling for subnetworks", "Inter blockchain communications to cosmos"]
+    description: ["Sharding enabling for subnetworks", "Inter blockchain communications to cosmos and other chains"]
 
   },
   {
     date: "2024 Q2",
-    name: "Validator clustors",
-    title: "Integrate large validator clustors",
-    description: ["Integrate large validator clustors", "Onboard institutions"]
+    name: "Validator clusters",
+    title: "Integrate large validator clusters",
+    description: ["Integrate large validator clusters", "Onboarding enterprises"]
 
   }]
 

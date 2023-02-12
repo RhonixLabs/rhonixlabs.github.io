@@ -12,7 +12,7 @@ export function LandingLetter() {
     <section className="relative flex flex-col items-center px-6 py-16 font-sans md:py-24 lg:py-32 gap-14">
       <FadeIn>
         <HeroText>
-          Decentralized technologie&apos;s for
+          Decentralized technology for
           <br />
           the masses
         </HeroText>
@@ -22,15 +22,15 @@ export function LandingLetter() {
           <p>
             Since the inception of the internet, web services have been run on
             centralized server farms, and scaling these services has not been
-            trivial. Decentralized networks are challenging this approach by
-            utilizing technologies, where failure and scalability is directly
-            modelled into their platform. But since decentralized network had
-            scalability issues, these platforms are not fully realizing their
-            full potential for business.
+            easy. Decentralized networks are challenging this approach by
+            utilizing technologies, where fault-tolerance and scalability is
+            directly modelled into their platform. But since decentralized
+            networks have had scalability issues, these platforms are not fully
+            realizing their full potential for business and common adoption.
           </p>
           <br />
           <p>
-            The Rhonix team looks back on these technologies, and advances
+            The Rhonix team has learned from these mistakes, and advances
             forward with a fully new scientific paradigm shift. We are using a
             new developed programming language, called rholang, which is based
             on the latest research from the reflective higher order calculus.
