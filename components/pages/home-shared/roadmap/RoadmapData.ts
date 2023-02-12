@@ -17,7 +17,7 @@ export const milestones: Milestones =
     date: "2023 Q2",
     name: "Integration phase",
     title: "Integrate new features into codebase",
-    description: ["Leaderless blockmerge", "Last finalized state"]
+    description: ["Upgrading of the execution logic"]
 
   },
   {

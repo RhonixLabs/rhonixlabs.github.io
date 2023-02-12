@@ -5,7 +5,7 @@ export function LandingFeatures() {
   return (
     <FeaturesBento
       header="Why Rhonix?"
-      body="In order to unlock decentralized computing services for common adoption, the protocol needs to scale and achieve low cost transactions for dApps."
+      body="In order to unlock decentralized computing services for common adoption, the protocol needs to scale, while achieving low cost transactions for dApps."
       features={PACK_HOME_FEATURES}
     />
   );
