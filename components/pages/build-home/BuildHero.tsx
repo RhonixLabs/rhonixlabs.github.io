@@ -41,7 +41,6 @@ export function PackHero() {
           <HeroText h1>Devs, Devs, Devs, </HeroText>
           <SectionSubtext hero>
             Our goal is that you write and deploy dApps as easily as possible.
-            For developers as well as for validators.
           </SectionSubtext>
         </FadeIn>
         <FadeIn

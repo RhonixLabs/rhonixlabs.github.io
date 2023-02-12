@@ -31,16 +31,17 @@ export function LandingLetter() {
           <br />
           <p>
             The Rhonix team has learned from these mistakes. We are solving
-            these scalability issues with out unique techonolgy stack based on
-            advancements in computer science. We are using a newly developed
-            programming language, called rholang, which is based on the latest
-            research from the reflective higher-order calculus. This language
-            enables us to have concurrency in our core language. This means that
-            detecting the emergence of conflict between transactions is now
-            easier than ever. There is no need for a transaction in Canada to
-            wait for a transaction from Singapore to be finalized if there are
-            no dependencies between them. Only if there are conflicts in their
-            ordering do these transactions have to be resolved. With these
+            these scalability issues with our unique techonolgy stack based on
+            advancements in computer science. This will give people back the
+            power to control their own part of the network.
+          </p>
+          <br />
+          <p>
+            We are using a newly developed programming language, called rholang,
+            which is based on the latest research from the reflective
+            higher-order calculus. This language enables us to have concurrency
+            in our core language. This means that detecting the emergence of
+            conflict between transactions is now easier than ever. With these
             lessons learned, our runtime executes these smart contracts
             concurrently.
           </p>
@@ -48,7 +49,7 @@ export function LandingLetter() {
           <p>
             With the Rhonix runtime, we are making scaling for common adoption a
             reality. And with the launch of our upcoming testnet 2.0, we will
-            begin a new era of concurrent computing for decentralized network.
+            begin a new era of concurrent computing for decentralized networks.
           </p>
         </FadeIn>
         <FadeIn noVertical viewTriggerOffset className="relative h-2 h-12 h-12">

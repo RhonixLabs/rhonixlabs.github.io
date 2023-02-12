@@ -47,7 +47,7 @@ export function LandingHero() {
               </CTAButton>
               <CTAButton>
                 <Link href="/build/" className="block py-3">
-                  Develop
+                  Build
                 </Link>
               </CTAButton>
               <CTAButton outline>
