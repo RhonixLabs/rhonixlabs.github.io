@@ -48,7 +48,7 @@ const navigation = {
       name: "GitHub",
       href: "https://github.com/RhonixLabs/rhonix",
     },
-    { name: "Twitter", href: "https://twitter.com/rhonix" },
+    { name: "Twitter", href: "https://twitter.com/RhonixLabs" },
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
