@@ -41,7 +41,7 @@ export function PackHero() {
           <HeroText h1>Rhonix 101 for starters</HeroText>
           <SectionSubtext hero>
             Start with understanding how the architecture is designed and what
-            set's Rhonix apart from other chains. After that you can start with
+            sets Rhonix apart from other chains. After that, you can start
             building dApps.
           </SectionSubtext>
         </FadeIn>
