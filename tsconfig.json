@@ -18,7 +18,8 @@
     "baseUrl": "./",
     "paths": {
       "@components/*": ["components/*"],
-      "@images/*": ["public/images/*"]
+      "@images/*": ["public/images/*"],
+      "@api/*": ["api/*"]
     }
   },
   "include": ["custom.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
