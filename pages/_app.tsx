@@ -50,7 +50,7 @@ export default function Nextra({ Component, pageProps }: NextraAppProps) {
   const [isLocation, setIsLcoation] = useState(false);
 
   const getData = async () => {
-    setIsLcoation(await checkInLocation("Abu Dhabi"));
+    setIsLcoation(await checkInLocation("t"));
 
     setLoading(false);
   };
