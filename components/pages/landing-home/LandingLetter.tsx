@@ -24,7 +24,7 @@ export function LandingLetter() {
             centralized server farms, and scaling these services has not been
             easy. Decentralized networks are challenging this approach by
             utilizing technologies, where fault-tolerance and scalability is
-            directly modelled into their platform. But since decentralized
+            directly modeled into their platform. But since decentralized
             networks have had scalability issues, these platforms are not fully
             realizing their full potential for business and common adoption.
           </p>
