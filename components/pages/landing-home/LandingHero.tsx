@@ -51,14 +51,9 @@ export function LandingHero() {
                 </Link>
               </CTAButton>
               <CTAButton outline>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/RhonixLabs/rhonix"
-                  className="block py-3"
-                >
-                  GitHub
-                </a>
+                <Link href="/about" className="block py-3">
+                  About
+                </Link>
               </CTAButton>
             </div>
             <p className="text-sm text-[#666666]">

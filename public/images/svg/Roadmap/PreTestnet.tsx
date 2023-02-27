@@ -1,5 +1,5 @@
 import React from "react";
-import AlphaMainnetBackground from "@images/roadmap/pretestnet.png";
+import AlphaMainnetBackground from "@/images/roadmap/pretestnet.png";
 
 export interface Params {
   className?: string;

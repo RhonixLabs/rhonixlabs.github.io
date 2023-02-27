@@ -1,11 +1,11 @@
-import "./index.css";
+import "@/style/global.css";
 import "../custom.css";
 
 import { SSRProvider } from "@react-aria/ssr";
 import type { AppProps } from "next/app";
 import type { ReactNode } from "react";
-import { checkInLocation } from "@api/getLocation";
-import ItHome from "@components/pages/it-home";
+import { checkInLocation } from "@/api/getLocation";
+import ItHome from "@/components/pages/it-home";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Suspense } from "react";

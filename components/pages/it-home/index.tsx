@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getGeoInfo } from "@api/getLocation";
+import { getGeoInfo } from "@/api/getLocation";
 
 export default function ItHome() {
   const [state, setState] = useState({

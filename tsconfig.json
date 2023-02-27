@@ -17,9 +17,10 @@
     "types": ["next"],
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["components/*"],
-      "@images/*": ["public/images/*"],
-      "@api/*": ["api/*"]
+      "@/components/*": ["components/*"],
+      "@/images/*": ["public/images/*"],
+      "@/api/*": ["api/*"],
+      "@/style/*": ["style/*"]
     }
   },
   "include": ["custom.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"],

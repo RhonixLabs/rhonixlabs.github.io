@@ -1,5 +1,5 @@
 import React from "react";
-import MainnetBackground from "@images/roadmap/sharding.png";
+import MainnetBackground from "@/images/roadmap/sharding.png";
 import Image from "next/image";
 
 export interface Params {

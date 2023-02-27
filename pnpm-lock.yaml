@@ -17,6 +17,7 @@ specifiers:
   autoprefixer: 10.4.13
   axios: 0.27.2
   classnames: 2.3.2
+  clsx: ^1.2.1
   copy-to-clipboard: 3.3.2
   csstype: 3.1.1
   eslint: 8.10.0
@@ -35,6 +36,7 @@ specifiers:
   postcss: ^8.4.21
   prettier: ^2.8.3
   prettier-plugin-tailwindcss: ^0.1.13
+  prism-react-renderer: ^1.3.5
   react: ^18.2.0
   react-dom: ^18.2.0
   react-hot-toast: 2.4.0
@@ -59,6 +61,7 @@ dependencies:
   '@splinetool/runtime': 0.9.211
   axios: 0.27.2
   classnames: 2.3.2
+  clsx: 1.2.1
   copy-to-clipboard: 3.3.2
   framer-motion: 7.6.12_biqbaboplfbrettd7655fr4n2y
   js-cookie: 3.0.1
@@ -70,6 +73,7 @@ dependencies:
   nextra: 2.0.1_6jx7hpii6hgsrmhxgqrmo3277u
   nextra-theme-docs: 2.0.1_6jx7hpii6hgsrmhxgqrmo3277u
   prettier: 2.8.3
+  prism-react-renderer: 1.3.5_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hot-toast: 2.4.0_owo25xnefcwdq3zjgtohz6dbju
@@ -4863,6 +4867,14 @@ packages:
     resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+
+  /prism-react-renderer/1.3.5_react@18.2.0:
+    resolution: {integrity: sha512-IJ+MSwBWKG+SM3b2SUfdrhC+gu01QkV2KmRQgREThBfSQRoufqRfxfHUxpG1WcaFjP+kojcFyO9Qqtpgt3qLCg==}
+    peerDependencies:
+      react: '>=0.14.9'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}

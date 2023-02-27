@@ -1,5 +1,5 @@
 import React from "react";
-import AlphaMainnetBackground from "@images/roadmap/validators.png";
+import AlphaMainnetBackground from "@/images/roadmap/validators.png";
 
 export interface Params {
   className?: string;

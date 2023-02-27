@@ -1,4 +1,4 @@
-import { RoadMap } from "@components/roadmap/RoadMap";
+import { RoadMap } from "@/components/roadmap/RoadMap";
 import { FadeIn } from "../FadeIn";
 import { SectionHeader, SectionSubtext } from "../Headings";
 import { milestones } from "./RoadmapData";

@@ -1,22 +1,22 @@
 import React, { useState, useRef, createRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { type Swiper as SwiperRef } from "swiper";
-import { Container } from "@components/Container";
-import { Button } from "@components/button";
+import { Container } from "@/components/Container";
+import { Button } from "@/components/button";
 import Link from "next/link";
-import Tag from "@components/Tag";
-import Validators from "@images/svg/Roadmap/Validators";
-import Sharding from "@images/svg/Roadmap/Sharding";
-import Mainnet from "@images/svg/Roadmap/Mainnet";
-import Testnet from "@images/svg/Roadmap/Testnet";
-import PreTestnet from "@images/svg/Roadmap/PreTestnet";
-import Bond from "@images/svg/Roadmap/Bond";
-import Rectangle from "@images/svg/Roadmap/Rectangle";
-import ArrowLeft from "@images/svg/ArrowLeft";
-import ArrowRight from "@images/svg/ArrowRight";
+import Tag from "@/components/Tag";
+import Validators from "@/images/svg/Roadmap/Validators";
+import Sharding from "@/images/svg/Roadmap/Sharding";
+import Mainnet from "@/images/svg/Roadmap/Mainnet";
+import Testnet from "@/images/svg/Roadmap/Testnet";
+import PreTestnet from "@/images/svg/Roadmap/PreTestnet";
+import Bond from "@/images/svg/Roadmap/Bond";
+import Rectangle from "@/images/svg/Roadmap/Rectangle";
+import ArrowLeft from "@/images/svg/ArrowLeft";
+import ArrowRight from "@/images/svg/ArrowRight";
 import { motion } from "framer-motion";
 import "swiper/css";
-import { Milestones } from "@components/pages/home-shared/roadmap/RoadmapData";
+import { Milestones } from "@/components/pages/home-shared/roadmap/RoadmapData";
 
 type Props = {
   data: Milestones;
