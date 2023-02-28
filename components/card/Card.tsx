@@ -48,7 +48,7 @@ export function Card({
           <Icon />
         </div>
 
-        <div className="flex justify-center flex-col items-center flex-1">
+        <div className="flex text-white justify-center flex-col items-center flex-1">
           <div>{title}</div>
           {children}
         </div>

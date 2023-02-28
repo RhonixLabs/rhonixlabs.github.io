@@ -43,7 +43,7 @@ function TrafficLightsIcon(props) {
 
 const HeroContent = (props) => (
   <div className="mx-auto grid max-w-8xl grid-cols-1 gap-y-16 gap-x-8 px-8 lg:max-w-8xl lg:grid-cols-2 lg:px-16 xl:gap-x-16 xl:px-40">
-    <div className="relative z-10 md:text-center lg:text-left">
+    <div className="relative flex flex-col justify-center z-10 md:text-center lg:text-left">
       <Image
         className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
         src={blurCyanImage}
@@ -53,8 +53,8 @@ const HeroContent = (props) => (
         unoptimized
         priority
       />
-      <div className="relative">
-        <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-7xl tracking-tight text-transparent">
+      <div className="relative ">
+        <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-4xl md:text-7xl tracking-tight text-transparent">
           The scalable layer 1 runtime for dApps.
         </p>
         <p className="mt-9 text-2xl tracking-tight text-slate-400">

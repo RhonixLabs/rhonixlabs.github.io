@@ -5,7 +5,7 @@ import { FadeIn } from "@/components/pages/home-shared/FadeIn";
 
 export const SiteCards = () => {
   return (
-    <div className="flex px-16 mt-40 lg:max-w-8xl xl:px-40 flex-col gap-5 justify-center items-center   md:flex-row ">
+    <div className="flex px-16 my-8 sm:mt-8 lg:mt-40 lg:max-w-8xl xl:px-40 flex-col gap-5 justify-center items-center   md:flex-row ">
       <FadeIn delay={0.1} className="grow w-full">
         <Card
           title="Whitepaper"
