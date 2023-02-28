@@ -47,22 +47,16 @@ const ToolBoxs = (props) => {
     <div className="relative bottom-0 flex mx-auto mb-10  max-w-[29rem]  lg:max-w-[50rem]">
       <div className="grid gap-4  pt-12 md:gap-8 lg:grid-cols-4">
         <ToolBox
-          title="Pitch"
-          description={""}
-          icon={DecentralizedIconLight}
-          link="/assets/presentation/Rhonix_Company_Presentation_23_02_28.pdf"
-        />
-        <ToolBox
           title="Whitepaper"
           description={""}
           icon={DecentralizedIconLight}
-          link={"/assets/whitepaper/Rhonix_Company_Whitepaper_23_02_03.pdf"}
+          link={"/assets/whitepaper/Rhonix_Company_Whitepaper.pdf"}
         />
         <ToolBox
           title="Tokenomics"
           description={""}
           icon={DecentralizedIconLight}
-          link="/assets/tokenomics/Rhonix_Tokenomics_Model_2023_02_29.pdf"
+          link="/assets/tokenomics/Rhonix_Tokenomics_Model.pdf"
         />
 
         <ToolBox
