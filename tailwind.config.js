@@ -1,8 +1,10 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  mode: "jit",
   content: [
     "./components/**/*.{js,tsx}",
+    "./layout/**/*.{js,tsx}",
     "./nextra-theme-docs/**/*.{js,tsx}",
     "./pages/**/*.{md,mdx,tsx}",
     "./public/images/svg/**/*.{js,tsx}",
@@ -91,9 +93,6 @@ module.exports = {
         15: ".15",
       },
       screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
         betterhover: { raw: "(hover: hover)" },
       },
       typography: (theme) => ({
