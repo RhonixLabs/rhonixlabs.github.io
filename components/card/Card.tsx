@@ -40,7 +40,7 @@ export function Card({
       ></motion.i>
       <div
         className={cn(
-          "relative   w-full h-full max-w-full !pb-12 pt-8 md:!pb-4 md:!pt-4 p-3 rounded-xl overflow-hidden flex flex-col items-center  border border-[rgba(255,255,255,0.05)]",
+          "relative   w-full h-full max-w-full   md:!pb-4 md:!pt-4 p-3 rounded-xl overflow-hidden flex flex-col items-center  border border-[rgba(255,255,255,0.05)]",
           className
         )}
       >

@@ -57,7 +57,7 @@ const HeroContent = (props) => (
         <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-4xl md:text-7xl tracking-tight text-transparent">
           The scalable layer 1 runtime for dApps.
         </p>
-        <p className="mt-9 text-2xl tracking-tight text-slate-400">
+        <p className="mt-9 text-1xl sm:text-2xl tracking-tight text-slate-400">
           Based on the latest research in reflective higher-order calculus, our
           runtime scales linearly as new nodes are added
         </p>
